@@ -24,6 +24,9 @@
 \newcommand{\ml}[3]{#2}
 \newcommand{\coverfrontfilename}{cover_front.pdf}
 
+\usepackage{float} % https://stackoverflow.com/a/55863947/19827315
+\restylefloat{table} % https://stackoverflow.com/a/55863947/19827315
+
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{ltablex}
@@ -1634,7 +1637,7 @@ Tomēr ģermnizatoru cerētie rezultāti izpalika. Kaut līdz 1914.~gadam uz Vā
 Mūsdienās vācu vēstures literatūrā ir parasts Prūsijas-Vācijas politiku ķeizaru Vilhelma I un Vilhelma II un īpaši O.F.~Bismarka laikā uzskatīt kā neizdevušos un vērtēt to negatīvi. Nav noliedzams, ka tās mērķi netika sasniegti. Taču H.f.~Zitzevics norādījis, ka šai politikai bija arī ievērojami panākumi, īpaši kulturālajā un saimnieciskajā jomā. Vispārējais izglītības līmenis (1815.~gadā tikai 20\% skolas vecuma bērnu apmeklēja skolas, XIX gadsimta beigās tas, ka visi bērni apmeklēja skolas, bija pats par sevi saprotams), kā arī pilsētnieku un zemnieku, kā arī visu vidusslāņu saimnieciskais stāvoklis pārdzīvoja tādu attīstību, kādu nesasniedza Krievijai un Austroungārijai piederošajos poļu apgabalos. Piemēram skat. \ref{tab:table1}. tabulu.
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{Lauksaimniecības kultūru ražība hektolitros Pozenes provincē un Polijas karalistē pirms Pirmā pasaules kara} \label{tab:table1}
 \begin{tabularx}{\linewidth}{|p{5cm}|p{1.5cm}|p{3.5cm}|}
 \hline
@@ -1690,7 +1693,7 @@ Vēl pirms Polijas otrās dalīšanas 1791.~gadā ar imperatores Katrīnas II de
 
 Mūsdienu krievu sociālās vēstures pētnieks B.~Mironovs ir izdalījis vairākus Krievijas politikas principus tās inkorporētajās nacionālajās nomalēs.
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Krievija ilgstoši tajās saglabāja to administratīvo kārtību, vietējos likumus un iestādes, zemes īpašuma attiecības, ticību, valodu un kultūru, kas pastāvēja pirms to pievienošanas Krievijai. Pagāja vairākas desmitgades, līdz pakāpeniski Viskrievijas kārtība tika attiecināta arī uz nomalēm. Cara valdība plaši sadarbojās ar vietējām feodālajām elitēm, kuras saņēma tādas pat tiesības kā krievu muižnieki. Tas centrālajai varai atviegloja jauno teritoriju pārvaldīšanu.
 
 \item Nekrieviem tika radītas dažas priekšrocības salīdzinājumā ar krieviem. Tautas, kuras nepazina dzimtbūšanas attiecības, ar pievienošanu Krievijai tā arī neuzzināja, kas tā tāda. Ar nodokļu sistēmas palīdzību, kur nekrievu tautas maksāja mazākus nodokļus, tika radīts stāvoklis, ka nacionālajās nomalēs dzīvojošo nekrievu materiālais stāvoklis bija relatīvi labāks nekā krievu stāvoklis. (To atspoguļoja tāds apkopojošs labklājības rādītājs kā vidējais augums. Tā 1874.--1883.~gadā armijā iesaucamo vidējais augums no 28 lielkrievu guberņām bija 1~620~mm, bet no 22 pārējām guberņām~--- 1~627~mm). Teiktais nenozīmē, ka nekrievi neizjuta carisma spaidus, taču krieviem šai ziņā bija dažas ``priekšrocības''.
@@ -2092,7 +2095,7 @@ Svarīga nozare Polijas karalistē bija kalnrūpniecība. To savās rokās turē
 % TODO: Нужен заголовок таблицы!
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{Polijas karalistē saražotās rūpnieciskās produkcijas aptuvenā kopīgā vērtība (miljonos rubļu)} \label{tab:table2}
 \begin{tabularx}{\linewidth}{|p{4cm}|p{4cm}|}
 \hline
@@ -2360,7 +2363,7 @@ Pastāv pamatots viedoklis, ka 1863.~gada sacelšanās varēja uzvarēt tikai ta
 
 Baltkrievu publicists A.~Tarass izdalījis četrus galvenos \strong{sacelšanās sakāves cēloņus}:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 
 \item Reālas palīdzības trūkums no Rietumeiropās valstu puses. Bet sacelšanās tika gatavota tieši cerot uz Rietumu iejaukšanos!
 
@@ -2497,7 +2500,7 @@ Sakarā ar Krievijas realizēto protekcionisma politiku, raksturīgu ar augstām
 
 Tirdzniecība ar Krieviju un ārzemju, galvenokārt franču, beļģu un vācu kapitāli, investēti Polijas karalistes rūpniecībā, bija tās tautsaimniecības pamats. Tiesa, kā norādījis poļu ekonomikas vēsturnieks V.~Kula, ne visus ar vāciskiem uzvārdiem saistītos kapitālieguldījumus Polijā varēja uzskatīt par ārzemju kapitāliem. Tā, Lodzas tekstilrūpnīcu īpašnieki vācieši L.~Geiers un K.~Šeiblers savus līdzekļus bija ieguldījuši Polijā, paši tos pārvaldīja uz vietas, peļņu izmantoja ražošanas paplašināšanai, nevis izveda uz ārzemēm.
 
-Šai sakarā jāpiemin, ka XIX gadsimta beigās~--- XX gadsimta sākumā zināmu izplatību ieguva t.s. kapitālisma Polijā attīstības ``koloniālā teorija'', kura kapitālismu uzskatīja nevis par iekšēju sociāli-ekonomisko pārmaiņu rezultātā radušos, bet svešu, ārpus Polijas dzimušu un tās augsnē ``mākslīgi'' ``pārstādītu'' parādību. To raksturojot ārzemju kapitāli, noieta tirgi ārzemēs, ārzemju izcelsmes buržuāzija un arī lielā daudzumā no ārzemēm iebraukuši strādnieki. Kā uzskatīja V.~Kula, minētajā posmā un īpaši pēc Polijas valstiskās neatkarības atjaunošanas 1918.~gadā šai teorijai bija uzdevums pierādīt, ka poļu rūpniecība ir radusies tikai pateicoties ``austrumu tirgiem'' un poļiem ir nacionāli vienoti jācīnās gan pret no ārzemēm nākušo lielburžuāziju, gan reizē par šo tirgu saglabāšanu. Pats V.~Kula marksistiski vērtēja kapitālisma veidošanos kā nesaraujami vienotu vēsturisku procesu, ko izsauc ražošanas spēku attīstība un progress sabiedriskā darba dalīšanā, iedzīvotāju noslāņošanās, jaunu kapitālismam raksturīgu šķiru~--- buržuāzijas un proletariāta rašanās, bagātības akumulācija vienā sabiedrības polā un nabadzības otrā, kapitāla uzkrāšana vienu rokās un otru pāreja algotu darbinieku kategorijā. Tomēr, atzīstot, ka komplekss tirgus ekonomikas izveides skaidrojums ir tuvāks īstenībai, iekšējie procesi bija noteicošie, nedrīkst arī vienkāršot situāciju un noliegt, ka gan poļu zemju kopumā, gan Polijas karalistes tautsaimniecība atsevišķi, nebija izolēta no apkārtējo valstu, īpaši Poliju sadalījušo, ekonomiskās attīstības, ka starptautiskās norises, arī kapitāla imports, ietekmēja poļu zemju ekonomisko attīstību.
+Šai sakarā jāpiemin, ka XIX gadsimta beigās~--- XX gadsimta sākumā zināmu izplatību ieguva t.s. kapitālisma Polijā attīstības ``koloniālā teorija'', kura kapitālismu uzskatīja nevis par iekšēju sociāli-ekonomisko pārmaiņu rezultātā radušos, bet svešu, ārpus Polijas dzimušu un tās augsnē ``mākslīgi'' ``pārstādītu'' parādību. To raksturojot ārzemju kapitāli, noieta tirgi ārzemēs, ārzemju izcelsmes buržuāzija un arī lielā daudzumā no ārzemēm iebraukuši strādnieki. Kā uzskatīja V.~Kula, minētajā posmā un īpaši pēc Polijas valstiskās neatkarības atjaunošanas 1918.~gadā šai teorijai bija uzdevums pierādīt, ka poļu rūpniecība ir radusies tikai pateicoties ``austrumu tirgiem'' un poļiem ir nacionāli vienoti jācīnās gan pret no ārzemēm nākušo lielburžuāziju, gan reizē par šo tirgu saglabāšanu. Pats V.~Kula marksistiski vērtēja kapitālisma veidošanos kā nesaraujami vienotu vēsturisku procesu, ko izsauc ražošanas spēku attīstība un progress sabiedriskā darba dalīšanā, iedzīvotāju noslāņošanās, jaunu kapitālismam raksturīgu šķiru~--- buržuāzijas un proletariāta rašanās, bagātības akumulācija vienā sabiedrības polā un nabadzības otrā, kapitāla uzkrāšana vienu rokās un otru pāreja algotu darbinieku.~kategorijā. Tomēr, atzīstot, ka komplekss tirgus ekonomikas izveides skaidrojums ir tuvāks īstenībai, iekšējie procesi bija noteicošie, nedrīkst arī vienkāršot situāciju un noliegt, ka gan poļu zemju kopumā, gan Polijas karalistes tautsaimniecība atsevišķi, nebija izolēta no apkārtējo valstu, īpaši Poliju sadalījušo, ekonomiskās attīstības, ka starptautiskās norises, arī kapitāla imports, ietekmēja poļu zemju ekonomisko attīstību.
 
 No otras puses, Polijas karalistes rūpniecības arvien lielāka piemērošanās tirgiem austrumos padarīja to pārlieku atkarīgu no tiem. Dārgo izejvielu imports no Rietumiem palielināja poļu produkcijas pašizmaksu un neļāva tai sekmīgi konkurēt rietumu tirgos. Karalistes rūpniecība tāpēc kļuva īpaši jūtīga pret konjunktūras pasliktināšanos vai politisko attiecību izmaiņām.
 
@@ -2918,7 +2921,7 @@ Poļu izcelsmes autori: jurists un publicists V.~Spasovičs un žurnālists, pol
 Mūsdienu Krievijas sociālās vēstures pētnieks B.~Mironovs ir devis valsts ienākumu (visu tiešo un netiešo ienākumu, izpirkšanas maksājumu, muitas u.c.) un izdevumu (pārvaldei, armijas uzturēšanai u.c.) ainu XIX gadsimta beigu dažos gados. Tajā var redzēt arī 10~Vislas novada un 30~lielkrievu apdzīvoto guberņu (Bez Pēterburgas kā galvaspilsētas guberņas) stāvokli. Skat. \ref{tab:table3}. tabulu.
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{Vidējie valsts ienākumi un izdevumi 1892.--1895.~gadā Vislas novada guberņās salīdzinājumā ar 30 lielkrievu guberņām} \label{tab:table3}
 \begin{tabularx}{\linewidth}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
 \hline
@@ -4448,7 +4451,7 @@ Vai ``poļu zemes'', par kurām tik daudz runāja politiķi, bija jāsniedzas l�
 
 Teorētiski jautājumā par Polijas robežām pastāvēja trīs galvenie varianti:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 
 \item poļu nacionāla valsts aptvertu tikai etniskās poļu apdzīvotās teritorijas (kaut, ņemot vērā ebreju diasporas eksistenci, arī šāda valsts nevarētu būt pilnīgi etniski viendabīga);
 
@@ -5008,7 +5011,7 @@ Savulaik KSDS(b)P VII konferencē 1917.~gada aprīlī V.~Ļeņins norādīja: ``
 
 1920.~gada 15.~jūlijā V.~Ļeņins nosūtīja Rietumu frontes Revolucionārajai kara padomei telegrammu uz tās locekļa J.~Unšlihta vārda. Tajā bija teikts: ``Paziņojiet kā jūs un citi biedri vērtē tādu taktiku.
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Mēs ļoti svinīgi pasludinām, ka nodrošinām poļu strādniekiem un zemniekiem robežu uz austrumiem no tās, kuru dod Kērzons un Antante.
 
 \item Mēs sasprindzinām visus spēkus lai sakautu Pilsudski.
@@ -5158,7 +5161,7 @@ Kā atzīmējis vēsturnieks Ē.~Jēkabsons, 1920.~gada septembrī un oktobra s�
 
 Taču J.~Pilsudskis, negribot samierināties ar Viļņas zaudējumu, centās izmantot labvēlīgo situāciju karā pret Padomju Krieviju, lai veiktu daļas \strong{Lietuvas teritoriju okupāciju un aneksiju}. Faktiski Polija atteicās no ar Lietuvu parakstīto līgumu izpildes. Polijas vadību neinteresēja Tautu Savienības ideālu realizēšana, tā bija orientēta uz maksimālu savu teritoriju palielināšanu. Šī mērķa dēļ tika ignorētas Tautu Savienības prasības.
 
-J.~Pilsudskis jau augustā bija sācis gatavot agresīvu akciju. Lai vēlāk būtu iespējams attaisnot dažu karaspēka daļu ieplānoto ``nepaklausību'', tika ieviests sadalījums regulārajās un neregulārajās karaspēka daļās, pēdējo kategorijā ieskaitot arī tā dēvēto Pirmo Lietuvas--Baltkrievijas divīziju (\pltxti{1~Dywizja Litewsko-Białoruska}), kuru komandēja ģenerālis L.~Žeļigovskis un kurā galvenokārt dienēja poļi no austrumu rajoniem.
+J.~Pilsudskis jau augustā bija sācis gatavot agresīvu akciju. Lai vēlāk būtu iespējams attaisnot dažu karaspēka daļu ieplānoto ``nepaklausību'', tika ieviests sadalījums regulārajās un neregulārajās karaspēka daļās, pēdējo.~kategorijā ieskaitot arī tā dēvēto Pirmo Lietuvas--Baltkrievijas divīziju (\pltxti{1~Dywizja Litewsko-Białoruska}), kuru komandēja ģenerālis L.~Žeļigovskis un kurā galvenokārt dienēja poļi no austrumu rajoniem.
 
 Pats L.~Žeļigovskis bija dzimis Lietuvā, Viļņas guberņā. Pirmā pasaules kara laikā komandēja pulku Krievijas armijā. Pēc Februāra revolūcijas viņš kļuva par vienu no poļu nacionālo daļu organizētājiem Krievijā, komandēja brigādi 1.~Poļu korpusā, 1918.~gadā izveidoja 4.~poļu strēlnieku divīziju Kubaņā, kura kopā ar ģenerāļa A.~Deņikina komandētajiem baltajiem karoja pret boļševikiem. 1919.~gada aprīlī caur Odesu un Besarābiju divīzija atgriezās Polijā un iekļāvās tās armijā.
 
@@ -5284,7 +5287,7 @@ Diemžēl nākas konstatēt, ka daudziem mūsdienu Krievijas politiķiem jautāj
 
 Līdz 2008.~gadam Osuvas (neliela pilsētiņa Varšavas tuvumā) vietējie iedzīvotāji pie 1920.~gadā kritušu 22~sarkanarmiešu kapa, atzīmēta ar pareizticīgo krustu, mirušo piemiņas dienā nolika ziedus un aizdedza sveces. Tad ar Polijas piemiņas un mocību aizsardzības padomes (\pltxti{Rada Ochrony Pamięci Walk i Męczeństwa}) iniciatīvu tika nolemts uzcelt nelielu memoriālu. Ideju radīt pieminekli, kuram bija jākļūst par saprašanās un attiecību normalizācijas simbolu ar Krieviju, atbalstīja toreizējais Seima priekšsēdētājs B.~Komorovskis, vēlāk Polijas prezidents. Piemineklis tika izgatavots no nerūsējoša tērauda pareizticīgo krusta formā, kuru aptver 22~asi elementu, atgādinoši durkļus. Uzraksts uz memoriālās plāksnes vēstīja, ka šeit atdusas 22 Sarkanās armijas karavīri, krituši 1920.~gada 14.~un 15.~augustā. Tēlnieks M.~Moderau, vairāku sabiedrībā atzītu skulptūru, tai skaitā 2010.~gada 10.~aprīlī aviakatastrofā pie Smoļenskas bojā gājušā Polijas prezidenta L.~Kačinska un viņa pavadoņu piemiņai veltītā pieminekļa militārajā kapsētā Varšavā, autors, krusta kā simbola izvēli izskaidroja ar to, ka kritušie bija audzināti pirms revolūcijas, kaut krita, nesot jau citu simboliku. (Starp citu, brāļu kapu pirms pārapbedīšanas atrokot, tika atrasts uz krūtīm nēsājams krustiņš.
 
-Memoriāls tika uzbūvēts, 2010.~gada 15.~augustā, Polijas armijas un Varšavas kaujas atceres dienā, bija jānotiek tā atklāšanai. Bija paredzēts, ka to apmeklēs arī Krievijas pārstāvji. Taču atklāšana nenotika poļu radikālnacionālistu vainas dēļ. Jau pirms tam izraisījās diskаusija. Pret pieminekļa atklāšanu protestēja radikālnacionālisti, norādot, ka kritušajiem boļševiku karavīriem neesot bijis nekā kopīga ar pareizticīgo krustu, pieminekļa mets neesot saskaņots ar sabiedrību, iebilda pret durkļu simboliem. Naktī pirms atklāšanas uz pieminekļa tika uzkrāsotas trīs sarkanas zvaigznes, dienā ieradās nacionāl-konservatīvās un katoliski-klerikālās partijas \pltxti{Prawo i Sprawiedliwość} (``Taisnība un taisnīgums'') delegācija ar protesta transparantiem. Pilsētas mērijas pārstāvis, ieraugot apgānīto pieminekli, sašutis izsaucās: ``Kāds kauns. Tā nebija [vietējo] iedzīvotāju akcija. Mēs cienām kapus.'' Piemiņas un mocību aizsardzības padomes ģenerālsekretārs vēsturnieks A.~Kunerts paguva vienīgi dažu simtu metru attālumā no notikuma vietas apstādināt oficiālo Krievijas sūtņa Polijā vadīto delegāciju, kura parādīja sapratni un atgriezās mājup, lai nesaasinātu incidentu. Nākamajā dienā pilsētiņā kāds bija izlīmējis ``Taisnības un taisnīguma'' konkurenta Polijas premjerministra D.~Tuska attēlus padomju mundierī. Presē un Internetā ``Taisnības un taisnīguma'' biedri protestēja pret to, ka par viņu naudu tiek izbūvēti boļševiku karavīru apbedījumi. Lai kādi attaisnotu vandālismu avīzē ``\pltxti{Rzeczpospolita}'' (``Žečpospolita'') vēsturnieks, profesors A.~Novaks pēc garāka apcerējuma par Polijas un Krievijas vēsturiskajām attiecībām iebilda pret pareizticīgo krusta attēlošanu piemineklī kritušajiem sarkanarmiešiem, jo nevarot taču zināt, ka tie visi bijuši pareizticīgie. Tā esot pēcnāves iespiešana vienā kategorijā. Lai nu kā, pilsētas burgomistrs nosūtīja prokuratūrai iesniegumu par izdarīto noziegumu~--- kapu apgānīšanu, bet Piemiņas un mocību aizsardzības padomes ģenerālsekretārs A.~Kunerts paziņoja, ka piemineklis karavīriem tiks notīrīts, restaurēts un notiks arī tā atklāšanas ceremonija. Intervijā avīzei ``\pltxti{Gazeta Wyborcza}'' viņš uzsvēra: ``Katram karavīram ir tiesības uz kapavietu''. Jāatzīst, ka reakcija krievu preses izdevumus bija bez eksaltācijas, iespējams gan tāpēc, ka 2010.~gada 10.~augustā bija gājis bojā Polijas prezidents Ļ.~Kačinskis. Vietējās varas iestādes pieņēma lēmumu, kuram piekrita arī Polijas piemiņas un mocību aizsardzības padome, noņemt durkļus atgādinošos elementus. Oktobrī piemineklis tika rekonstruēts. Atklāšanas ceremonija notika 2010.~gada 2.~novembrī, tajā nepiedalījās neviens Krievijas pārstāvis, bet piketēja neliela protestējošo grupa ar transparantiem. Tadejādi labi iecerētais pasākums tā arī nekļuva par poļu un krievu samierināšanās un savstarpējās izpratnes simbolu.
+Memoriāls tika uzbūvēts, 2010.~gada 15.~augustā, Polijas armijas un Varšavas kaujas atceres dienā, bija jānotiek tā atklāšanai. Bija paredzēts, ka to apmeklēs arī Krievijas pārstāvji. Taču atklāšana nenotika poļu radikālnacionālistu vainas dēļ. Jau pirms tam izraisījās diskаusija. Pret pieminekļa atklāšanu protestēja radikālnacionālisti, norādot, ka kritušajiem boļševiku karavīriem neesot bijis nekā kopīga ar pareizticīgo krustu, pieminekļa mets neesot saskaņots ar sabiedrību, iebilda pret durkļu simboliem. Naktī pirms atklāšanas uz pieminekļa tika uzkrāsotas trīs sarkanas zvaigznes, dienā ieradās nacionāl-konservatīvās un katoliski-klerikālās partijas \pltxti{Prawo i Sprawiedliwość} (``Taisnība un taisnīgums'') delegācija ar protesta transparantiem. Pilsētas mērijas pārstāvis, ieraugot apgānīto pieminekli, sašutis izsaucās: ``Kāds kauns. Tā nebija [vietējo] iedzīvotāju akcija. Mēs cienām kapus.'' Piemiņas un mocību aizsardzības padomes ģenerālsekretārs vēsturnieks A.~Kunerts paguva vienīgi dažu simtu metru attālumā no notikuma vietas apstādināt oficiālo Krievijas sūtņa Polijā vadīto delegāciju, kura parādīja sapratni un atgriezās mājup, lai nesaasinātu incidentu. Nākamajā dienā pilsētiņā kāds bija izlīmējis ``Taisnības un taisnīguma'' konkurenta Polijas premjerministra D.~Tuska attēlus padomju mundierī. Presē un Internetā ``Taisnības un taisnīguma'' biedri protestēja pret to, ka par viņu naudu tiek izbūvēti boļševiku karavīru apbedījumi. Lai kādi attaisnotu vandālismu avīzē ``\pltxti{Rzeczpospolita}'' (``Žečpospolita'') vēsturnieks, profesors A.~Novaks pēc garāka apcerējuma par Polijas un Krievijas vēsturiskajām attiecībām iebilda pret pareizticīgo krusta attēlošanu piemineklī kritušajiem sarkanarmiešiem, jo nevarot taču zināt, ka tie visi bijuši pareizticīgie. Tā esot pēcnāves iespiešana vienā.~kategorijā. Lai nu kā, pilsētas burgomistrs nosūtīja prokuratūrai iesniegumu par izdarīto noziegumu~--- kapu apgānīšanu, bet Piemiņas un mocību aizsardzības padomes ģenerālsekretārs A.~Kunerts paziņoja, ka piemineklis karavīriem tiks notīrīts, restaurēts un notiks arī tā atklāšanas ceremonija. Intervijā avīzei ``\pltxti{Gazeta Wyborcza}'' viņš uzsvēra: ``Katram karavīram ir tiesības uz kapavietu''. Jāatzīst, ka reakcija krievu preses izdevumus bija bez eksaltācijas, iespējams gan tāpēc, ka 2010.~gada 10.~augustā bija gājis bojā Polijas prezidents Ļ.~Kačinskis. Vietējās varas iestādes pieņēma lēmumu, kuram piekrita arī Polijas piemiņas un mocību aizsardzības padome, noņemt durkļus atgādinošos elementus. Oktobrī piemineklis tika rekonstruēts. Atklāšanas ceremonija notika 2010.~gada 2.~novembrī, tajā nepiedalījās neviens Krievijas pārstāvis, bet piketēja neliela protestējošo grupa ar transparantiem. Tadejādi labi iecerētais pasākums tā arī nekļuva par poļu un krievu samierināšanās un savstarpējās izpratnes simbolu.
 
 Kā ievērojams sasniegums saprašanās meklējumos vērtējams XXI gadsimta sākumā Krievijas Federālās arhīvu aģentūras un virknes Krievijas Federācijas arhīvu noslēgtais divpusējais līgums ar Polijas Valsts arhīvu Ģenerāldirekciju par problēmas izpēti. Tā rezultātā 2004.~gadā iznāca krājums ``Sarkanarmieši poļu gūstā 1919.--1922.gg.'' (\rutxti{Красноармейцы в польском плену в 1919--1922 гг. Сб. документов и материалов. Москва~--- Санкт-Петербург, Летний сад, 2004. 912~с.}). Abu~--- Krievijas un Polijas~--- pušu vēsturnieku darba rezultātā ir noskaidrots, ka dokumenti neapstiprina to, ka poļu varas iestādes mērķtiecīgi realizēja padomju gūstekņu iznīcināšanas politiku. Līdz tam krievu puses minētais mirušo sarkanarmiešu skaits bija pārspīlēts. Krājumā publicētie materiāli rāda, ka Polijas varas iestādes griezās dažādās Eiropas instancēs ar lūgumu palīdzēt karagūstekņu nometņu apgādē. Taču sagrautās karā Eiropas valstis varēja sniegt tikai ierobežotu palīdzību. Poļu iestādes piedāvāja daudzus gūstekņus padomju pusei, taču padomju iestādes atteicās tos pieņemt pirms būs parakstīts miera līgums.
 
@@ -5338,7 +5341,7 @@ Plašu poļu gūstekņu dzīves ainu padomju republikās sniedz 2004.~gadā Mask
 
 Tiesa, abas puses vēlējās pirmkārt panākt tai visvairāk vēlamo repatriantu nosūtīšanu mājup no otrās puses teritorijas. Tas kavēja, ieviesa juceklī visa darba organizācijā un tikai palēnināja to. Daudzi poļu bēgļi dzimtenē atgriezās neorganizētas pašplūsmas ceļā. No 1918. 1īdz 1920.~gadam vairāk nekā miljons poļu atstāja Sarkanās armijas ieņemtos apgabalus un teritorijas, kas nonāca Padomju Krievijas sastāvā pēc Rīgas miera. Bez tam, pēc 1924.~gada 21.~maijā apkopotiem padomju datiem no 1921.~gada aprīļa līdz 1924.~gada aprīlim no padomju republikām Polijā atgriezās vēl ap 1~000~000 cilvēku.
 
-Poļi sastādīja 15~līdz 25\% no repatriantiem, pārējie bija galvenokārt baltkrievu un ukraiņu zemnieki. Acīmredzot ziņas nebija visai precīzas, jo pēc līdz 1924.~gada vidum strādājošās jauktās krievu-ukraiņu-poļu repatriācijas komisijas datiem no PSRS uz Poliju aizbrauca apmēram 300~tūkstošu poļu. Daudzi poļi nevēlējās atgriezties Polijā, labāk palika Padomju Krievijā. Acīmredzot tikai mazākā daļa no tiem to darīja ideoloģisku apsvērumu rosināti. To var secināt no tā, ka 1922.~gadā tikko izveidotajā Padomju Savienībā bez Jakutijas un Tālajiem austrumiem dzīvoja ap 5~600 poļu komunistu. (Viņu organizācijas vadīja speciāli politbiroji: 4~apgabalu, 16~guberņu un 20~apriņķu.) 1926./1927.~gadā PSRS teritorijā bez Aizkaukāza un Uzbekijas dzīvoja gandrīz 790~500~poļu. Vairāk nekā 526~000 no viņiem bija lauku iedzīvotāji. Pēc poļu avotiem PSRS teritorijā palika ap 1,5~miljoni poļu, kuri neizmantoja tiesības repatriēties uz dzimteni. Domājams, ka padomju dati ir tuvāk īstenībai, jo tie balstījās arī uz 1926.~gada iedzīvotāju skaitīšanas rezultātiem. (Tiesa, pēc poļu-padomju kara daudzi poļi, apzinot sevi par tādiem, tomēr skaitīšanā varēja nosaukt citu tautību, lai izvairītos no ieskaitīšanas ``panu'' kategorijā.)
+Poļi sastādīja 15~līdz 25\% no repatriantiem, pārējie bija galvenokārt baltkrievu un ukraiņu zemnieki. Acīmredzot ziņas nebija visai precīzas, jo pēc līdz 1924.~gada vidum strādājošās jauktās krievu-ukraiņu-poļu repatriācijas komisijas datiem no PSRS uz Poliju aizbrauca apmēram 300~tūkstošu poļu. Daudzi poļi nevēlējās atgriezties Polijā, labāk palika Padomju Krievijā. Acīmredzot tikai mazākā daļa no tiem to darīja ideoloģisku apsvērumu rosināti. To var secināt no tā, ka 1922.~gadā tikko izveidotajā Padomju Savienībā bez Jakutijas un Tālajiem austrumiem dzīvoja ap 5~600 poļu komunistu. (Viņu organizācijas vadīja speciāli politbiroji: 4~apgabalu, 16~guberņu un 20~apriņķu.) 1926./1927.~gadā PSRS teritorijā bez Aizkaukāza un Uzbekijas dzīvoja gandrīz 790~500~poļu. Vairāk nekā 526~000 no viņiem bija lauku iedzīvotāji. Pēc poļu avotiem PSRS teritorijā palika ap 1,5~miljoni poļu, kuri neizmantoja tiesības repatriēties uz dzimteni. Domājams, ka padomju dati ir tuvāk īstenībai, jo tie balstījās arī uz 1926.~gada iedzīvotāju skaitīšanas rezultātiem. (Tiesa, pēc poļu-padomju kara daudzi poļi, apzinot sevi par tādiem, tomēr skaitīšanā varēja nosaukt citu tautību, lai izvairītos no ieskaitīšanas ``panu''.~kategorijā.)
 
 \strong{1921.~gada 18.~martā Rīgā KSFPR} (kura uzstājās arī Baltkrievijas PSR vārdā) un Ukrainas PSR delegācija, no vienas puses, \strong{un Polijas Republikas delegācija}, no otras, \strong{parakstīja miera līgumu}, kurā noteica robežu starp Poliju un padomju republikām. Padomju~--- Polijas robeža izveidojās uz kauju rezultātā radušās frontes līnijas pamata. Nekāda cita, teorētiska pamata šai robežai nebija un arī nevarēja būt. Polija saņēma teritorijas, kuras tā varēja sarunu ceļā iegūt vēl 1919.~gada beigās, 1920.~gada sākumā. Turpmāk Polija formāli robežojās ar Baltkrievijas un Ukrainas padomju republikām, bet faktiski ar to pašu vien Padomju Krieviju, kura 1922.~gadā kopā ar citām republikām pārtapa par PSRS. J.~Pilsudska plāns par bufervalstu radīšanu ar Krieviju netika īstenots. Poļu tautai pēc Pirmā pasaules kara beigām nācās vēl ap trijiem gadiem karot, samaksājot ar desmitiem tūkstošu poļu dzīvību, lai iegūtu vismaz daļu no poļu politiskās elites iecerētās ģeopolitiskās telpas.
 
@@ -5463,7 +5466,7 @@ Polijas valsts administratīvais iedalījums veidojās pakāpeniski. 1919.~gada 
 Galu galā Visa Polijas \strong{teritorija tika sadalīta 17 vojevodistēs} (Skat. \ref{tab:table4}.~tabulu), pie tam Varšava bija izdalīta atsevišķā administratīvā vienībā ar vojevodistes tiesībām. Vairākās austrumu un dienvidu vojevodistēs~--- Staņislavas, Tarnovas, Volīnijas un Poļesjes pat pēc oficiāliem datiem iedzīvotāju vairākums bija ukraiņi un baltkrievi. Vojevodistes dalījās vidējās un zemākās administratīvās pārvaldes vienībās: povjatos un gminās.
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{Polijas administratīvi teritoriālais iedalījums starpkaru periodā} \label{tab:table4}
 \begin{tabularx}{\linewidth}{|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
 \hline
@@ -5524,7 +5527,7 @@ Vēl pirms Konstitūcijas pieņemšanas 1921.~gada februārī valsts priekšniek
 
 Vēl līdz šai dienai vēstures literatūrā notiek domu apmaiņa par to, kādi faktori bija svarīgākie Polijas valsts izveidē 1918.--1921.~gadā. Jau tikko nosauktā posma laikā poļu vēsturnieki sadalījās tajos, kuri par galveno neatkarības izcīnīšanas priekšnoteikumu uzskatīja labvēlīgu starptautisko konjuktūru un tajos, kuri uzsvaru lika uz pašu poļu gadu desmitiem ilgušajiem atbrīvošanās pūliņiem. 20.--30.~gados, īpaši t.s. sanācijas režīma laikā liela vēsturnieku daļa atzina, ka J.~Pilsudskim pieder galvenie nopelni valsts atjaunošanā. Citi, ideoloģiski un politiski vairāk saistīti ar nacionāldemokrātu partiju un tās līderi R.~Dmovski, atzina, ka tieši viņš spēja panākt Rietumu valstu (Francijas, Lielbritānijas, Itālijas, un, pirmkārt, ASV) vadītāju atbalstu Polijas valsts atjaunošanai. Taču pats R.~Dmovskis 1920.~gada februārī rakstīja: ``Ja mēs [nacionāldemokrāti] radītu valdību, teiksim, ar mani priekšgalā, mēs Poliju varētu pazudināt.
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Neaizmirstiet, ka mēs dzīvojam revolucionārā laikmetā, kurš kādu laiku vēl turpināsies. Bet mēs neesam revolucionāri.
 
 \item Mūs neieredz visi revolucionārie strāvojumi, kuri pret mums tikai stiprāk mobilizētos un niknāk cīnītos nekā pret valdībām, kuras radīja Pilsudskis\dots{}'' Autoram šis spriedums šķiet pamatots.
@@ -5729,7 +5732,7 @@ Bloks, kurš ievēlēja divus pirmos Polijas prezidentus, nebija stabils. Vairā
 
 Ļudovieši no partijas \pltxti{Piast} 1923.~gada 17.~maijā noslēdza līgumu ar labējo bloku~--- Nacionālās vienotības kristīgo savienību. Šis tā saucamais ``Lanckaronas pakts'' (\pltxti{Pakt lanckoroński}~---  Pakta nosaukums cēlies no tā, ka tā noteikumi tika apspriesti kāda senatora īpašumā, kurš pārstāvēja Lanckaronas vēlēšanu apgabalu) paredzēja, ka:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Seima vairākumam jābūt poliskam, valdībai jāsastāv tikai no poļiem,
 
 \item visās valsts iestādēs jālieto tikai poļu valoda,
@@ -5871,7 +5874,7 @@ Neraugoties uz plašu iedzīvotāju slāņu cerībām, politiskie ieslodzītie n
 
 Taču visiem par brīnumu maršals atteicās atlaist Seimu un sarīkot jaunas vēlēšanas. Tam bija dažādi skaidrojumi.
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item J.~Pilsudskis nerīkoja parlamenta vēlēšanas, baidīdamies no kreiso uzvaras tajās (pats J.~Pilsudskis bija bezpartijisks, savus agrākos sabiedrotos~--- kreisos par līdzvērtīgiem partneriem vairs neatzina). Vēlēšanas maršals vēlējās sarīkot tad, kad valsts pēc apvērsuma būs nomierinājusies.
 
 \item Sakompromitētā parlamenta pastāvēšana bija J.~Pilsudskim izdevīga. Jaunās parlamenta vēlēšanās uz panākumiem varētu cerēt tikai tās partijas, kuras atbalstīja maršalu~--- PPS, kreisie ļudovieši no partijas \pltxti{Wyzwylenie} un Zemnieku partijas (\pltxti{Stronnictwo Chłopske}). Taču tad J.~Pilsudskis pats būtu atkarīgs no šiem relatīvi kreisajiem spēkiem, bet viņš vēlējās paturēt lēmējvārdu visos strīdos. Viņam, kā rakstīja viens no ievērojamiem PPS darbiniekiem A.~Prohņiks, izdevīgāks bija iepriekšējais Seims, ``vājš, bez autoritātes \citespace{} ciestā zaudējuma un savas paša nespēcības pazemots \citespace{} nekā jauns, spēcīgs ar tikko tam izrādīto masu uzticību''. Maršals bija konservators un ignorēja parlamentārās darbības metodes. Diktatora attieksmi pret parlamentu uzskatāmi demonstrēja viņa vārdi, veltīti Seima deputātiem 29.~maijā, divas dienas līdz Nacionālās sapulces sanākšanai: ``Tagadējā situācijā es varētu jūs neielaist Nacionālās sapulces zālē, izsmiedams jūs visus, taču es pārbaudīšu, vai pār Poliju vēl var valdīt bez pletnes palīdzības''. Polijas parlamentu viņš vērtēja kā ``politisko prostitūtu Seimu''. Valdības veidošanā, daudzu svarīgu jautājumu izlemšanā J.~Pilsudskis faktiski nerēķinājās ar parlamentu.
@@ -5906,7 +5909,7 @@ Diktatūrām var būt arī paveidi. Daži pazīstamākie: nacistiskais režīms,
 
 Autoritārisma iezīmes:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Autoritāro režīmu priekšgalā atrodas vadoņi, politiķi vai ģenerāļi, kuri, lai gan bauda popularitāti daļā tautas, tomēr nelīdzinās tādiem harizmātiskiem līderiem kā Ā.~Hitlers un B.~Musolini. Valsts vadītājam pieder plašas pilnvaras un viņš realizē savu politiku jebkuriem līdzekļiem~--- gan humāniem, gan antihumāniem. Varas aparāts balstās uz vecajiem valdošajiem slāņiem, notiek tikai ierobežotas pārmaiņas elitē, kuras rokās atrodas reālā vara~--- atšķirībā no fašistiskajiem režīmiem, kuri rada jaunu valdošo slāni.
 
 \item Atšķirībā no fašistiskajiem režīmiem autoritārajos nepastāv masu partija ar saviem bruņotiem spēkiem, nenotiek plašu masu mobilizācija varas atbalstam. Tomēr tiek ierobežota vai aizliegta opozīcijas partiju darbība, parlaments atlaists vai tā tiesības ierobežotas, ieviesta cenzūra.
@@ -5923,7 +5926,7 @@ Dažus vārdus par konkrēto vārda \strong{sanācija} (no latīņu \latxti{sana
 
 Formāli ``sanācija'' apvienoja sevī 3 procesus:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item armijas pasargāšanu no politiskas ietekmes (praktiski armija tika pārvērsta par J.~Pilsudskās personiskās varas realizācijas ieroci);
 
 \item valsts pārvaldes ``veselīgu'' attīrīšanu un profesionalizāciju~--- amatos iecēla zinātniekus (matemātiķus, ekonomistus, inženierus) nevis politiķus. Pastāvēja valsts tehnokrātija~--- zinātnieku dominēšana valsts pārvaldē;
@@ -5940,7 +5943,7 @@ J.~Pilsudski valdīja ar ``stingru roku'', neatzina nekādu disidentismu. Reizē
 
 Nosacīti autoritārā režīma 13~gadus var sadalīt trijos posmos:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Pārejas, šķietama parlamentārisma posms ilga līdz 1930.~gada novembra Seima vēlēšanām, kurām jau bija raksturīga plašu terora pielietošana;
 
 \item Tālākas patvaļas izvēršanās, cīņas pret politiskajām partijām posms līdz J.~Pilsudska nāvei 1935.gadā, kas sakrita ar pastāvošās sistēmas leģitimāciju ar t.s. ``Aprīļa konstitūciju''.
@@ -5988,7 +5991,7 @@ Pirms tām pilsudskieši organizēja \strong{Bezpartijisko bloku sadarbībai ar 
 
 Vieni (arī Latvijā 1929.~gadā iznākušas grāmatas par Poliju autori K.~Bürgers un J.~Ošs) bloku, neraugoties uz nosaukumu, uzskata par J.~Pilsudska piekritēju uz vēlēšanām organizētu partiju. Citi domā, ka tas drīzāk bija vēlēšanu saraksts nekā reāla politiska partija. Jāuzsver, ka bloks bija organizatoriski visai amorfs, principiāli atšķīrās no tādām organizācijām kā nacistu partija Vācijā (\detxti{Nationalsozialistische Deutsche Arbeiterpartei}) vai fašistiskā partija Itālijā (\ittxti{Partito Nazionale Fascista}). Bloka kodolu veidoja J.~Pilsudska piekritēji no leģionāru vidus un pārbēdzēji no bijušajiem kreisajiem, labējiem un centristiem. Vācu autors R.~Vingendorfs kā trīs bloka sastāvdaļas izdalījis:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item t.s. ``pulkvežu grupu'' tai laikā ar pulkvedi V.~Slaveku priekšgalā;
 
 \item bijušo sociālistu grupu ar agrāko premjeru J.~Moračevski vadībā;
@@ -6112,7 +6115,7 @@ Pēc tam gan J.~Pilsudskis lika izvērst šķietamu diskusiju par Konstitūcijas
 
 1935.~gada 23.~aprīlī, skanot 101~artilērijas zalvei, prezidents I.~Moscickis parakstīja jaunās, t.s. \strong{Aprīļa Konstitūcijas} tekstu. 1935.~gada Aprīļa konstitūcija būtiski atšķīrās no 1921.~gada Pamatlikuma. Priekšplānā tautas vietā tajā tika izvirzīta valsts, kurā vadoša vieta piederēja prezidentam. Viņš savās rokās apvienoja ``vienotu un nedalāmu valsts varu''. Konstitūcija saglabāja parlamentu, taču izpildvaru lielā mērā atbrīvoja no atbildības tā priekšā. Izpildvaru pirmkārt pārstāvēja prezidents, viņš arī formēja valdību, nozīmēja 1/3 senatoru. Prezidentu ievēlēja Seima un Senāta izvirzīta 80~cilvēku liela vēlētāju kolēģija, par valsts likteni viņš bija atbildīgs tikai ``Dieva un vēstures'' priekšā, varēja arī pats izvirzīt varas pārmantotāja kandidatūru. Ja vēlētāju kolēģija izvirzītu citu kandidātu, bija jānotiek vispārējai nobalsošanai tikai par šiem diviem kandidātiem. Kara gadījumā pat šāda procedūra nebija nepieciešama. Faktiski varas dalīšanas vietā tika ieviests prezidenta ietekmes pārsvars pār visām citām valsts iestādēm. PKP CK locekļa kandidāts J.~Bruns 1937.~gadā publicētā brošūrā rakstīja: ``Mūsdienu Polija nav republika ar plašu prezidenta varu, kā tas rakstīts sanācijas konstitūcijā, bet ir maršala mūža dzimtmuiža''. Tā bija izteikti prezidentāla pārvaldes sistēma, savienota ar cilvēku grupas diktatūru, kas bija saistīti ar kopīgu pagātni (PPS kaujas organizācija, leģions, 1919.--1920.~gada poļu-padomju karš) un arī kopīgu uzdevumu saglabāt varu kā tagadnē, tā nākotnē.
 
-Pilsoņu tiesības, kuras bija ietvertas Aprīļa konstitūcijā, neietekmēja administratīvo un tiesu iestāžu darbību, praksē tās ieguva arvien vairāk fiktīvu raksturu. Visi vēlētāji tika iedalīti divās kategorijās: parastos un ``labākajos dēlos'', kuriem bija plašākas tiesības.
+Pilsoņu tiesības, kuras bija ietvertas Aprīļa konstitūcijā, neietekmēja administratīvo un tiesu iestāžu darbību, praksē tās ieguva arvien vairāk fiktīvu raksturu. Visi vēlētāji tika iedalīti divās.~kategorijās: parastos un ``labākajos dēlos'', kuriem bija plašākas tiesības.
 
 Ar 1935.~gada Aprīļa konstitūcijas ieviešanu tika pabeigta pāreja no ``sanācijas'' režīma agrīnā modeļa uz tā nobriedušu formu. Ja līdz tam iedibinātais varas modelis varēja darboties tikai balstoties uz J.~Pilsudski ar viņa autoritāti, leģendu un spēju ietekmēt sabiedrību un opozīciju, tad nobriedušai formai, pēc diktatora domām, bija jājūtas pietiekami komfortabli arī bez šāda ``sanācijai'' labvēlīga faktora.
 
@@ -6140,7 +6143,7 @@ J.~Pilsudskis nomira, atstājot pie varas politiķu kliķi, kas sastāvēja no v
 
 J.~Pilsudska piekritēji sašķēlās trīs grupās:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Kreisajā sanācijas piekritēju grupā (\pltxti{Lewica sanacyjna}), ar V.~Slaveku priekšgalā, kura centās panākt kompromisu ar opozīciju. To parasti sauca par ``pulkvežu grupu'', jo tajā ietilpa virkne jaunāko J.~Pilsudska sekotāju, kuri bija sasnieguši šo militāro pakāpi.
 
 \item T.s. ``Pils'' (``\pltxti{Zamek}'') grupā, kura apvienojās ap prezidentu I.~Moscicki, kurš dzīvoja Varšavas pilī, no šejienes arī nosaukums.
@@ -6474,7 +6477,7 @@ Taču ar Otrā pasaules kara izraisīšanu saistītie notikumi neļāva projekta
 
 Tika veidota pret ebrejiem vērstu likumu sistēma. 1939.~gada februārī Polijas Ārlietu ministrijas vadības uzdevumā Konsulārā departamenta Emigrācijas politikas nodaļa sagatavoja ebreju emigrācijas veicināšanas programmu, kurā bija apskatītas divas jautājuma atrisināšanas iespējas un to sekas. Viena iespēja bija vienpusīga akcija, Polijai ``uzsākot karu ar [domāts~--- pret~--- V.Š.] ebrejiem gan savā valstī, gan arī pasaulē''. Taču šis ceļš varēja izraisīt Polijas finansiālu un tirdzniecisku boikotu no Rietumu demokrātisko valstu puses. Otra iespēja tika nosaukta par ``konstruktīvu sadarbības ceļu ar ebrejiem'', kaut tās pamatus pēc poļu ierēdņu domām bija jāveido tādiem principiem, kurus par ``sadarbību'' varētu nosaukt tikai vislielākais ciniķis un demagogs. Lūk, šie ``principi'':
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item ebreji apņemas panākt pusotra miljona ebreju izbraukšanu no Polijas 30~gadu laikā;
 
 \item ebreji piešķir Polijai ilgtermiņa kredītus 300--500~miljonu dolāru apjomā;
@@ -6767,7 +6770,7 @@ Polijas lauksaimniecība, neraugoties uz labvēlīgākiem klimatiskajiem un citi
 Pēc 1921.~gada datiem, kuros gan vēl nebija iekļauti Augšsilēzijas un Viļņas apgabali, kopumā vidējo un mazsaimniecību īpašnieki sastādīja 87\% no visiem zemes īpašniekiem, taču viņu īpašumā bija tikai 31,9\% no visas privātīpašumā esošās zemes. Pēc padomju vēsturnieku datiem Polijā rentablas bija tikai tās saimniecības, kuru valdījumā atradās ne mazāk kā 5~ ha zemes un 64\% no visiem zemes īpašniekiem bija trūcīgie zemnieki. Turpretī 19~000 cilvēku (0,6\% no visiem), kuru īpašumā bija vairāk nekā 100~ha zemes, kopumā piederēja vairāk 13~miljonu ha (44,8\%) no visas privātīpašumā esošās zemes. (Pēc citiem datiem 4~255~muižu, kuras bija lielākas par 500~ha, īpašnieku rokās atradās 31\% lauksaimniecībā izmantotās zemes.) Skat. \ref{tab:table5}. tabulu.
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{Saimniecību skaits un lielums Polijas lauksaimniecībā XX~gs. 20.~gadu 2.~pusē} \label{tab:table5}
 \begin{tabularx}{\linewidth}{|p{4cm}|p{4cm}|p{4cm}|}
 \hline
@@ -6868,7 +6871,7 @@ Daudz smagu problēmu Polijai bija jārisina \strong{finanšu jomā}. Liela daļ
 1923.~gadā jau V.~Sikorska valdības laikā, pirms jaunās valdības ar ļudovieti V.~Vitosu priekšgalā nākšanas pie varas, strauji \strong{pieauga inflācija}. Ja 1918.~gadā 1 ASV \$ maksāja 9,8~poļu markas, 1919.~gadā par to jau bija jāsamaksā 90~markas. Turpmāk inflācija turpināja augt. (Skat. \ref{tab:table6}.~tabulu) 1923.~gadā jau tika izdotas naudas zīmes 100~000, 250~000, 500~000 un 1 miljona marku vērtībā, bet gada beigās pat 5 un 10~ miljonu marku vērtībā.
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{ASV dolāra vērtība poļu markās attiecīgajā gadā} \label{tab:table6}
 \begin{tabularx}{\linewidth}{|p{4cm}|p{4cm}|}
 \hline
@@ -6920,7 +6923,7 @@ Tomēr ar 1923.~gada finanšu katastrofu un to pavadošo revolucionāro krīzi b
 
 Viena no tādām bija \strong{parādu nomaksa}. Parādus sastādīja:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Poļu nacionālās komitejas Parīzē izdevumi J.~Hallera armijas finansēšanai. Tie bija \$25,8~miljoni un sastādīja ap 5,8~\% no visa parāda.
 
 \item Versaļas un Sen-Žermenas līgumi paredzēja, ka Polijai jānomaksā sava daļa no Vācijas un Austroungārijas reparācijām, atbilstoši šo valstu teritoriju, kuras pēc kara iegāja Polijas sastāvā, ekonomiskajai vērtībai. Taču vēlāk šī summa daudzkārt mainījās un gala rezultātā kā tāda vairs nefigurēja.
@@ -6981,7 +6984,7 @@ Karteļu lomu uzskatāmi parāda piemērs. Līdz cementa karteļa izveidei 1926.
 Pēc 1937.~gadā izdotā oficiālā krājuma ``\pltxti{Mafy Rocznik Statystczny}'' (``Statistikas gadagrāmata'') datiem karteļu veidošanās aina bija sekojoša: Skat. \ref{tab:table7}.~tabulu.
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{Karteļu skaits Polijā 1919.--1936.~gadā} \label{tab:table7}
 \begin{tabularx}{\linewidth}{|p{4cm}|p{4cm}|p{4cm}|}
 \hline
@@ -7060,7 +7063,7 @@ Oficiāli tika uzskatīts, ka Polija realizē deflācijas politiku. Taču tā bi
 Uzņēmēji centās krīzes smagumu pārlikt uz darba ņēmēju pleciem. Piemēram, lielu uzņēmumu vadītājs E.~Lansbergs uzstājās par apdrošināšanas bezdarba gadījumiem likvidēšanu, jo, pēc viņa domām, ``nodrošināšana bezdarba gadījumā ir pamatcēlonis, kas izsauc bezdarbu''. Šo kursu atbalstīja arī valdība. 1932.~gada decembrī premjerministrs A.~Pristors, uzstājoties Seimā, paziņoja: ``Atbilstoši saimniecisko sfēru prasībai, mums ir jāmazina izdevumi sociālajiem pasākumiem''. Tas tika teikts tad, kad poļu strādnieku dzīves līmenis un alga bija viena no zemākajām Eiropā. Jau līdz 1928.~gadam svarīgākajās rūpniecības nozarēs poļu strādnieku reālās darba algas indekss nesasniedza 1914.~gada līmeni. Pēc Starptautiskā darba biroja datiem piecu gadu laikā no 1924.~līdz 1928.~gadam Polijā, neraugoties uz svārstībām, darba alga samazinājās par 2\%. (Blakus Vācijā tai pat laikā darba alga pieauga par 55\%. Arī otrā Polijas kaimiņvalstī Rumānijā darba alga pieauga par 30\%). Pie tam no 1925.~gada vidus līdz 1926.~gada vidum Polijā darba algas strādniekiem sistemātiski tika aizturētas. Uzņēmēju parādi strādniekiem sastādīja miljonus zlotu. Tautā runāja, ka strādnieki uzstājas kā ``fabrikantu baņķieri''. Skat. \ref{tab:table8}. tabulu.
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{Polijas lielo un vidējo rūpniecības uzņēmumu strādnieku darba alga 1929--1935.~gadā} \label{tab:table8}
 \begin{tabularx}{\linewidth}{|p{4cm}|p{4cm}|}
 \hline
@@ -7086,7 +7089,7 @@ Uzņēmēji centās krīzes smagumu pārlikt uz darba ņēmēju pleciem. Piemēr
 Salīdzinājumu ar citām valstīm rāda strādnieku nožēlojamo stāvokli Polijā. Skat. \ref{tab:table9}.~tabulu.
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{Darba algas salīdzinājums Polijā un citās valstīs 1929.~gadā (darba alga Lielbritānijā pieņemta par 100)} \label{tab:table9}
 \begin{tabularx}{\linewidth}{|p{4cm}|p{4cm}|}
 \hline
@@ -7116,7 +7119,7 @@ Krīzes apstākļos 1933.~gada 22.~martā tika pieņemts likums par izmaiņām 1
 
 1932.~gadā tika pieņemts likums, saskaņā ar kuru sabiedriskās vajadzības nodrošinošo uzņēmumu strādniekus par streikošanu varēja sodīt ar cietumsodu līdz 5~gadiem. 1933.~gada janvārī stājās spēkā jauns Civilkodekss, kurš atzina tikai individuālos līgumus starp uzņēmējiem un strādniekiem, ar to dodot triecienu arodkustībai. Tomēr strādnieku kustība turpinājās. Piemēram, 1933.~gada martā norisa plašs Lodzas u.~c. pilsētu tekstilnieku streiks. Policijas sadursmēs ar streikojošajiem pieci strādnieki tika nogalināti.
 
-1933.~gada 28.~marta likums atņēma tiesības saņemt slimības pabalstus visiem strādniekiem lauksaimniecībā, arī dažām citām strādnieku kategorijām, piemēram, praktikantiem. Citiem strādniekiem slimības pabalstu izmaksas termiņš samazinājās no 39~līdz 26~nedēļām. Slimības pabalstu lielums samazinājās no 60\% līdz 50\% no darba algas. Bērnu dzimšanas pabalsti samazinājās vairāk nekā divas reizes. Ja agrāk darba devējs apmaksāja 3/5 no apdrošināšanas pret slimību iemaksas, bet pats darba ņēmējs 2/5, tagad gan darba devējs, gan ņēmējs maksāja 1/2. Šādu taupības uz strādājošo rēķina piemēru uzskaitījumu var turpināt.
+1933.~gada 28.~marta likums atņēma tiesības saņemt slimības pabalstus visiem strādniekiem lauksaimniecībā, arī dažām citām strādnieku.~kategorijām, piemēram, praktikantiem. Citiem strādniekiem slimības pabalstu izmaksas termiņš samazinājās no 39~līdz 26~nedēļām. Slimības pabalstu lielums samazinājās no 60\% līdz 50\% no darba algas. Bērnu dzimšanas pabalsti samazinājās vairāk nekā divas reizes. Ja agrāk darba devējs apmaksāja 3/5 no apdrošināšanas pret slimību iemaksas, bet pats darba ņēmējs 2/5, tagad gan darba devējs, gan ņēmējs maksāja 1/2. Šādu taupības uz strādājošo rēķina piemēru uzskaitījumu var turpināt.
 
 Valsts izdevumi sociālajai nodrošināšanai saruka no 155~miljoniem zlotu 1931./1932.~gadā līdz 65~miljoniem zlotu 1934./1935.~gadā. Tai pat laikā pensijas invalīdiem un algas valsts kalpotājiem samazinājās no 164~līdz 103~miljoniem zlotu. Premjerministrs F.~Slavojs Skladkovskis savā grāmatā ``\pltxti{Strzępy meldunków}'' (``Ziņojumu druskas'', 1936), ir pastāstījis kā tika sastādīts budžets krīzes laikā. Izrādās, ka tas notika uz īsu J.~Pilsudska pavēļu pamata. Diktators paziņoja, ka ``pirmā nelaime ir ierēdņi, pārāk uzpūstie štati un augstās algas''. Tāpēc divu gadu laikā viņu likmes tika samazinātas par 30\%. Var piebilst, ka valsts aparātā, kā arī valsts un municipālajos uzņēmumos bija nodarbināti simti tūkstoši strādnieku un kalpotāju (1/3~garīgā darba darītāju un 21\% strādnieku). Lieluzņēmējus šāds stāvoklis apmierināja. Viens no asociācijas ``Leviafāns'' pārstāvjiem R.~Bataļja 1933.~gadā ciniski rakstīja: ``Vai tad jautājumu par sociālās apgādes paplašināšanu un attīstību \citespace{} par pieprasījuma pēc grāmatām pieaugumu, par inteliģences sadzīves apstākļu uzlabošanu u.tml. var salīdzināt ar jautājumu par smagās rūpniecības pastāvēšanas nepieciešamību.''. Faktiski runa gāja nevis par smagās rūpniecības pastāvēšanu, bet tās nesto peļņu.
 
@@ -7125,7 +7128,7 @@ Valsts izdevumi sociālajai nodrošināšanai saruka no 155~miljoniem zlotu 1931
 Jau minētais bijušais ministrs Č.~Klarners 1935.~gadā publicētā grāmatā ``\pltxti{U podstaw bezrobocia}'' (``Pie bezdarba saknēm'') ir salīdzinājis patēriņu krīzes laikā Polijā un citās valstīs. Skat. \ref{tab:table10}. tabulu.
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{Preču vidējais patēriņš (kg) gadā uz vienu iedzīvotāju Polijā, Lielbritānijā un Vācijā 1927.--1931.~gadā} \label{tab:table10}
 \begin{tabularx}{\linewidth}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
 \hline
@@ -7151,7 +7154,7 @@ Elektroenerģija (KWh) & 84,0 & 351,2 & 773,2 \\
 Cenu saglabāšana augstā līmenī vai pat to pieaugums veda pie plašu iedzīvotāju slāņu straujas pirktspējas krišanas. No 1928./1929.~līdz 1933./1934.~gadam gaļas, tauku, miltu, apģērba un apavu patēriņš samazinājās trīs-četras reizes. Zināmu priekšstatu par to sniedz \ref{tab:table11}.~tabula.
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{Pārtikas produktu personīgais patēriņš gadā uz vienu iedzīvotāju Polijā un Vācijā 1932.~gadā} \label{tab:table11}
 \begin{tabularx}{\linewidth}{|p{3cm}|p{3cm}|p{3cm}|}
 \hline
@@ -7184,7 +7187,7 @@ Oficiālajiem datiem par bezdarbnieku skaitu nevar uzticēties. Tā 1930.~gada m
 Zināmu priekšstatu par reģistrēto bezdarbnieku skaita dinamiku sniedz \ref{tab:table12}.~tabula.
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{Oficiāli reģistrēto bezdarbnieku skaits Polijā (tūkstošos cilvēku)} \label{tab:table12}
 \begin{tabularx}{\linewidth}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
 \hline
@@ -7224,7 +7227,7 @@ Netika atstātas novārtā arī citas streiku formas. Tā, 1932.~gada 16.~martā
 Aktīva streiku kustība turpinājās arī pēc 1933.~gada. Streiku statistiku rāda \ref{tab:table13}.~tabula.
 
 \noindent
-\begin{table}[h!]
+\begin{table}[hp]
 \caption{Pārskats par streikiem Polijā 1930.--1936.~gadā} \label{tab:table13}
 \begin{tabularx}{\linewidth}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
 \hline
@@ -7278,7 +7281,7 @@ Poļu prese ziņoja par badu t.~s. guculu apdzīvotajos rajonos, (poļu \pltxti{
 Poļu publicisti nevarēja nekonstatēt, ka Polijas tautsaimniecībā pastāv briesmīgi paradoksi. Tā, viens no viņiem S.~Prostvils 1932.~gadā rakstīja: ``Polija ir ekonomisko pretrunu zeme. Melno dimantu novadā, ogļu pārprodukcijas zemē~--- ogles ir dārgas. Zemē, kurā cukurbiešu ir atliku likām, cukurs ir dārgs, dārgāks nekā zemēs, kuras importē cukuru. Zemē, kur ir cilvēku pārprodukcija, kur ir liels iedzīvotāju pieaugums, kur ir daudz cilvēku ar milzīgu apetīti, lauksaimniecības produkti neatrod noietu. Lauksaimniecības zeme ar piena upēm un ķīseļa krastiem ir pilna ar bada cietējiem''. Zināmu kopieskatu par Polijas iedzīvotāju stāvoklī sniedz nacionālā ienākuma (angļu \entxti{national income}) salīdzinājums ar citām valstīm. Skat. \ref{tab:table14}.~tabulu.
 
 \noindent
-\begin{table}
+\begin{table}[hp]
 \caption{Nacionālas ienākums uz vienu iedzīvotāju dažādās valstīs (ievērojot valūtas devalvāciju atsevišķās valstīs) 1929.~un 1932.~gadā} \label{tab:table14}
 \begin{tabularx}{\linewidth}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
 \cline{1-5}
@@ -7323,7 +7326,7 @@ Aviācijas satiksme Polijā attīstījās kopš 1922.~gada. 1929.~gadā tika org
 Tomēr rūpnieciskās ražošanas attīstība norisa lēni. Pēc čuguna, tērauda un krāsaino metālu ieguves, elektroapgādes, rūpniecisko iekārtu skaita uz vienu iedzīvotāju Polijā palika vienā no pēdējām vietām Eiropas valstu vidū. 1936.~gadā ogles Polijā ieguva par 25\% mazāk nekā 1913.~gadā. Ja pasaulē naftas ieguve no 1913.~līdz 1936.~gadam pieauga apmēram 5~reizes, Polijā tā samazinājās no 1~100~tūkstošiem~t līdz 500~tūkstošiem~t., kaut arī naftas atradnes nebūt nebija izsmeltas. Priekšstatu par dažādu produkcijas veidu ražošanu Polijā dod \ref{tab:table15}.~tabula.
 
 \noindent
-\begin{table}
+\begin{table}[hp]
 \caption{Dažādu produkcijas veidu ražošana Polijā 1913.~un 1936.~gadā} \label{tab:table15}
 \begin{tabularx}{\linewidth}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
 \cline{1-5}
@@ -7365,7 +7368,7 @@ Streiku skaits 30.~gadu otrajā pusē tikai pieauga. Ja 1934.~gadā valstī kop�
 Joprojām cenas uz lauksaimniecībā nepieciešamajiem ražojumiem palika nesamērīgi augstas salīdzinājumā ar cenām uz pašu zemnieku saražoto pārtiku. Skat. \ref{tab:table16}.~tabulu
 
 \noindent
-\begin{table}
+\begin{table}[hp]
 \caption{Rūpniecības un lauksaimniecības preču cenu salīdzinājums zlotos 1927./28.~un 1937./38.~gadā} \label{tab:table16}
 \begin{tabularx}{\linewidth}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
 \cline{1-5}
@@ -8486,7 +8489,7 @@ Lielbritānijas paraugam sekoja arī Francija, demonstratīvi apstiprinot 1921.~
 
 Francijas un Polijas militārās sadarbības līgumā bija paredzēts, ka Vācijas agresijas gadījumā pret Poliju ``Francijas armija automātiski uzsāks savu dažādo [ieroču] šķiru bruņoto spēku darbību sekojošā veidā:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Francija uzreiz pēc iepriekš izstrādāta plāna uzsāks gaisa spēku darbību.
 
 \item Tiklīdz daļa no Francijas spēkiem būs gatava (apmēram trešajā dienā), Francija pakāpeniski attīstīs uzbrukuma darbību ar ierobežotiem mērķiem.
@@ -8529,7 +8532,7 @@ Bez tam atzīmējams, ka pēc Polijas galīgas atteikšanās piekāpties Vācija
 
 Uz šiem pārmetumiem vismaz daļēji ir atbildējis amerikāņu vēsturnieks G.~Veinbergs, kurš norādījis uz trim secinājumiem, no kuriem vadījās Lielbritānijas valdība, pasludinot garantijas.
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Ja pirms tam Lielbritānija centās par katru cenu novērst pat maza kara izraisīšanu Eiropā, jo vienalga lai kur tas izraisītos~--- austrumos vai rietumos, tas varētu aptvert visu kontinentu un Lielbritānija tik un tā tajā tiktu ierauta, tad pēc Čehoslovākijas iznīcināšanas Lielbritānijai bija jāatsakās no vecās stratēģijas un jārod jauna. Jaunās~--- 1939.~gada stratēģijas uzdevumi bija: skaidri demonstrēt savu pozīciju, tā iebiedējot Vāciju, uzmundrinot potenciālo upuri un cenšoties piesaistīt tā pusē citas valstis;
 
 \item Ja 1938.~gadā Vācijas propaganda par it kā apspiestajiem 3~miljoniem Sudetu vāciešu atstāja ietekmi uz Lielbritānijas sabiedrību un arī valdību, tad 1939.~gadā, zinot, ka vācu mazākumam Polijā tiešām ir par ko sūdzēties, briti apzinājās, ka šīs vācu mazākuma sūdzības ir Vācijas propagandas līdzeklis. Bija tikai viens solis kā nacistiskā Vācija varētu pierādīt pretējo~--- atjaunot Čehoslovākijas neatkarību, ko tā nekad nedarītu. Britu sabiedrība ietekmēja valdību stingra kursa pret Vāciju ieturēšanas virzienā;
@@ -8689,7 +8692,7 @@ Pēc pētnieces I.~Fleišhaueres domām, cēlonis tam, ka tieši 19.~augustā J.
 
 19.~augustā Vācijas un PSRS valdības apmainījās ar neuzbrukšanas līguma projektiem. Tai pat 19.~augustā J.~f.~Ribentrops Itālijas sūtnim Berlīnē B.~Attoliko arī nodeva Ā.~Hitlera atbildi Itālijas ``dučem'' (itāļu \ittxti{duce}~--- vadonis) B.~Mussolini uz iepriekš saņemto vēstījumu, ka Itālija nespēj vest Eiropas mēroga karu. Ā.~Hitlera vēstījums dod skaidras atbildes par viņa tuvākajiem nodomiem. Vācijas ``fīrers'' tajā izklāstīja savu kredo (latīņu \latxti{credo}~--- ticu, cilvēka personīgā pārliecība, pasaules uzskats):
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item lēmums uzbrukt Polijai ir pieņemts, tas netiks pārskatīts;
 
 \item Polijas konflikts paliks lokāla konflikta līmenī, jo Lielbritānija un Francija neuzdrošināsies uzbrukt ``ass'' valstīm (Domātas Vācija un Itālija. Terminu ``ass'' pirmo reizi lietoja B.~Mussolini 1936.~gada 2.~novembrī, kad pēc Itālijas un Vācijas draudzības līguma parakstīšanas viņš runāja par Romas-Berlīnes asi ap kuru pārējās Eiropas valstis varēs riņķot.);
@@ -8780,11 +8783,11 @@ Tādus uzskatus noteica pēc Otrā pasaules kara sācies aukstais karš, antikom
 
 Arī mūsdienās jauno, no PSRS ietekmes atbrīvojušos Austrumeiropas valstu, tai skaitā Polijas, un dažu bijušo PSRS republiku historiogrāfijā ir vērojami centieni mazināt Minhenes vienošanās ietekmi uz tālākajiem notikumiem, Otrā pasaules kara izraisīšanu, priekšplānā izvirzot vienīgi Molotova~--- Ribentropa paktu kā visu nelaimju aizsākumu. Tā, piemēram, poļu vēsturnieks un žurnālists K.~Voucickis, rakstot par vēsturisko atmiņu Eiropā, uzsvēris, ka 1939.~gada 23.~augusta pakta vēsturiskā nozīme vēl joprojām tiekot nepietiekami novērtēta, kaut tas ``gandrīz visu Austrumeiropu ierāva Pasaules kara haosā''. Tai pašā laikā viņš ne ar vārdu nepiemin Minhenes vienošanos.
 
-Arī Latvijas ZA loceklis, profesors Inesis~Feldmanis, sekojot daudzu Rietumu vēsturnieku koncepcijām, uzsver, ka Minhenes vienošanās un Molotova~--- Ribentropa pakts ``ir grūti salīdzināmi (lai neteiktu nesalīdzināmi) lielumi'', kur ``Minhenes vienošanās bija it kā mēģinājums modificēt pēc Pirmā pasaules kara noteikto starptautisko kārtību~--- tā saukto Versaļas sistēmu.'' Teiktajam varētu piekrist, taču tālāk profesors I.~Feldmanis raksta, ka Lielbritānija un Francija ``atšķirībā no Vācijas un Padomju Savienības netiecās pēc teritoriāliem ieguvumiem un citu tautu pakļaušanas. Šo valstu līderi pamatā nedomāja XVIII gadsimta, bet gan XX gadsimta diplomātijas kategorijās.'' I.~Feldmanis gan atzīst, ka britu un franču īstenotā diplomātija bija ``apšaubāma un neveiksmīga'', ka Lielbritānijas un Francijas vadītāji ``neriskēja atbildēt uz Vācijas izaicinājumu, bet piekrita kompromisam'', taču uzskata, ka ``strikti nosodīt viņus par to ir pagrūti, jo likme tomēr bija ļoti augsta, un iespējamā alternatīva viņiem pamatoti šķita pārāk bīstama un tobrīd neadekvāta'', ka ``bez atrunām ir pagrūti akceptēt historiogrāfijā visai izplatītu apgalvojumu, ka tieši Minhenes vienošanās bija Otrā pasaules kara prologs''.
+Arī Latvijas ZA loceklis, profesors Inesis~Feldmanis, sekojot daudzu Rietumu vēsturnieku koncepcijām, uzsver, ka Minhenes vienošanās un Molotova~--- Ribentropa pakts ``ir grūti salīdzināmi (lai neteiktu nesalīdzināmi) lielumi'', kur ``Minhenes vienošanās bija it kā mēģinājums modificēt pēc Pirmā pasaules kara noteikto starptautisko kārtību~--- tā saukto Versaļas sistēmu.'' Teiktajam varētu piekrist, taču tālāk profesors I.~Feldmanis raksta, ka Lielbritānija un Francija ``atšķirībā no Vācijas un Padomju Savienības netiecās pēc teritoriāliem ieguvumiem un citu tautu pakļaušanas. Šo valstu līderi pamatā nedomāja XVIII gadsimta, bet gan XX gadsimta diplomātijas.~kategorijās.'' I.~Feldmanis gan atzīst, ka britu un franču īstenotā diplomātija bija ``apšaubāma un neveiksmīga'', ka Lielbritānijas un Francijas vadītāji ``neriskēja atbildēt uz Vācijas izaicinājumu, bet piekrita kompromisam'', taču uzskata, ka ``strikti nosodīt viņus par to ir pagrūti, jo likme tomēr bija ļoti augsta, un iespējamā alternatīva viņiem pamatoti šķita pārāk bīstama un tobrīd neadekvāta'', ka ``bez atrunām ir pagrūti akceptēt historiogrāfijā visai izplatītu apgalvojumu, ka tieši Minhenes vienošanās bija Otrā pasaules kara prologs''.
 
 Pēc autora domām, šie cienījamā vēsturnieka spriedumi prasa kritisku komentāru, jo līdzās neapstrīdamiem secinājumiem tie satur neattaisnojamu minēto Rietumu valstu pirmskara imperiālistiskās ārpolitikas apoloģētiku.
 
-Pirmkārt, par diplomātijas kategorijām, kurās domāja Lielbritānijas un Francijas līderi. Minhenes tikšanās, kurā lielvalstu vadītāji mainīja Eiropas politisko karti, nejautājot ``mazo'' valstu viedokli, vairāk atbilda XVIII~gadsimta (arī citu iepriekšējo gadsimtu) politiskās domāšanas tradīcijām.
+Pirmkārt, par diplomātijas.~kategorijām, kurās domāja Lielbritānijas un Francijas līderi. Minhenes tikšanās, kurā lielvalstu vadītāji mainīja Eiropas politisko karti, nejautājot ``mazo'' valstu viedokli, vairāk atbilda XVIII~gadsimta (arī citu iepriekšējo gadsimtu) politiskās domāšanas tradīcijām.
 
 Daži piemēri. Lielbritānija kopš 1792.~gada atradās kara stāvoklī ar Franciju un britu flote sagrāba visu valstu kuģus, ja radās aizdomas, ka tās tirgojas ar Franciju. 1800.~gada beigās Dānija, Krievija, Prūsija un Zviedrija radīja savienību, kuras mērķis bija realizēt bruņotas neitralitātes politiku un aizstāvēt savas brīvas tirdzniecības tiesības. Lielbritānija uzskatīja, ka šī savienība apdraud tās intereses, iesniedza Dānijai ultimātu ar prasību no tās izstāties. Dānija to noraidīja. Tad 1801.~gada 2.~aprīlī britu eskadra admirāļu D.~Pārkera un H.~Nelsona vadībā ieradās Kopenhāgenas ostā un bez kara pasludināšanas uzbruka nesagatavotajai Dānijas flotei, pirms tā nebija apvienojusies ar Krievijas un Zviedrijas flotēm. Dāņu flote tika sakauta un Dānija bija spiesta izstāties no bruņotas neitralitātes savienības. 1807.~gadā, kad Dānija bija nonākusi Napoleona ietekmē, Lielbritānija baidījās, ka atjaunotā Dānijas flote varētu (!) apdraudēt Lielbritāniju. 1807.~gada septembrī britu flote šoreiz jau admirāļa D.~Gambjē vadībā trīs dienas apšaudīja Kopenhāgenu, ieskaitot arī dzīvojamos kvartālus, piespiežot Dāniju atdot savu floti britiem. Minētajās sadursmēs bija daudz cilvēku upuru.
 
@@ -8970,7 +8973,7 @@ Vajadzētu paturēt prātā, ka pēc Molotova~--- Ribentropa pakta noslēgšanas
 
 Lai nu kā, Polijas stāvoklis pēc Molotova-Ribentropa pakta parakstīšanas kļuva traģisks. Polijas Ārlietu ministrijas Preses nodaļas pirmā reakcija uz Molotova-Ribentropa pakta noslēgšanu bija paziņojums, ka valsts drošība ar to netiek aizskarta, jo Polijai ar PSRS ir 1932.~gada neuzbrukšanas līgums. ``Pēc būtības maz kas ir mainījies'',~--- Francijas sūtnim Varšavā L.~Noelam paziņoja J.~Beks. Kad ziņojumu par to redzēja Francijas sūtnis P.~Nadžiars, viņš secināja: ``Nevar iedomāties lielāku muļķību''. Arī Varšavas radio paziņojums par Molotova-Ribentropa pakta noslēgšanu skanēja: ``Dabīgi, ka līguma noslēgšana neatstās nekādu ietekmi uz Polijas lēmumiem Eiropas politikas jautājumos. Polijai nekad nav bijis vēlēšanās kaut kādi sadarboties ar Krieviju un tā atkārto savu nemainīgo ``nē''. Tā uzskata, ka Padomes nevar būt derīgs partneris Eiropas politikā. Pakta noslēgšana apstiprina Polijas ārpolitikas tēzi: Austrumos Eiropa beidzas ar Poliju. Tas viss nostiprina Polijas prestižu''. Turpmāk J.~Beks Polijas diplomātiskajām pārstāvniecībām citās valstīs lika Molotova-Ribentropa paktu komentēt sekojoši:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Tas nekādā ziņā nemaina Polijas faktisko pozīciju sakarā ar to, ka Polija nekad nerēķinājās ar Padomju palīdzību.
 
 \item Tas nekādi nemaina Polijas politisko līniju, tāpat kā netraucē tās savstarpējās attiecības ar sabiedrotajiem.
@@ -9047,7 +9050,7 @@ No otras puses, jāatzīst, ka ``sanācijas'' vadoņus grūti vainot par to, ka 
 
 Polijas valsts atjaunošana ir jāuzskata par:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item taisnīguma atjaunošanas un atmaksas aktu par sadalītājvalstu noziegumiem (1772--1793--1795);
 \item poļu nacionālo spēku, kuri attīstījušies par spīti sadalītājlielvalstu destruktīvajiem centieniem, attīstības rezultātu un Austroungārijas sabrukuma, Krievijas impērijas sabrukuma un Vācijas sakāves konsekvenci;
 \item nepieciešamību izveidot spēcīgu un patiesi neatkarīgu valsti, kas atrastos starp Vāciju un Krieviju.
@@ -9223,7 +9226,7 @@ Pagājušo gadu, jūlija beigās ieradās kāda Sabiedroto (amerikāņu) komisij
 
 Paraksti:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Pēteris Adama d. Ciemiņš, Palsmanes pag., Cēsu apr., Grušļu mājas.
 \item Jānis Alberta d. Bemfelds, Sоpeles pag., Dobeles apr., Kalna Košķu mājas.
 \item Otto Otto d. Dimiņš, Ilzenes pag., Valkas apr., Čonkas mājas.
@@ -9295,7 +9298,7 @@ Tulkots no: \rutxti{Л. Троцкий. Война с Польшей. Докла
 
 Pilnīgi slepeni
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item \citespace{} Lai novilcinātu [gaidāmo] mūsu Savienības karu ar kapitālisma pasauli un uzlabotu militāro-politisko situāciju, ir mērķtiecīgi un nepieciešami \citespace{}
 
 \item traucēt Polijas-Vācijas strīdīgo jautājumu (Danzigas koridors, Augšsilēzija u.c.) atrisināšanu;
@@ -9723,11 +9726,11 @@ Mēs ierakumos sēdēsim\\
 Un šnabīti ierausim.
 \end{minipage}
 
-Polijas armijas kaujas spējas nevarēja neietekmēt arī virsnieku un Polijas iedzīvotāju atšķirīgais nacionālais sastāvs, ko rāda 17.tabula
+Polijas armijas kaujas spējas nevarēja neietekmēt arī virsnieku un Polijas iedzīvotāju atšķirīgais nacionālais sastāvs, ko rāda \ref{tab:table17}. tabula.
 
 \noindent
-\begin{table}
-\caption{PSRS Kozeļskas un Starobeļskas nometnēs ieslodzīto Polijas armijas 8~394 virsnieku nacionālā sastāva 1940.~gadā salīdzinājums ar pirmskara Polijas iedzīvotāju nacionālo sastāvu} \label{tab:table16}
+\begin{table}[hp]
+\caption{PSRS Kozeļskas un Starobeļskas nometnēs ieslodzīto Polijas armijas 8~394 virsnieku nacionālā sastāva 1940.~gadā salīdzinājums ar pirmskara Polijas iedzīvotāju nacionālo sastāvu} \label{tab:table17}
 \begin{tabularx}{\linewidth}{|p{3cm}|p{3cm}|p{3cm}|}
 \cline{1-3}
 \multirow{2}{*}{Tautība} & \multicolumn{2}{p{6cm}|}{Procentuālais sastāvs} \\
@@ -9876,7 +9879,7 @@ Kā norāda ukraiņu jurists V.~Makarčuks, 1939.~gadā starptautiskajās tiesī
 
 Kopumā abu: Baltkrievijas un Ukrainas fronšu karaspēks, kurš 16.~septembra vakarā atradās gatavībā Polijas pierobežā un 17.~septembrī šķērsoja robežu, pēc dažiem datiem sastāvēja no 21~strēlnieku un 13~kavalērijas divīzijām, 16~tanku, 2~motorizētajām brigādēm un Dņepras upes flotīlijas. Pēc 1993.~gadā Krievijas Federācijā publiskotajiem datiem karagājienā uz Rietumukrainu un Rietumbaltkrieviju piedalījās 466~516 padomju militārpersonu, taču pēc citiem datiem vēlāk pienāca papildinājumi un kopā iebrukumā Polijā piedalījās 617~588 cilvēki, 4~736 tanki, 4~959 lielgabali un mīnmetēji. Abi fronšu aviācijā skaitījās 3~298 lidmašīnas (faktiski to bija mazāk un kara darbībā tās piedalījās, veicot galvenokārt izlūklidojumus).
 
-Pulksten 3.00 1939.~gada 17.~septembrī PSRS ārlietu tautas komisāra vietnieks V.~Potjemkins Polijas sūtnim V.~Gžibovskim nolasīja PSRS valdības notu, kura neilgi pirms tam bija koriģēta, ņemot vērā Vācijas vēlmes.
+Pulksten 3.00~1939.~gada 17.~septembrī PSRS ārlietu tautas komisāra vietnieks V.~Potjemkins Polijas sūtnim V.~Gžibovskim nolasīja PSRS valdības notu, kura neilgi pirms tam bija koriģēta, ņemot vērā Vācijas vēlmes.
 
 Koriģēts tika informatīvais aizsegs, kādu padomju vadība izmantoja Sarkanās armijas karagājiena izskaidrošanai. 10.~septembrī V.~Molotovs informēja V.~f.~Šulenburgu, ka Padomju valdībai ir nolūks izmantot vācu daļu tālāko virzīšanos, lai paziņotu, ka Polija ir sabrukusi un Padomju Savienībai tāpēc ir jāiet palīgā ukraiņiem un baltkrieviem, kurus ``apdraud'' Vācija. Šis arguments ir nepieciešams, lai Padomju Savienības intervence masu acīs šķistu pieklājīga un lai izvairītos no tā, ka Padomju Savienība izskatītos kā agresors. 15.~septembrī J.~f.~Ribentrops uzdeva V.~f.~Šulenburgam paziņot V.~Molotovam, ka par šādu Sarkanās armijas darbības izskaidrojumu nevar būt ne runas, jo tas Vāciju un PSRS visas pasaules priekšā nostādīs kā ienaidniekus un ``būs pretrunā vēlmei veidot draudzīgas attiecības, ko izteikušas abas valstis''. Nākamajā dienā V.~Molotovs informēja V.~f.~Šulenburgu, ka Padomju valdība atradusi jaunu formulējumu, lai attaisnotu Sarkanās armijas ievešanu Polijā, kurā nekas nebija teikts par Vācijas draudiem ukraiņiem un baltkrieviem. Taču informāciju Vācijai par Sarkanās armijas ievešanu Polijā padomju vadība nodeva pēdējā brīdī~--- naktī uz 17.~septembri. Vācijas vadītājiem vairs nebija laika protestēt pret padomju akcijas motivāciju, kurai arī bez Vācijas nosaukšanas vārdā bija pretvācisks raksturs, jo baltkrievu un ukraiņu tautas aizsardzība nebija iedomājama no kādas citas valsts, bet vienīgi no Vācijas.
 
@@ -10440,7 +10443,7 @@ Piemēram, mūsdienu krievu vēsturnieks J.~Pavļuks savā 2006.~gadā aizstāv�
 
 Pēc autora domām, sadarbība starp Maskavu un Berlīni gan tika noformēta ar starpvalstu līgumu, taču par PSRS militāri politisku ``savienību'' ar Vāciju nevar būt runas, jo:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item abi partneri neuzticējās viens otram, rūpīgi raudzījās, lai viena puse nepārkāptu otrās valstiskās intereses;
 
 \item Vācija oficiāli ievēroja neitralitāti PSRS karā pret Somiju, savukārt, PSRS~--- Vācijas karos pret Franciju, Lielbritāniju u.c. valstīm. Tiesa, šī PSRS ``neitralitāte'' daudzos gadījumos faktiski tika pārkāpta, PSRS sniedzot Vācijai militāri-politiska un militāri-ekonomiska rakstura pakalpojumus (tāpat kā, piemēram, ASV Pirmā pasaules kara sākumposmā formāli bija neitrālas, bet sniedza ekonomisku un arī militāru palīdzību Antantes valstīm). Tomēr J.~Staļinam izdevās līdz galam nesabojāt attiecības ar Rietumvalstīm.
@@ -10559,7 +10562,7 @@ Ar pēc Pirmā pasaules kara tai atsavināto teritoriju atgūšanas ieganstu Vā
 
 Vācijā iekļautie Polijas apgabali tika sadalīti četrās daļās.
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item Suvalku apgabals un Mazovijas ziemeļi (no agrākās Varšavas vojevodistes daļas tika izveidota Cihanuvas (poļu \pltxti{Ciechanów}, vācu \detxti{Zichenau}) administratīvā vienība (\detxti{Regierungsbezirk}) tika piedalīti Austrumprūsijai (\detxti{Reichsgau Ostpreußen}). Kopā tajā bija apmēram 16~200~km$^{2}$ ar 1~miljonu iedzīvotāju;
 
 \item Danciga, agrākais ``poļu koridors'', Pomožes vojevodiste tika pievienota Dancigas-Rietumprūsijas valstsnovadam (\detxti{Reichsgau Danzig-Westpreuβen}). Apmēram 21~200~km$^{2}$ platībā šeit dzīvoja ap 2,15~miljonu iedzīvotāju, to skaitā ap 800~000~vāciešu un 120~000~kašubu (kašubu \emph{Kaszëbi}; poļu \pltxti{Kaszubi}, vācu \detxti{Kaschuben}~--- rietumslāvu etniska grupa, dzīvojoša Polijas ziemeļos);
@@ -10577,9 +10580,9 @@ Nacionālsociālistu plāni paredzēja paaugstināt vāciešu skaitu reiham piev
 
 No savām mājām padzītajiem, par vācu kalpiem padarītajiem vietējiem iedzīvotājiem nodarītā netaisnība, pret tiem vērstā vardarbība tika attaisnota kā nāciju cīņa (\detxti{Volkstumskampf}).
 
-Pielietojot seno iekarotāju principu~--- ``skaldi un valdi'', okupanti vēlējās sadalīt to okupēto zemju iedzīvotājus nošķirtās, savstarpēji naidīgās nacionālās grupās. Ar 1939.~gada 7.~oktobra Ā.~Hitlera dekrētu SS reihsfīrers H.~Himlers tika iecelts par ``Valsts komisāru vācu tautības stiprināšanai'' (\__txti{Reichskomisar für die Festugung deutschen Volkstums}). Pēc fīrera rīkojuma viņa uzdevumi bija:
+Pielietojot seno iekarotāju principu~--- ``skaldi un valdi'', okupanti vēlējās sadalīt to okupēto zemju iedzīvotājus nošķirtās, savstarpēji naidīgās nacionālās grupās. Ar 1939.~gada 7.~oktobra Ā.~Hitlera dekrētu SS reihsfīrers H.~Himlers tika iecelts par ``Valsts komisāru vācu tautības stiprināšanai'' (\detxti{Reichskomisar für die Festugung deutschen Volkstums}). Pēc fīrera rīkojuma viņa uzdevumi bija:
 
-\begin{enumerate}
+\begin{enumerate}[label=\arabic*)]
 \item īstenot visu valstsvāciešu un etnisko vāciešu ātrāku repatriāciju uz reihu;
 
 \item dažādu vācu nācijai bīstamu ietekmju izskaušana;
@@ -10612,6 +10615,448 @@ Jau 1939.~gada beigās no Vācijas anektētājām teritorijām sākās \strong{p
 % page 877
 
 
+Proporcionāli visam vietējo iedzīvotāju skaitam mazākas poļu izsūtīšanas notika Silēzijā (līdz 1942.~gada beigām~--- 81~tūkstotis cilvēku), Piejūrā (\pltxti{Pomorze Wschodnie})~--- vairāk nekā 120~tūkstošu cilvēku, Cihanuvas (\pltxti{Ciechanów}) novadā~--- ap 25~tūkstošu. Tas izskaidrojams ar to, ka Silēzijā bija vajadzīgs kvalificēts darba spēks, īpaši šahtās, bez tam Silēzijas un Piejūras nacistiskie vadītāji plānoja daļu poļu iedzīvotāju pārvācot.
+
+Bez plānveidīgajām deportācijām notika arī t.s. ``mežonīgās'' izraidīšanas, kad vācu kaimiņi panāca poļu bēgšanu. Par šādu vajāšanu upuriem kļuva no 30~līdz 40~tūkstošu poļu, kuri bija spiesti bēgt uz Ģenerālgubernatūru.
+
+Daudzi poļi tika izsūtīti uz ``veco'' Vāciju (\detxti{Altreich}) piespiedu darbā, līdz 1943.~gadam no Vartas novada vien tādu bija ap 400~000. Pārējiem atņēma dzīvokļus, iedzīvi, saimniecības, taču atstāja Vartas apgabalā, lai izmantotu spaidu darbos etnisko vāciešu saimniecībās un rūpniecības uzņēmumos. Bieži poļu zemnieks vai amatnieks, kuram bija atņemts īpašums, bija spiests par nieka grašiem strādāt pie etniskā vācieša, kurš bija sagrābis viņa mantu.
+
+Tiesa, visi minētie skaitļi nāk no vācu dokumentiem, kuri arī pilnībā nav saglabājušies un nespēj dot pilnvērtīgu notikušā ainu. Pēc vācu vēsturnieka H.~Rosa savāktajām ziņām līdz 1941.~gada martam no Vācijai pievienotajiem apgabaliem izraidīti tika ap 280~000 poļu, citi 100~000 bēga paši. Deportēti tika arī ap 380~000 (citi dati~--- 300~000) ebreju. Tas sastādīja 1/6 no visiem šo apgabalu iedzīvotājiem 1939.~gadā. Pēc vācu iestāžu datiem līdz 1944.~gada oktobrim no t.s. Vartas novada, Dancigas apgabala, Augšsilēzijas un Cihanovas 364~665~cilvēku tika pārvietoti uz Ģenerālgubernatūru un 474~213 cilvēku uz Vāciju, starp tiem pēc vērtējumiem bija arī 70~000--80~000 ebreju. (Pēc citiem datiem, kopumā kara gados no Polijas teritorijām, kas tika iekļautas reihā, vairāk nekā 460~000 cilvēku tika izraidīti uz Ģenerālgubernatūru, 40~000 cilvēku tika nosūtīti uz Vāciju, lai veiktu to ģermanizāciju, bet 25~000 cilvēku darbā uz Franciju).
+
+Pēc dažu poļu pētnieku datiem no Vācijas anektētajām vojevodistēm uz Ģenerālgubernatūru ticis izsūtīts ap 1~miljons poļu, bet, ieskaitot izraidītos no saviem mitekļiem, bet palikušos uz vietas vai izsūtītos darbos uz Vāciju,~--- vairāk nekā 1,5~miljoni. Literatūrā sastopami arī vērtējumi, ka ap 2~miljoni poļu zemnieku ar ģimenes locekļiem no Polijas rietumiem tika pārvietoti uz Ģenerālgubernatūru. Daļa pārvietoto bija arī to 2,8~miljonu (citi dati~--- 2~460~000) Polijas pilsoņu vidū, kuri tika nosūtīti uz Vāciju un tās okupētajām teritorijām spaidu darbos. Tika gatavoti plāni pēc Vācijas uzvaras pār PSRS vairākus miljonus poļu izsūtīt uz Sibīriju, uz vietas atstājot tikai viņu nelielu daļu kā vācu pārceļotāju izpalīgus. (Tai pat laikā kara beigu posmā nacisti vēlējās izmantot lielas poļu daļas bailes no krievu apspiedējiem saviem mērķiem. Ā.~Hitlers paziņoja; ``Poļiem ir jāstrādā, bet vācu karavīrs viņus, tāpat kā visu Eiropu, aizstāvēs pret boļševikiem''. Ļvovā 1944.~gadā tika izkārti pat plakāti poļu valodā: ``Pie ieročiem~--- pie lāpstām. Visi cīņā un darbā pret kopējo ienaidnieku!'' Savu mērķi šādi aicinājumi gan nesasniedza.)
+
+Kaut poļu vairākumu nacisti tā arī nepaguva deportēt, visiem viņiem tika atņemtas pilsoņu tiesības. Viņi tika nosaukti par ``Vācijas valsts aizsardzībai piederīgajiem'' (\detxti{Schutzangehőrige des Deutschen Reiches}), uz kuriem tika attiecinātas ``speciālas krimināltiesības poļiem'' (\detxti{Sonderstrafrecht für Polen}). 1941.~gada 4.~decembrī ar H.~Gēringa, ģenerālgubernatora H.~Hranka un impērijas kancelejas šefa G.~Lammersa parakstiem tika izdots dekrēts, kas visus Vācijā dzīvojošos poļus un ebrejus nostādīja faktiski ārpus likuma. Viņiem bija tikai pienākumi valsts priekšā, bet nekādu tiesību.
+
+Pirmie \strong{vācu pārceļotāji} uz Vartas novadu bija vācbaltieši no Latvijas un Igaunijas. Līdz 1939.~gada beigām vairāk nekā 66 tūkstošu Baltijas vāciešu (52~583 no Latvijas un 13~700 no Igaunijas) atstāja savu dzimteni. 1940.~gadā, kad Padomju Savienība anektēja Baltijas valstis, viņiem sekoja vēl 18~ tūkstoši etnisko vāciešu. Baltijas vācieši kā pirmie tika nometināti no poļiem atbrīvotajā Vartas apgabalā. Savās iepriekšējās dzīves vietās viņi bija gadsimtiem ilgi atradušies priviliģētā stāvoklī, tāpēc arī jaunajās apmešanās vietās enerģiski centās ieņemt viņu pašapziņai atbilstošu statusu.
+
+Tiesa, vāciskuma stiprināšanai uz Vartas novadu tika sūtīti arī t.s. valstsvācieši (\detxti{reichsdeutsche})~--- pašas Vācijas pavalstnieki. Ieceļotāji no Vācijas Vartas novadā varēja cerēt iegūt amatus vietējā pārvaldē un nacistu organizācijās, iedzīvoties mantā. Taču tādas pat cerības loloja arī šurp pārceltie etniskie vācieši. Tāpēc radās nesaskaņas starp ``valsts ģermāņiem'' (\detxti{reichsgermanen}) un vietējiem etniskajiem vāciešiem (\detxti{volksdeutsche}), kurus pirmie pat nereti sauca par ``trofejvāciešiem'' (\detxti{beutedeutsche}). Drīz gan kļuva redzams, ka no reiha iebraukušie nepieder ideālu pilnai vācu elitei, bet gan ir tikai otršķirīgi savu profesiju pārstāvji ar nesamērīgām pretenzijām. Toties vācu pārceļotāji no citiem novadiem ar repatriāciju varēja sasniegt īslaicīgu izrāvienu savā karjerā un sadzīves apstākļos.
+
+1940.~gadā vasarā SS izveidotais pārcelšanās štābs Helmas, Ļubļinas un Varšavas apgabalā Vislas labajā krastā dzīvojošajiem vāciešiem lika reģistrēties un sagatavoties pārceļošanai. Tā notika pēc ražas novākšanas. Oficiāli pārvietošanās uz Vartas novadu notika brīvprātīgi, taču patiesībā tika izdarīts spiediens sekot SS norādījumiem. Vairums pārceļotāju tika iemitināti Vartas novadā saimniecībās, no kurām tikko bija padzīti to iepriekšējie saimnieki~--- poļi. Gada beigās tālāka vāciešu pārvietošana no Ģenerālgubernatūras tika pārtraukta. Acīmredzot tas notika saskaņā ar jaunajiem Ā.~Hitlera plāniem par uzbrukumu PSRS, kura sagatavošanu tīri polisks iedzīvotāju sastāvs Ģenerālgubernatūrā varēja apgrūtināt.
+
+Nākamais vāciešu pulks nāca no PSRS ieņemtajiem Austrumpolijas (Rietumukrainas un Rietumbaltkrievijas) apgabaliem. No Austrumgalīcijas uz rietumiem tika pārvietoti 57~000 vācu zemnieku, no Volīnijas un Poļesjes apgabaliem 67~000. Viņus nometināja Vartas un Dancigas-Rietumprūsijas novados. Vācieši no Rietumu Volīnijas un Austrumu Galīcijas Narevas apgabala pēc pēdējiem novadītajiem dievkalpojumiem savā dzimtenē 1939./1940.~gada ziemā to atstāja līdz ar liela, līdz pat 40°grādu sala iestāšanos. Viņu pajūgu kolonu attēli kļuva par nacistu propagandas izdaudzinātās ``jaunās ģermāņu tautu staigāšanas'' (\detxti{germanischen Völkerwanderung}) klišeju. Toties milzīgās pārcelšanās grūtības, iestāžu neizdarības piemēru klāsts tā arī nenonāca atklātībā. Daudzi vecāka gada gājuma cilvēki un bērni neizturēja pārgājiena grūtības un saslima.
+
+Kad PSRS 1940.~gadā no Rumānijas anektēja Besarābiju un Ziemeļbukovīnu, no turienes uz Vāciju pārcēlās ap 189~000 (citi dati~--- 100~000) vāciešu. Tiem sekoja 156~000 vāciešu no Ziemeļdobrudžas (rum. \rotxti{Dobrogea}), tāpat arī 53~000 no Lietuvas, 15~000 no Krainas (tagad Slovēnijā, līdz 1947.~gadam bija Itālijas sastāvdaļa), 2~000 no Bulgārijas, 18~000 no Bosnijas un 2~900 no Serbijas. Arī viņi tika nometināti agrāk poļu apdzīvotajos ciematos Vartas un Rietumprūsijas apgabalos. Tā laikā pēc Vācijas-PSRS 1939.~gada 28.~septembra līguma līdz abu valstu karam apmēram 400~000 cilvēku no agrākajām dzīves vietām tika nometināti bijušajās Polijas teritorijās.
+
+Uz poļiem atņemtās zemes tika radītas vācu pārceļotāju saimniecības. Katrs no tiem ieguva vairākas agrāk poļu zemniekiem piederējušās saimniecības. Dabīgi, ka jaunajās dzīves vietā pārvietotie vācieši sastapās ar vietējo poļu iedzīvotāju naidu. Vartas novada gauleiters A.~Greizers, sagaidot ieradušos tautiešus, viņiem paziņoja: ``Poļi būs mūsu sulaiņi''. Taču vācu pārceļotāji jaunajās dzīves vietās nereti arī ieguva sliktākus dzīves apstākļus nekā pamestajā dzimtenē. Pilsētās trūka būvmateriālu un malkas.
+
+Berlīnē un ģenerālgubernatoram H.~Frankam tuvajās aprindās ilgstoši tika apspriests jautājums kā izturēties pret \strong{poļu valodas lietošanu}. Jautājums īpaši aktuāls bija Vācijas anektētajos apgabalos, kur dzīvoja miljoniem poļu. Tā kā vienots viedoklis netika rasts, tā risinājums tika atstāts vietējo varas iestāžu izlemšanai. Vartas novadā A.~Greisers atļāva poļiem lietot dzimto valodu, taču valsts valoda bija vācu. Lodzas prezidents toties aizliedza lietot poļu valodu sabiedriskās vietās, izņemot pastu un dzelzceļu. Dancigas-Rietumprūsijas novadā nebija oficiāla poļu valodas aizlieguma, taču faktiski tajā runājošie tāpat izjuta diskriminējošu attieksmi. Tāda pat situācijā bija Cihanuvas rajonā. Augšsilēzijā cīņa pret poļu valodas lietošanu norisa ar lozungu ``Kurš runā poliski, tas ir mūsu ienaidnieks''. To atgādināja visur izkarinātie plakāti. Stingri sodīti tika arī tie etniskie vācieši, kuri bija iekļauti vācu tautas sarakstā, bet ar poļu kaimiņiem runāja poliski. Cīņā pret poļu valodu tika pielietoti arī poļu rakstu zīmju aizliegums un poļu valodas izstumšana no sabiedriskām vietām. Cilvēkus, kuri runāja uz ielām poļu valodā, nereti sagaidīja okupantu apvainojumi vai pat fiziski uzbrukumi. Visas poļu skolas tika slēgtas.
+
+Reizē ar poļu valodas lietošanas apspiešanu okupanti centās uzspiest poļiem vācu valodu. Tā tika uzskatīta ne tikai kā saziņas līdzeklis, bet arī kā kultūrnesējas funkcijas pildītāja. Par to tika rakstīti zinātniski raksti, notika vairākās Vācijas akadēmijas un Vācu izglītības biedrības konferences. Anektētajos apgabalos neiznāca neviena avīze poļu valodā.
+
+A.~Greizers centās arī pilnībā izolēt poļus no vācu iedzīvotājiem. Tāpēc viņš pavēlēja veikalos poļus apkalpot tikai noteiktās stundās, pēc tam, kad bija iepirkušies vācieši. Uz ielas poļu pienākums bija sveicināt katru vācieti uniformā un atbrīvot tam ceļu. Poļiem bija aizliegts lietot telefonu, viņiem bija noteikti ierobežojumi pasta pakalpojumu saņemšanā. Poļiem bija aizliegts apmeklēt teātrus, koncertus, stadionus, parkus, citas sabiedriskas vietas. Pozenē parkos bieži bija redzami uzraksti: ``Poļiem un suņiem ieeja aizliegta.'' No 1940.~gada decembra Pozenē dzīvojošajiem poļiem tika aizliegts rīta sastrēgumstundā (no pulkst. 7.15~līdz 8.15) lietot tramvaju. Daudzos pilsētas tramvaja maršrutos poļi varēja braukt tikai speciāli viņiem paredzētos vagonos.
+
+Taču nacistu mēģinājumi aizskart poļu cilvēcisko cieņu un ar to pacelt jaunos augstumos vāciešus kā ``augstākas kultūras nesējus'' ne vienmēr bija efektīvi pat vietējo vācu iedzīvotāju vidū. 1939.~gada decembrī Drošības policijas iestādes ziņoja par vācu iedzīvotāju draudzīgu izturēšanos pret poļu karagūstekņiem. Ja augstākie vācu vadītāji pieprasīja, lai pret poļiem vācieši izturētos kā pret ienaidniekiem, tad ierindas vāciešiem, īpaši laukos, pret tiem nebija nekāda naida. Kopīgi tika svinēti svētki, rīkotas dejas utt. Vēl 1941.~gada februārī tika ziņots, ka tajās ēkās, kur kopā dzīvoja poļi un vācieši, to vidū pastāv draudzīgas attiecības. Šai sakarā izskanēja priekšlikums vāciešus izmetināt īpašos pilsētas kvartālos. Atsevišķos ziņojumos tika atzīmēts, ka lielākas nesaskaņas pastāv starp uz Vartas novadu pārceltajiem valstvāciešiem, kuri pieprasīja sev privilēģijas, un etniskajiem vāciešiem-pārceļotājiem no Baltijas.
+
+Neraugoties uz visām pūlēm, nacistiem neizdevās Vācijā iekļautajos Polijas apgabalos radīt vācu vairākumu. Pat 1944.~gadā Vartas novadā tikai katrs ceturtais līdz piektais iedzīvotājs bija vācietis. Pēc vācu zinātnieku datiem Vācijai pievienotajos Polijas apgabalos bija nometināti tikai ap pusmiljonu vāciešu pārceļotāju no Austrumeiropas zemēm. 1944.~gada martā pēc vietējās preses ziņām tur dzīvoja jau ap miljons vāciešu, taču šai skaitā bija arī no sabiedroto bomdardēšanai pakļautajiem Vācijas rajoniem evakuētie.
+
+Vācu attieksme pret poļiem kā zemcilvēkiem izsauca pat saprātīgāko vācu ierēdņu protestus. Tā Varšavas distrihta gubernators L.~Fišers iebilda pret Berlīnes varas iestāžu atbalstīto poļu pielīdzināšanu ebrejiem un čigāniem. Poļu iedzīvotāju godprātīgākā daļa tādu salīdzinājumu uztverot kā pazemojumu un apvainojumu. Gubernators izteica cerību, ja reihs šai ziņā mainītu politiku, iedzīvotāju attieksme pret vācu okupantiem uzlabotos. Taču līdz pirmajām Vācijas sakāvēm nekas nemainījās.
+
+Tā, 1941.~gada 10.~septembrī Vartas novadā tika izdots rīkojums, kurš ierobežoja poļiem laulības vecumu: aizliedza stāties laulībā poļu vīriešiem pirms 28~gadu, bet sievietēm~--- pirms 25~gadu vecuma sasniegšanas. Ar to tika cerēts ierobežot poļu dabīgo pieaugumu. Tā Lodzas (\detxti{Litzmannstadt}) pilsētā laika posmā no 1942.~gada oktobrim līdz decembrim salīdzinājumā ar tādu par posmu 1940.~gadā laulību skaits samazinājās par 70\%, bet Lodzas novadā~--- par 84\%. Taču, neraugoties uz laulību skaita samazināšanos, poļu dzimstība būtiski nesaruka. Arī Augšsilēzijā 1943.~gada 26.~janvārī poļiem laulībā stāšanās vecums tika paaugstināts~--- vīriešiem līdz 25, sievietēm līdz 22~gadiem. Cihanuvas rajonā 1941.~gada 10.~novembrī laulības starp poļiem praktiski vispār tika aizliegtas. Taču poļi apgāja likumu, dodoties uz kaimiņos esošo Belostoku, kur aizlieguma nebija.
+
+Tajos Polijas rajonos, kur ilgstoši dzīvoja etniskie vācieši, bija radušās jauktas ģimenes, kuru pēcnācējus pēc nacistu domām nevarēja atzīt par tīrasiņu āriešiem. Tāpēc, lai nodalītu vāciešus no poļiem, galīgi ģermanizētu nacistiem ``derīgos'' cilvēkus, tika uzsākta vācu nacionālo sarakstu (\detxti{Volksliste}) sastādīšanas kampaņa. Tika radīts birojs ar nosaukumu ``\detxti{Deutsche Volksliste}'' (Vācu tautas saraksts), kurš reģistrēja tos etniskos vācieši, kuri bija okupēto valstu pilsoņi, un izsniedza viņiem speciālu dokumentu. Tas apliecināja, ka to saņēmušie etniskie vācieši ir izgājuši naturalizācijas procesu, un vienlaikus pildīja pases, kā arī apliecības par rasistiskās izcelsmes tīrību, lomu. Kā pirmais no 1939.~gada 28.~oktobra Vartas novada vadītājs gauleiters A.~Geislers to ieviesa viņam pakļautajās teritorijās. Pēc H.~Himlera kā komisāra vācu tautības stiprināšanai 1940.~gada 12.~septembra rīkojuma pamata no 1941.~gada 4.~marta ``Vācu tautas saraksts'' tika ieviests arī citās Vācijas anektētajās teritorijās: Dancigā-Rietumprūsijā, Augšsilēzijā, daļā Austrumprūsijas.
+
+H.~Himlers nolēma izveidot faktiski \strong{četrus dažādus etnisko vāciešu sarakstus}. 1941.~gada 4.~maijā fīrera vietnieks un nacistu partijas kancelejas priekšnieks R.~Hess izdeva attiecīgu direktīvu. Pretēji nacistu propagandistu izteiktajiem apgalvojumiem, dalījumam.~kategorijās nebija uzdevums piesaistīt vācietībai nevāciešus, bet, gluži pretēji~--- norobežot no ``vācietības'' tos poļus un arī etniskos vāciešus, kuri nebija pievēršami nacistiskajai ideoloģijai.
+
+Krievu vēsturnieks M.~Semirjaga ir izdalījis vairākus mērķus, ko ar sarakstiem gribēja panākt nacisti:
+
+\begin{enumerate}[label=\arabic*)]
+\item pasaules sabiedrības priekšā tā varēja ``pierādīt'' iekaroto teritoriju ``vācisko'' raksturu un tātad to pievienošanas Vācijai likumību. Karš jau bija ieguvis ilgstošu raksturu, tāpēc Ā.~Hitleram nebija vienaldzīgi, kā citu Eiropas valstu tautas izturas pret viņa realizēto okupācijas politiku.
+
+\item vācu nacionālo sarakstu sastādīšanai un attiecīgu privilēģiju ieviešanai bija jāienes šķelšanās vietējo iedzīvotāju vidū, kas nāca par labu okupantiem.
+
+\item pateicoties vācu nacionālo sarakstu sastādīšanai, nacisti ieguva papildus karavīru kontingentu vērmahta papildināšanai. Tāpēc 1943.~gadā prasības personām, kuras pretendēja uz iekļūšanu sarakstos, bija mazāk stingras kā 1939.~gadā.
+
+\item beidzot, nacionālie saraksti bija mēģinājums pārvarēt pretrunu starp nacistisko ideoloģiju, kura paredzēja poļu izsūtīšanu vai pat fizisku likvidāciju, un Vācijas kara tautsaimniecības interesēm. Pēdējai bija nepieciešams jebkuras tautības kvalificēts darbaspēks. Tāpēc sevišķi plaši nacionālie saraksti tika stādīti Augšsilēzijā. Šo teritoriju taču jau agrāk bija mēģināts ģermanizēt, šeit bija stingras vācu kapitāla pozīcijas, daudzi vietējie poļi prata vācu valodu.
+\end{enumerate}
+
+Saraksts paredzēja visu etnisko vāciešu sadali 4.~kategorijās:
+
+\begin{enumerate}[label=\arabic*)]
+\item neapstrīdamie vācieši (\detxti{Bekenntnisdeutsche}), kuri jau pirms kara bija iestājušies par ``vācu tautisko kopību'', respektīvi~--- bija iesaistījušies vācu mazākuma organizācijās, neatkarīgi no tā vai viņi varēja pierādīt ``vācisko izcelsmi'';
+
+\item vāciskas izcelsmes personas (\detxti{Stammesdeutsche}), kuras gan Polijas valstī bija izturējušās pasīvi, nebija iesaistījušies vācu mazākuma organizācijās, bet bija iesakņotas vācu valodā un kultūrā;
+
+\item vāciskas izcelsmes personas, kuras bija etniski sajaukušās, piemēram, apprecējušās, ar vietējiem iedzīvotājiem, vairs nerunāja vāciski, bija piederīgas tā saucamajiem ``starpslāņiem'' (kašubiem, silēziešiem, mazūriem u.c.), bet nebija poļu organizāciju biedri;
+
+\item personas ar vāciskiem senčiem, kuras bija zaudējušas sakarus ar vācu nāciju, ``ieslīdējušas poliskumā'' (\detxti{ins Polentum abgeglitten waren}), sevi uzskatīja par poļiem.
+\end{enumerate}
+
+Kā redzam, dalīšanai grupās pamatā bija nevis rasu piederības, bet politiskās uzticamības Vācijas impērijai princips.
+
+Ienešana noteiktā vācu nacionālajā sarakstā bija saistīta ar noteiktām privilēģijām. Visu šo kategoriju pārstāvji bija pakļauti Vācijas tiesībām un likumiem, taču katrai pakāpei bija savas tiesības un privilēģijas, ko varēja noteikt pēc personas apliecību krāsas (1.~un 2.~kategorijai tās bija zilas, 3.~--- zaļas, 4.~--- sarkanas).
+
+Pirmās un otrās grupas piederīgie varēja kļūt par Vācijas pilsoņiem. Tos varēja izmantot okupācijas varas iestādēs austrumu apgabalos. Abu grupu pārstāvji saņēma krietni bagātākas pārtikas kartiņas kā poļi un izmantoja arī citas priekšrocības. Taču, ja 1.~kategorijai pieskaitītie tūlīt varēja iestāties nacistu partijā (tie patiešām arī sastādīja nacistu partijas organizāciju kodolu okupētajos apgabalos), 2.~kategorijai piederīgie varēja pieteikties tikai kā partijas kandidāti. Abu pirmo grupu pārstāvju pienākums bija dienēt vērmahtā.
+
+Trešās un ceturtās grupas pārstāvjiem bija vairāk tiesību kā poļiem, bet mazāk kā vācu pilsoņiem un pirmo divu kategoriju etniskajiem vāciešiem. Arī vērmahtā viņus sākotnēji neiesauca.
+
+3.~grupas piederīgie saņēma ``atliktu Vācijas pilsonību'' (\detxti{deutsche Staatsangehörigkeit auf Widerruf}), arī okupācijas varas iestādēs viņus nebija atļauts izmantot;
+
+4.~kategorijai pieskaitītie saņēma tiesības kandidēt uz ``atliktu Vācijas pilsonību'' (\detxti{Anwartschaft auf die deutsche Staatsangehörigkeit auf Widerruf}). Šie etniskie vācieši vēl bija jāģermanizē. Viņi bija nolemti izsūtīšanai uz impēriju pārvācošanai policijas uzraudzībā. Ģermanizācijai paredzētajiem bija obligāti jāpiesakās ``vācu tautas sarakstā'', nepakļaušanās gadījumā tos sagaidīja ieslodzījums cietumā vai koncentrācijas nometnē. Daudzus uz pieteikšanos minētajā sarakstā spieda beztiesīgais stāvoklis, kādā atradās poļu iedzīvotāji.
+
+Pastāvot īpašām spējām, piemēram tehniskajā jomā, arī poļiem varēja konstatēt ``vācu asiņu'' klātesamību un ieskaitīt tos šajā.~kategorijā, taču tajā nedrīkstēja ieskaitīt zemes lielīpašniekus, brīvo profesiju darbiniekus, rūpniekus un citus vadošus darbiniekus, kuri tika vērtēti kā nevēlami konkurenti vāciešiem.
+
+Vietējie nevācu iedzīvotāji objektīvi bija ļoti ieinteresēti nokļūt ``vācu tautas sarakstā'', jo tajā uzņemtajiem bija noteiktas privilēģijas, ieskaitot labāku uzturu, apģērba, mēbeļu u.c. preču saņemšanu. (Piemēram, kara laikā okupētās Ukrainas teritorijā katram etniskajam vācietim specializētos veikalos reizi nedēļā izsniedza 150~gr tauku, 1~kg siera, 4~olas, dārzeņus un augļus, kartupeļus, medu, marmelādi, sāli un daudz ko citu, ko parasti nesaņēma personas, kuras nebija ierakstījušās sarakstā.) Jo zemāka bija kategorija, jo grūtāk bija izdzīvot.
+
+Vēlāk~--- 1944.~gadā no 9,5~miljoniem no Vācijas anektētajās poļu teritorijās dzīvojošo 1,7~miljoni piederēja valstsvāciešu, kā arī 1.~un 2.~kategorijas etnisko vāciešu.~kategorijām, 1,8 miljoni bija 3.~un 4.~kategorijas etniskie vācieši, 6~miljoni bija ``Vācijas valsts aizsardzībai piederīgie''~--- tātad neapšaubāmi nevācieši.
+
+Dancigā-Rietumprūsijā un Augšsilēzijā apmēram 60\% vietējo iedzīvotāju uzņēma ``vācu tautas sarakstā'', lielākoties ieskaitot 3..~kategorijā. Kara apstākļos pastāvēja liels pieprasījums pēc darba spēka un nosauktajos novados lielāko daļu iedzīvotāju uzņēma priviliģēto sarakstos un atzina par vāciešiem. No 1941.~gada šī prakse ļāva arī 3.~kategorijai piederīgos agrākos Polijas pilsoņus iesaukt Vācijas armijā. Tā arī kolaborācijai gatavie etniskie poļi un arī citu etnisko grupu pārstāvji tika uzņemti ``vācu tautas sarakstā''. Pēc dažiem datiem, ap 200~000 no tiem tika nosūtīti uz fronti.
+
+Kopš 1943.~gada ierakstīšana etnisko vāciešu nacionālajos sarakstos norisa piespiedu kārtā, pat bez ieinteresētās personas ziņas. Pie tam trešajā un ceturtajā grupā dažkārt tika ieskaitīti arī poļi, kuriem ar vāciešiem nekad nebija bijis radniecīgu attiecību. Polijas okupācijas noslēgumā visos šais sarakstos bija ietverti vairāk nekā 2~miljoni poļu pilsoņu, no tiem abās pirmajās grupās~--- ap 900~000. (Ir arī vērtējums, ka ``vācu tautas sarakstos'' tika iekļauti 2,7~līdz 3~miljoni cilvēku, bet 1.~un 2..~kategorijā tika ieskaitīti 959 tūkstoši.)
+
+Kā secināja M.~Semirjaga, pat ņemot vērā, ka daļa poļu sarakstos tika ietverta bez viņu piekrišanas, tomēr tas nozīmēja, ka ap 1,5 miljonu poļu pilsoņu bija atteikušies no savas nacionālās piederības un līdz ar to objektīvi, neatkarīgi no viņus vadījušajiem motīviem, pretstatījuši sevi poļu tautai.
+
+Vācijas anektētajos Polijas apgabalos ``Vācu tautas sarakstā'' uzņemto kopējo skaitu rāda \ref{tab:table18}.~tabula.
+
+\noindent
+\begin{table}[hp]
+\caption{Vācu tautas sarakstā ierakstīto skaits 1942.~gadā} \label{tab:table18}
+\begin{tabularx}{\linewidth}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\strong{Apgabals} & \strong{VTS ierakstītie (kopā)} & \strong{VTS 1.~kategorijā ierakstītie} & \strong{VTS 2.~kategorijā ierakstītie} & \strong{VTS 3.~kategorijā ierakstītie} & \strong{VTS 4.~kategorijā ierakstītie} \\
+\hline
+Austrumprūsija & 45~000 & 8~500 & 21~500 & 13~500 & 1~500 \\
+\hline
+Vartas novads & 476~000 & 209~000 & 191~000 & 56~000 & 20~000 \\
+\\\hline
+Danciga~--- Rietumprūsija & 1~153~000 & 150~000 & 125~000 & 870~000 & 8~000 \\
+\hline
+Augšsilēzija & 1~450~000 & 120~000 & 250~000 & 1~020~000 & 60~000 \\
+\hline
+Kopā & 3~124~000 & 487~500 & 587~500 & 1~959~500 & 89~500 \\
+\hline
+\end{tabularx}
+\end{table}
+
+Priekšstatu par to, kā Vācijas anektētajos Polijas apgabalos kara laikā mainījās etnisko vāciešu un Vācu tautas sarakstā ierakstīto skaits, dod \ref{tab:table19}.~tabula.
+
+\noindent
+\begin{table}[hp]
+\caption{Etnisko vāciešu un poļu skaits (tūkstošos) Vācijai pievienotajos poļu apdzīvotajos apgabalos 1944.~gadā} \label{tab:table19}
+\begin{tabularx}{\linewidth}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\strong{Apgabals} & \strong{Iedzīvotāju kopskaits} & \strong{Vācu iedzīvotāji 1939.~gadā} & \strong{Vācu tautas sarakstā ierakstītie} & \strong{``Vācijas valsts aizsardzībai piederīgie'' (poļi)} \\
+\hline
+Augšsilēzija & 2.450 & 100 & 1.477 & 973 \\
+\hline
+Vartas novads & 4.400 & 325 & 512,5 & 3.887,5 \\
+\hline
+Danciga~--- Rietumprūsija & 1.650 & 243 & 976 & 674 \\
+\hline
+Sudāvija\footnote{1939.~gadā, sadalot Polijas teritoriju starp Vāciju un PSRS atbilstoši atsevišķam slepenā protokola punktam Suvalku rajons, kaut tam nebija kopējas robežas ar nākamo Ģenerālgubernatūru, tika atdots Vācijai un tika pievienots Austrumprūsijai ar Sudāvijas vārdu.} jeb Cihanuva (\detxti{Sudauen}, \detxti{Zichenau}) & 1.000 & --- & 46,5 & 920 \\
+\hline
+\end{tabularx}
+\end{table}
+
+% page 885
+
+
+Jāpasaka arī par etnisko vāciešu likteni pēc kara. PSRS Vācu tautas saraksta parakstīšana no padomju pilsoņu puses tika vērtēta kā dzimtenes nodevība. To izdarījušie tika arestēti un tiesāti. Arī Polijā šī saraksta parakstītājus sākotnēji apvainoja kā ``fašistiski-hitleriskos'' kolaborantus. Tie tika ieslodzīti vai deportēti. Daļa no apvainotajiem tiešām bija kolaboranti, tomēr jau 1945.~gada otrajā pusē poļu politiķu vidū arvien plašāku izplatību guva uzskats, ka 3.un 4.~kategorijā īpaši Augšsilēzijā un Dancigā-Rietumprūsijā cilvēki tika ierakstīti nevis brīvprātīgi, bet piespiedu kārtā. Attiecīgi mainījās attieksme pret sarakstos ietvertajiem. Atbilstoši 1945.~gada 6.~maija likumam par naidīgo elementu izraidīšanu no poļu sabiedrības visi trešajā un ceturtajā sarakstā ietvertie tika atzīti par Polijas pilsoņiem pēc uzticības zvēresta nodošanas savai tautai un demokrātiskai poļu valstij. Daļu pirmajā un otrajā sarakstā ietverto izsūtīja uz Vāciju kā vāciešus, kuri bija atteikušies no Polijas pilsonības. Otra daļa, parasti no otrā saraksta, varēja atjaunot Polijas pilsonību tiesas ceļā.
+
+Toties pēc VFR dibināšanas (1949), katrs, kurš bija ieskaitīts ``vācu tautas sarakstā'', kā arī viņu pēcnācēji, automātiski ieguva tās pilsonību un tiesības pārcelties uz jaundibināto vācu valsti.
+
+Ārpus Vācijas valsts (reiha) palikušās poļu apdzīvotās teritorijas starp Vislu un Karpatiem, kā jau teikts, tika nosauktas par ``okupēto poļu apgabalu \strong{Ģenerālgubernatūru}''. Tā sākotnēji bija ap 99~000~km$^{2}$ liela un tajā mita 12,1~miljons iedzīvotāju. Ģenerālgubernatūra dalījās četros distriktos (latīņu \latxti{districtus}~--- teritoriāli administratīva vienība); Krakovas, Radomas, Varšavas un Ļubļinas, kas ietvēra sevī 56~lauku un 7~pilsētu apriņķus. Uz 1940.~gada 1.~jūniju atsevišķu distriktu teritorija un iedzīvotāju skaits parādīts \label{tab:table20}.~tabulā (Literatūrā sastopami arī nedaudz atšķirīgi dati, piemēram: visa Ģenerālgubernatūras teritorija~--- 94~tūkstoši km$^{2}$, iedzīvotāji~--- 12,3~miljoni cilvēku, no tiem 9,7~miljoni poļu, 1,5~miljoni ebreju, 65~tūkstoši vāciešu, 526~tūkstoši ukraiņu un baltkrievu.)
+
+Pēc Vācijas iebrukuma PSRS un tās rietumapgabalu okupācijas, nacisti no 1941.~gada 1.~augusta Ģenerālgubernatūrai piedalīja arī piekto apgabalu~--- Rietumukrainu~--- Galīciju ar Lembergu (Ļvovu) kā centru. 1943.~gada sākumā Ģenerālgubernatūras platība bija ap 142~tūkstoši~km$^{2}$, tajā dzīvoja 16,8 miljoni cilvēku (citi dati~--- ap 18~miljonu), no tiem līdz 70\% poļu, ap 27\% ukraiņu, 2\% vāciešu, ebreji šai laikā jau gandrīz visi bija iznīcināti.)
+
+\noindent
+\begin{table}[hp]
+\caption{Ģenerālgubernatūras distrikti 1940.~gada 1.~jūnijā.} \label{tab:table20}
+\begin{tabularx}{\linewidth}{|p{3cm}|p{3cm}|p{3cm}|}
+\hline
+Distrikts & Teritorija (km$^{2}$) & Iedzīvotāji \\
+\hline
+Krakovas & 26~003 & 3~363~010 \\
+\hline
+Ļubļinas & 26~560 & 2~328~062 \\
+\hline
+Radomas & 24~431 & 2~881~806 \\
+\hline
+Varšavas & 16~877 & 3~234~540 \\
+\hline
+Kopā & 98~871 & 12~107~418 \\
+\hline
+\end{tabularx}
+\end{table}
+
+% page 886
+
+
+1939.~gada 17.~oktobrī Ā.~Hitlers personīgi noteica ``vadlīnijas Ģenerālgubernatūrai'' (\detxti{Richtlinien für Genargouvernement}). Tās prasīja nepieļaut poļu inteliģences kā vadoša slāņa pastāvēšanu, zema dzīves līmeņa radīšanu, kādu poļu nacionālo centienu izpausmju nepieļaušanu.
+
+Par ģenerālgubernatoru tika iecelts jurists, Vācijas valsts ministrs bez portfeļa H.~Franks. Stājoties amatā, viņš paziņoja; ``No šī brīža poļu tautas loma ir beigusies. \citespace{} Mēs panāksim to, lai uz mūžiem izdzēstu pašas Polijas jēdzienu. Nekad vairs neatdzims Žečpospolita vai kāda vēl nebūt poļu valsts.'' Pirmkārt tika konfiscēti Polijas karogi un citi valsts simboli. Ar H.~Franka 1940.~gada 8.~marta rīkojumu tos tika stingri aizliegts glabāt un demonstrēt. H.~Franka vietnieks A.~Zeis-Inkvarts 1939.~gada novembra beigās, uzstājoties vācu administratoru sanāksmē Ļubļinā, paziņoja: ``Šīs zemes resursiem un iedzīvotājiem ir jākalpo Vācijai un plaukt tie var tikai šajās robežās. Nedrīkst pieļaut neatkarīgas nacionālas politiskas domāšanas pastāvēšanu.'' Viņš arī atklāti pateica, ka šai ziņā ir dots kategorisks Ā.~Hitlera rīkojums un vācu administrācija Polijā to nesaudzīgi pildīs.
+
+Ģenerālgubernatora mītne tika ierīkota Vaveles (\detxti{Wawel}) pilī par ``vācu pilsētu austrumos'' (\detxti{Deutschen Stadt im Osten}) pasludinātajā Krakovā. (Zīmīgi, ka Ā.~Hitlers pēc Polijas okupācijas pavēlēja pie J.~Pilsudska kapa vietas Vaveles pilī ierīkot goda sardzi, tā atdodot godu un pateicību viņa darbībai, kura pēc gara bija tuva Ā.~Hitleram.) Līdz 1940.~gada sākumam Ā.~Hitlers vēl nebija atmetis variantu Ģenerālgubernatūras vietā izveidot poļu ``pārpalikuma valsti'' (\detxti{Polnische Reststaat}), kurai būtu sava ``valdība'', bet kura būtu cieši saistīta ar Trešo reihu. Tomēr plāns radīt zināmu polisku valstiskumu galu galā tika noraidīts, uzvarēja nodoms radīt Vācijas ``kaimiņzemi'' (\detxti{Nebenland des Reiches}), kuras tiesiskais statuss līdz galam tā arī nekad netika stingri noteikts. To nevarēja īsti saukt ne par Vācijas protektorātu, ne tās sastāvdaļu. Ģenerālgubernatūra tika uzskatīta par poļu ``rezervuāru'', kur bija jānometina poļi no Vācijā iekļautajām zemēm. Tā pastāvēja kā poļu iedzīvotāju dzīves vieta un vienlaikus lēta darbaspēka avots un paaugstinātas ekspluatācijas objekts, kurš tika pārvaldīts kā kolonija. Ģenerālgubernatūru no reiha šķīra atsevišķa policijas, naudas, muitas sistēma, ar ko vācieši varēja kontrolēt kontaktus starp atsevišķiem poļu novadiem. Ģenerālgubernatūrā 1939.~gada decembrī agrākās zlotu naudas zīmes tika nomainītas pret jaunām, tikpat vērtīgām (1 \pltxti{Złoty} = 1 \pltxti{Złoty}). Toties Vācijas naudai kurss tika noteikts paaugstināts. 1943.~gadā oficiālais naudas maiņas kurss Ģenerālgubernatūrā bija 50~reihsmarkas pret 100~zlotiem (mūsdienās apmēram €183 (\pltxti{eiro})).
+
+1940.~gada 2.~oktobrī Ā.~Hitlera dzīvoklī notika fīrera saruna par poļu likteni ar dažiem saviem līdzgaitniekiem, par kuru ir saglabājušies nacistu partijas kancelejas vadītāja M.~Bormana pieraksti. Ā.~Hitlers uzsvēra, ka ``pār poļiem jābūt tikai vienam kungam~--- vācietim, divi kungi, viens blakus otram, nevar un nedrīkst pastāvēt; tāpēc ir jāiznīcina visi poļu inteliģences pārstāvji. Tas skan nežēlīgi, taču tāds ir dzīves likums. Ģenerālgubernatūra ir poļu rezervācija, liela poļu strādnieku nometne. Poļi arī iegūs no tā, ka mēs rūpēsimies par viņu veselību un par to, lai viņi nebadotos utt., taču viņus nekad nedrīkst pacelt uz augstāku pakāpi, jo tad tie kļūs par anarhistiem un komunistiem.'' Ā.~Hitlers pavēlēja H.~Frankam: ``Noteikti jāievēro, lai nebūtu nekādu poļu kungu \citespace{} tie, lai cik cieti tas arī neskanētu, ir jānogalina''.
+
+Ar 1940.~gada jūliju sakarā ar vērmahta panākumiem Eiropā nacistu propaganda arvien biežāk sāka pieminēt Ģenerālgubernatūru kā ``Vācijas impērijas nomali''. 1940.~gada 8.~jūlijā pēc uzvarām Francijā pēc H.~Franka ierosinājuma A.~Hitlers lika ``poļu okupēto zemju Ģenerālgubernatūru'' pārdēvēt par vienkārši ``Ģenerālgubernatūru'', ar to uzsverot, ka tā ``ir un vienmēr būs [Vācijas] impērijas svarīga sastāvdaļa''. Uz šī rīkojuma pamata 31.~jūlijā H.~Franks izdeva attiecīgu direktīvu. 1942.~gada septembrī Ā.~Hitlers lika Ģenerālgubernatūras teritorijā izveidot parastu kara apgabalu, kādi pastāvēja Vācijā. Tas vēlreiz apliecināja, ka Ģenerālgubernatūra tiek uzskatīta par Vācijas impērijas sastāvdaļu.
+
+Visa likumdošanas un izpildvara atradās ģenerālgubernatora H.~Franka rokās, kurš bija pakļauts tieši Ā.~Hitleram. Vārdos H.~Franka vara Ģenerālgubernatūrā bija gandrīz neierobežota. Nacistu partijas aprindās viņš tika saukts par ``Polijas karali'' (\detxti{König von Polen}), bet viņa vadītās teritorijas~--- par ``Franka impēriju'' (\detxti{Frankreich}). Nacisti pat nemēģināja radīt kādu marionešu poļu valdību, visa augstākā administrācija bija vāciska. Tikai zemākajā līmenī drīkstēja darboties arī poļi.
+
+Iedzīvotāji bija sadalīti vairākās kategorijās. Vislielākās tiesības bija no reiha (Vācijas) iebraukušajiem vāciešiem, tad vietējiem etniskajiem vāciešiem, viņu ģimeņu locekļiem (``Vācu tautas sarakstos'' ierakstījās ap 100~000 cilvēku, kuri gan parasti pārcēlās uz Vāciju), ukraiņiem, goraļiem (pašnosaukums \pltxti{gόrali}~--- kalnieši, poļu \pltxti{górale}, slovāku \sktxti{gorali}, Polijas dienvidos kalnos uz Polijas un Slovākijas robežas dzīvojošs rietumslāvu etnoss, slāvu etnokultūras grupa, runājoša poļu-slovāku dialektā, kuru nacisti pasludināja par īpašu tautu), pārējiem poļiem, un, visbeidzot, nekādu tiesību~--- ebrejiem.
+
+Ģenerālgubernatūrā Helmas, Poļesjes un Piekarpatu teritorijā dzīvoja ap 1,2 miljoni cilvēku, no viņiem vairāk nekā 700~000 bija ukraiņi. Šeit dažādos veidos tika atbalstīti ukraiņu separātisti, zemākajos līmeņos bija atļauta ukraiņu pašpārvalde un pat policija, kurā bija ap 1~000 cilvēku. Ģenerālgubernators vairākkārt solīja ukraiņiem radīt visus nosacījumus nacionālās un kultūras attīstībai. Etnisko vāciešu vietā, kuri no Ļubļinas un Helmas rajoniem 1940.~gadā bija pārvietoti uz bijušajām rietumu vojevodistēm, tika iemitināti ukraiņi. Pie ģenerālgubernatora tika radīta vesela ukraiņu lietu nodaļa. Ukraiņu apdzīvotajos rajonos tika atļauta ukraiņu valodas lietošana. Jau 1939.~gadā tika atvērtas 2~510 ukraiņu skolas. Ukraiņu skolēniem bija atļauts arī apmeklēt vācu vidusskolas. Tas tika pamatots ar to, ka ``kungu rases palīgtautu'' izmantošana ir nepieciešama, lai dominētu pār ``austrumu tautām''. Tiesa, augstāko vadītāju sanāksmē 1940.~gada 12.~septembrī H.~Franks brīdināja nepieļaut nekādas sarunas par ``dižo Ukrainu'', par patstāvīgu Ukrainas valsti. Savas runas noslēgumā viņš paziņoja: ``Ukraiņiem ir jāzina, ka viņi ir dižās Vācijas pilsoņi, bet nevis dižās Ukrainas pārstāvji vācu teritorijā''. Arī H.~Himlers 1942.~gada martā, ieradies Krakovā, H.~Frankam uzsvēra nepieciešamību paātrināt guraļu ģermanizāciju un nekādā gadījumā nepieļaut to separātismu.
+
+Uzreiz gan jāsaka, ka mēģinājums izdalīt no poļu tautas atsevišķas etniskas grupas, lai tās pretnostatītu citu citai, kopumā nenesa panākumus. Guraļu, kašubu, lemku un dažu citu grupu pamatmasa uzskatīja sevi par poļu nācijas sastāvdaļu un bija gatava dalīties ar to liktenī. Tikai daļā mazūru, kuru separātismam bija senas tradīcijas, vēl no Pirmā pasaules kara laika Vācijas aktīvi atbalstītas, izdevās iedēstīt zināmu neuzticības sēklu pārējai poļu tautai. Par ukraiņu attiecībām ar poļiem gan vēl nāksies runāt atsevišķi.
+
+Nekādu juridisku normu, kas noteiktu poļu tiesisko statusu neeksistēja. Viņi tika pasludināti par ``esošiem bez pilsonības''. Poļus sodīja pēc vecajiem Polijas likumiem, ja tie nebija pretrunā gubernatora rīkojumiem. Vāciešus tiesāja atbilstoši Vācijas likumdošanai. Apžēlošanas tiesības no 1940.~gada janvāra bija piešķirtas vienīgi H.~Frankam.
+
+1939.~gada 26.~oktobra Ā.~Hitlera dekrētā tika noformulēta Polijas Ģenerālgubernatūras pārvaldes principiālā shēma, kura gadu gaitā ilgstoši palika nemainīga. Praktiski augstākā izpildvaras iestāde sākotnēji bija ģenerālgubernatora pārvalde, bet kopš 1940.~gada 1.~decembra~--- tā saucamā Ģenerālgubernatūras ``valdība''. Valdība sastāvēja no 12~pārvaldēm, kā arī virknes specializētu iestāžu (emisijas bankas, kontroles komisijas utt.). Distriktu priekšgalā atradās priekšnieki (gubernatori), kuri darbojās ģenerālgubernatora vārdā. 56 apriņķu (poļu \pltxti{powiat}) priekšgalā atradās apriņķu priekšnieki. Tā bija stingri izbūvēta varas vertikāle.
+
+Taču jāņem arī vērā, ka Ģenerālgubernatūrā salīdzinājumā ar citiem bijušajiem Polijas novadiem bija palielināta SS un policijas iestāžu kompetence. Pie Ģenerālgubernatūras valdības darbojās no tās neatkarīgu dažādu Vācijas augstāko iestāžu: SS un policijas priekšnieka, drošības policijas priekšnieka, kārtības policijas priekšnieka, fīrera vietnieka, impērijas kancelejas priekšnieka, Vācijas Ārlietu ministrijas, Hitlerjūgenda vadības, Vācu Sarkanā Krusta vadības pilnvaroto institūti. H.~Himleram padotās SS un policijas iestādes realizēja Polijā savu patstāvīgu vietējo iedzīvotāju iznīcināšanas un apspiešana politiku. Britu vēsturnieks N.~Deiviss Ģenerālgubernatūru nosauca par ``\detxti{Gestapoland}'' (slepenpolicijas zemi), uz kuru neattiecās ne Polijas, ne Vācijas likumi, un kura kļuva par īstāko nacistiskās ideoloģijas izmēģinājumu poligonu.
+
+Savukārt vācu vēsturnieks K.~Klesmans stāvokli Ģenerālgubernatūrā raksturojis kā ``anarhiju'' (``\detxti{Zustand der Anarchie}''), jo blakus, slikti sadarbojoties, pastāvēja civilā, militārā, policijas un SS vara. Civilā pārvalde un armijas iestādes galvenokārt rūpējās par kara vešanai nepieciešamo saimniecisko uzdevumu izpildi, SS un policija~--- par ``mieru un kārtību'', kā arī par nacionālsociālistiskās ``rasu politikas'' (\detxti{Rasenpolitik}) īstenošanu.
+
+Distriktu un apriņķu priekšnieku amatos ģenerālgubernators iecēla tikai valsts vāciešus. To skaits Ģenerālgubernatūrā bija ierobežots. Pēc vācu vēsturnieka V.~Jakobmeijera datiem, 1943.~gada 1.~septembrī 22~740~vācu vīriešu un 7~184 sievietes dienēja civilpārvaldē, 15~880~vīriešu un 2~980~sievietes pastā un uz dzelzceļa, kopā ap 50~000~vācu kalpotāju. Darbā uz Ģenerālgubernatūru parasti nosūtīja ierēdņus, kuri bija izdarījuši kādus pārkāpumus. Vācijā bija pat pieņemts, ka vācieša, kurš bija veicis noziegumu, kas netika sodīts ar ilgstošu cietumsodu, pasē vai darba grāmatiņā tika iespiests zīmogs: ``Derīgs dienestam tikai Polijā''. Tā Ģenerālgubernatūras pārvaldē ierēdņi ļoti bieži tika komplektēti no šādiem Vācijā neveiksmīgi strādājušajiem vai sodītiem darbiniekiem, dažkārt pilnīgi nepietiekami izglītotiem cilvēkiem. Tikai salīdzinoši zemākos līmeņos pārvaldes aparātā varēja dienēt arī vietējie vācieši. (Par etniskajiem vāciešiem Ģenerālgubernatūrā tika atzīti tikai ap 120~000 cilvēku, kas sastādīja mazāk nekā 1\% no visu iedzīvotāju skaita.)
+
+Tā kā vāciešu nepietika, okupācijas varas iestādes pārvaldes aparātā izmantoja arī poļus. Vecais Polijas valsts aparāts bija iznīcināts, taču tika saglabātas dažas vietējās iestādes un amati~--- gminu pārvaldes, voiti, soltisi. 1939.~gadā, kad tika izveidotas okupācijas iestādes, nacisti Ģenerālgubernatūrā konfiscēja Polijas valsts īpašumu un lielu daļu privāto īpašumu. 1941.~gada pavasarī tika izveidotas poļu ekonomiskās pašpārvaldes iestādes. H.~Franks, konstatējot, ka 4~tūkstošu km$^{2}$ plašā apriņķī kārtību uztur tikai 40--50~vācu žandarmu, norādīja uz poļu un ukraiņu policijas izveides nepieciešamību.
+
+1941.~gada aprīlī dažādās administratīvās iestādēs darbojās ap 40~tūkstošu poļu ierēdņu, bez tam vēl 11~tūkstošu poļu dienēja policijā, uz dzelzceļa strādāja 10~tūkstošu. (Pēc citiem datiem jau 1941.~gada martā Ģenerālgubernatūras pārvaldes struktūrās bija nodarbināti 130~000 poļu. Iespējams, domāti bija visi bijušie Polijas pilsoņi, arī nepoļi.). Ir ziņas, ka 1942.~gada novembra beigās Ģenerālgubernatūrā blakus gandrīz 12~tūkstošiem vācu policistu dienēja arī 12~tūkstošu poļu un gandrīz 1~800 ukraiņu policistu. Drošības policijas rindās bez 2~tūkstošiem vāciešu dienēja arī 3~tūkstoši poļu. (Pēc vācu vēsturnieka G.~Rodes datiem Ģenerālgubernatūrā vācu kārtību uzturēja pa 11 tūkstošiem vācu un poļu policistu, kā arī 6~tūkstoši ukraiņu un 5~tūkstoši ebreju policistu (geto teritorijās)).
+
+Pavisam Ģenerālgubernatūrā bija nodarbināti ap 130~tūkstoši poļu ierēdņu un kalpotāju. Poļu vēsturnieks V.~Borodzejs izpētījis, ka Radomas distrihtā 1943.~gadā dzīvoja 2~miljoni 300~tūkstošu nevācu iedzīvotāju, bet vietējā vācu administrācijā strādāja tikai nedaudz vairāk kā 400~vāciešu. Iznāca, ka 1~vācu ierēdnis bija uz vairāk nekā 56~tūkstošiem vietējo iedzīvotāju un 45~km$^{2}$ teritorijas. Tas nozīmēja, ka vietējā civilā administrācija vidējos un zemākajos līmeņos par vairāk nekā 90\% sastāvēja no nevāciešiem, galvenokārt poļiem.
+
+No vienas puses, šādos apstākļos pārvalde tīri objektīvi nevarēja būt priekšzīmīga. Tā, ja reiham pievienotajos apgabalos, kur visu dzīvi kontrolēja vācu tautības ierēdņi, poļu pretošanās kustības darbiniekiem bija gandrīz neiespējams ``noiet pagrīdē'' un ``nomainīt identitāti'', tad Ģenerālgubernatūrā tas bija grūti, tomēr iespējams. Taču tas liek nopietni skatīt arī jautājumu par poļu kolaboracionisma apjomu, par to tiks runāts vēlāk.
+
+1940.~gada aprīlī H.~Himlers sagatavoja memorandu par vācu attieksmi pret Poliju, kuram savu piekrišanu deva arī Ā.~Hitlers. Memorandā bija noformulēti vairāki principi:
+
+\begin{enumerate}[label=\arabic*)]
+\item Nepieciešams šķelt dažādas tautības, tāpēc sākotnēji poļu apdzīvotajās teritorijās jāatbalsta ukraiņus, baltkrievus, guraļus, lemkus (poļu \pltxti{lemki}, pašnosaukums \pltxti{rusīn}i vai \pltxti{rusņaki},~--- Karpatu kalnos dzīvojoša slāvu etnokultūras grupa) un kašubus. Vācijas interesēs ir veicināt viņu kultūras attīstību un nacionālās pašapziņas nostiprināšanos.
+
+\item Nacionālo mazākumu pārstāvjus izmantot zemākajā administratīvajā līmenī~--- kā policijas priekšniekus un burgomistrus.
+
+\item Nedrīkst pieļaut 15~miljonu Ģeneralgubernatūrā un 8~miljonu Vācijai pievienotajos apgabalos dzīvojošo poļu saliedēšanos. Nepieciešams veikt rases pārbaudi, lai atklātu tos no viņiem, kuri ir spējīgi asimilēties, atsijājot no Ģenerālgubernatūrā un Vācijas austrumu provincēs dzīvojošajiem rasistiski pilnvērtīgos un nogādāt viņus Vācijā, lai tur asimilētu.
+
+\item Turpmāk dažu gadu laikā ir jāizzūd kašubu tautai un tās nosaukumam. Pakāpeniski vācu zemēs jāpazūd jēdzieniem ``ukrainis'', ``guralis'', ``lemks''. Tas pats, tikai lielākos mērogos, attiecās uz poļiem. Ir jādeportē ebreji.
+
+\item Nevācu iedzīvotājiem austrumos var dot vienīgi iespēju apmeklēt četrklasīgu tautskolu. Tās uzdevums būtu iemācīt veikt vienkāršākās aritmētiskās darbības ar skaitļiem līdz 500, parakstīties, iemācīt, ka augstākais Dieva bauslis ir būt godīgiem, krietniem un paklausīgiem attiecībās pret vāciešiem. Lasītprasme varētu arī izpalikt. Poļiem domātās izglītības iestādes varētu sniegt apmācību arodā, bet vidējā un īpaši augstākā izglītība nav domāta poļiem.
+
+\item Nedrīkst atkārtot kļūdas, ko savā laikā vācieši pieļāva pret elzasiešiem un lotaringiešiem (Elzasas un Lotaringijas~--- vācu \detxti{Elsaß-Lothringen}, franču \frtxti{Alsace-Lorraine}~--- province pēc franču-vācu kara 1871.~gadā tika pievienota Vācijai, taču neieguva patstāvīgas pavalsts statusu), kurus, no vienas puses, uzskatīja par vāciešiem, bet no otras~--- pazemoja viņu cilvēcisko pašcieņu, tā izsaucot atbildes ambīcijas. Nepieļaut nosaukumus ``polis'', ``ukrainis'' u.c.
+\end{enumerate}
+
+% page 890
+
+
+H.~Himlers uzsvēra, ka šo principu konsekventas īstenošanas gaitā Ģenerālgubernatūras iedzīvotāji tuvāko 10~gadu laikā sastāvēs kā no tur pārpalikušajām nepilnvērtīgajām tautām, tā arī no Vācijas impērijai pievienotajiem apgabaliem izsūtītajiem, tātad~--- vienas [zemākās] rases piederīgajiem. Šos rasistiski nepilnvērtīgos iedzīvotājus bija jāizmanto Vācijā un citur galvenokārt vienkāršākajos darbos~--- ceļu, tiltu un ēku būvniecībā. Šo programmu Ā.~Hitlers apstiprināja kā vadlīnijas ``poļu politikai''.
+
+Jāņem vērā arī, ka Polijas teritorija bija galvenais placdarms, kurā tika gatavots un no kura tika veikts Vācijas iebrukums Padomju Savienībā. Arī visus kara gadus ¾ visu Vācijas militāro komunikāciju gāja caur Polijas teritoriju. Tāds poļu zemju stratēģiskais stāvoklis noteica Vācijas okupācijas režīma nežēlību tajās, ko var salīdzināt vienīgi ar stāvokli hitleriešu okupētajās padomju zemēs.
+
+Var atzīmēt, ka īsi pirms kara pret PSRS sākuma no 1941.~gada 5.~līdz 7.~maijam Ā.~Hitlers apmeklēja pievienotās Polijas zemes un Ģenerālgubernatūru, pārbaudot flotes un vērmahta gatavību karam. Viņš apmeklēja Krakovu, demonstratīvi apmeklēja J.~Pilsudska kapu, pat teica runu par dziļu cieņu pret mirušo Polijas līderi un savu ideoloģisko tuvību ar viņu.
+
+Smagie dzīves apstākļi nostādīja poļu sabiedrību grūta pārbaudījuma priekšā. Virspusē iznāca daudzi agrāk slēpti zemiski instinkti. Uzziedēja noziedzība, denunciācijas, spekulācijas. Taču ne mirkli nerima arī pretošanās kustība.
+
+1941.~gadā Vācijas politika tika izstrādāta tālāk, prasot visu poļu, kurus nacisti uzskatīja par zemcilvēkiem, pilnīgu iznīcināšanu. 10~līdz 20~gadu laikā vācu okupētās poļu teritorijas bija ``jāattīra'' no poļu iedzīvotājiem un to vietā jānometina vācu kolonisti. Nacisti stādīja uzdevumu ģermanizēt poļu apdzīvotās teritorija, pārvēršot tās par ``dižās ģermāņu impērijas'' sastāvdaļu. Poļu tautai savā zemē vieta nebija paredzēta. No iznīcības to varēja paglābt vienīgi nacisma sagrāve.
+
+Poļiem Ģenerālgubernaturā pagaidām bija jābūt savai mājvietai (\detxti{Heimstatt}), taču kāda viņu politiska vai kulturāla darbība nebija paredzēta. Poļu iedzīvotāji varēja tikai nosacīti piedalīties Ģenerālgubernatūras pašpārvaldē tās zemākajā līmenī, viņiem bija liegta jebkāda iespēja aizstāvēt savas tiesības.
+
+Tomēr, kā konstatējis vācu vēsturnieks E.~Meijers, poļi Ģenerālgubernatūrā nebija tik lielā mērā apspiesti kā Vācijai tieši pievienotajos poļu apdzīvotajos apgabalos. Tajos nacistu politika bija virzīta uz iedzīvotāju ģermanizāciju, tāpēc attieksme pret poļu kultūru bija īpaši noliedzoša. Ģenerālgubernaturā, kaut visas augstākās mācību iestādes bija slēgtas, tomēr poļu valodas lietošana nebija aizliegta. Arī katoļu baznīcas darbība Ģenerālgubernatūrā bija mazāk ierobežota. Ja bijušajos Polijas austrumu rajonos tika mēģināts poļu iedzīvotājus ``izspēlēt'' pret pārējiem, tad Ģenerālgubernatūrā masveida izsūtīšanu uz Vāciju un citu saimniecisko pasākumu realizācijas gaitā netika ievērota kāda atšķirīga pieeja dažādām tautībām (protams, izņemot ebrejus).
+
+Viens no poļu tautas iznīcināšanas veidiem bija bērnu atņemšana poļu ģimenēm un pārvācošana. Āriska izskata poļu bērnu atņemšana viņu ģimenēm un nodošana vācu ģimenēm bija viens no vācu okupantu noziegumiem. Pēc hitleriešu plāniem poļu bērnu ģermanizācijai bija, pirmkārt, jāved pie poļu skaitliskas samazināšanas, bet no otras puses, jāielej jauna svaiga straume vācu asinīs un tā jānostiprina vācu tauta. Trešā reiha varas vīri apzinājās, ka poļu bērnu vardarbīga atņemšana vecākiem ir noziegums, kurš jāslēpj kā no savas, vācu tautas, tā arī no citu valstu sabiedriskās domas. Tāpēc tika rūpīgi gādāts, lai par to būtu pēc iespējas mazāk zināms. Nevienā dokumentā netika runāts par ģermanizāciju, visbiežāk tika lietots termins ``reģermanizācija'' (\detxti{Wiedereindeutschung}). Tika izmantoti arī termini ``bērni, derīgi pārvācošanai'' (\detxti{Eindeutschungsfächige Kinder}), ``rases ziņā vērtīgi bērni'' (\detxti{gutrassige Kinder}), ``polonizētie vācu bērni'' (\detxti{Polonisierte deutsche Kinder}), ``vācu izcelsmes bērni'' (\detxti{Kinder deutscher Abstammung}), ``vācu bāreņi'' (\detxti{Deutsche weisen Kinder}). Jautājumu par to, vai konkrēto bērnu ir jāpārvāco, lēma uz rasu pazīmju, rakstura, spēju un psihisko īpašību izpētes pamata.
+
+Pēc H.~Himlera rīkojuma 1940.~gada aprīlī tūkstoši poļu bērnu vecumā no 7~līdz 14~gadiem tika atņemti viņu vecākiem un nosūtīti uz Vāciju ``ievācošanai'' (\detxti{eindeutschen}). Poļu bērnus pulcināja speciālās nometnēs, pārbaudīja ``rases tīrību'' un pēc tam izlēma to likteni. Ķelnē iznākošā vācu avīze ``\detxti{Kölnische Zeitung}'' šai sakarā rakstīja: ``Viņiem mācīs vācu valodu, pēc tam viņiem iepotēs vācu garu, lai izaudzinātu viņus kā priekšzīmīgus jauniešus un jaunietes.''
+
+Bērnu aizvešanai izmantoja arī vecāku arestus, nosūtīšanu uz koncentrācijas nometnēm vai spaidu darbos uz Vāciju. Tāpat rīkojās ar bāreņiem pēc vecāku nāves.
+
+Jauktajās laulībās, kur viens no ģimenes bija vācietis, silēzietis vai mazūrs, viņa partneri arī spieda pierakstīties etnisko vāciešu sarakstos. Ja viņš to nevēlējās darīt, otru laulāto spieda ierosināt lietu par laulības šķiršanu. Bērni vienmēr palika vācu pusei, jo tiesa vadījās no principa, ka bērna intereses prasa viņa vācisku audzināšanu. Ja vācu puses vecāks nomira, aizbildniecības tiesības tika nodotas kādai vācu ģimenei vai vācu iestādei.
+
+Vācijai pievienotajos Polijas rietumu apgabalos bērnus, atzītus par derīgiem ģermanizācijai, ierakstīja etnisko vāciešu sarakstos. 1940.~gada 12.~septembrī H.~Himlers izdeva rīkojumu Vācijai pievienotajos Polijas rietumu apgabalos atņemt bērnus tiem vecākiem, kuri atteicās no ``reģermanizācijas'' (iekļaušanas etnisko vāciešu sarakstos). 1942.~gada 16.~februārī šis rīkojums tika attiecināts arī uz ``politiski neuzticamiem'' vecākiem.
+
+Tāds liktenis bija gandrīz 200~000~poļu bērnu. Pēc vairākus gadus ilgiem uz Vāciju aizvesto bērnu meklējumiem pēc kara mājup atgriezās tikai neliela viņu daļa (15--20\%).
+
+Notika arī vietvārdu ģermanizācija. Tās gaitā tika ``ievācoti'' poļu apdzīvoto vietu un ielu nosaukumi. Vartas gauleiters A.~Geislers 1940.~gada 17.~aprīlī pirms Ā.~Hitlera dzimšanas dienas (20.~aprīlī) deva rīkojumu pārdēvēt vāciski visus apdzīvoto vietu, ielu, iestāžu utt. nosaukumus.
+
+Kā piemēru var minēt Lodzu. Polijas rūpniecības centrs Lodza par godu Vācijas ģenerālim K.~Licmanam (Pirmā pasaules kara laikā izcēlās Lodzas operācijas gaitā, gūdams uzvaru pār cariskās Krievijas armiju, par ko tika apbalvots ar ordeni ``\frtxti{Pour le Merite}'' (``Par nopelniem''), bet vēlāk piedalījās nacistu kustībā, bija nacistu frakcijas loceklis reihstāgā), tika pārdēvēta par Licmanštati (\detxti{Litzmannstadt}). Jau 1940.~gada jūlijā pilsētas vācu varas iestādes lielījās ar to, ka dažu mēnešu laikā tā zaudējusi savu polisko izskatu. Līdzīgi vāciskos vārdos tika pārdēvētas arī vairākas citas Polijas pilsētas. Sakarā ar ģermanizācijas kampaņu vācu presē parādījās ``zinātniski'' raksti, kuros bija ``pamatots'' poļu pilsētu vāciskais raksturs. tā, piemēram, tika apgalvots, ka Krakova ir vācu austrumu viduslaiku pilsēta, ka Ļubļinai ir vāciska izcelsme utt. Tika plānots poļu pilsētās ierīkot vācu kvartālus.
+
+Okupanti darīja visu, kas bija viņu spēkos, lai poļu pilsētas zaudētu savu nacionālo veidolu.
+
+Lūk, kā pēc aculiecinieka stāstītā, izskatījās Varšava okupācijas pirmajos mēnešos: ``Tas viss~--- gan vāciskie ielu nosaukumi, vācu-poļu reklāmas un valsts ģerbonis (ar kāškrustu apakšā) uz visām ēkām un vācu iestādēm, gotiskie burti ``Tikai vāciešiem'' uz pilsētas skaistākajām ēkām, kioski ar vācu avīzēm un kliedzoši karogi un \citespace{} [vācu karaspēka] defilādes piešķīra Varšavai pretīgu vāciešu klātbūtnes zīmogu''. Varšavas likteni jau bija izlēmis Ā.~Hitlers. Tās kā Polijas galvaspilsētas statusa atjaunošana bija pilnībā izslēgta. Ar Ģenerālgubernatūras attīstību Varšavai arvien vairāk bija jākļūst par parastu provinces pilsētu. Pēc Krakovas atbrīvošanas no okupantiem ģenerālgubernatora kancelejā tika atrasta mapīte ar uzrakstu ``Jaunā vācu pilsēta Varšava''. Dokumenti, kas glabājās mapē, rādīja, ka 1939.~gada beigās H.~Franks deva uzdevumu vācu arhitektiem izstrādāt jaunas vācu pilsētas projektu, kurai būtu jāpaceļas vecās vietā. Varšavu pēc tā saucamā Pabsta plāna (``\detxti{Pabst-plan}''~--- nosaukts vācu arhitekta F.~Pabsta vārdā) bija nolemts pārvērst nenozīmīgā provinces pilsētā ar līdz 200~tūkstošiem vācu iedzīvotāju, iznīcinot līdz 95\% celtņu kā ``nevajadzīgas''. Tika pieņemts, ka paliks tikai daļa no vecpilsētas (\pltxti{Stare Miasto}) rajona kā ``vācu arhitektūras'' piemineklis. Esošos iedzīvotājus bija jāpārvieto uz koncentrācijas nometnēm. Jau 1939.~gada 17.~septembrī vācu aviācijas uzlidojumā bija sagrauti divi torņi un daļa jumta bijušo Polijas karaļu pilij, kura tika uzskatīta par Polijas nacionālo relikviju. Okupācijas laikā H.~Franks pavēlēja pili neatjaunot. Gluži pretēji, sākās tās sabrukums. Jau līdz 1944.~gada vasarai bija palikušas tikai pilsdrupas.
+
+Nacistu sanāksmēs, viņu vadītāju oficiālajās runās, kā arī nacistiskajā presē un ``zinātniskajos'' izdevumos no 1940.~gada otrās puses arvien biežāk izskanēja prasība aktivizēt poļu ģermanizāciju. Tiesa, hitleriešu propagandisti attiecībā pret Poliju faktiski nelietoja vārdu ``ģermanizācija'', viņi labprātāk runāja par t.s. ``reorganizāciju'', jo vadījās no pieņēmuma, ka tikai atjauno to stāvokli, kurš valdīja šais apgabalos līdz to ``polonizācijai’’.
+
+Viens no galvenajiem ģermanizācijas līdzekļiem bija represijas pret aktīvajiem poliskuma nesējiem. Pēc tiešas kara darbības beigām Polijā ar ``politisko noziedznieku'' un ``trešā reiha ienaidnieku'' meklēšanu nodarbojās Vācijas valsts slepenpolicija~--- Gestapo. Daudzi, tai skaitā arī garīdznieki, tika arestēti. Varšavā vien no 1939.~gada līdz 1941.~gada vidum masu soda akcijās gāja bojā tūkstoši cilvēku. Sākotnēji masu nošaušanas tika veiktas netālu no Seima, pēc tam universitātes dārzā, bet no 1939.~~gada decembra vidus upurus izveda ārpus pilsētas un nošāva piepilsētas mežos. Pēc vācu nacistisko noziegumu izpētes komisijas datiem, kuri pēc kara tika piestādīti Nirnbergas tribunālam, jau 1939.~gada rudenī hitlerieši nonāvēja vairāk nekā 16~tūkstošus poļu. (Pēc citiem~--- vācu vēsturnieku datiem pirmie nacionālsociālistu nacionālās politikas upuri 1939.~gada rudenī bija līdz 20~tūkstošiem poļu augšslāņu pārstāvju, starp tiem daudz garīdznieku.)
+
+Plaši tika pielietots kolektīvās atbildības princips. Ja nevarēja atrast konkrēto vainīgo, okupanti atņēma dzīvību cilvēkiem, kuru vienīgais ``noziegums'' bija dzīve tai apdzīvotajā vietā vai pat tai blakus, kur bija veikts nodarījums.
+
+Viena no pirmajām šādām represīvajām akcijām bija 107~Varšavas apkaimes Vaveru (\pltxti{Warszawa-Wawer}) apdzīvotās vietas iedzīvotāju nošaušana 1939.~gada 27.~decembrī kā atmaksa par divu šeit izvietotā vācu celtniecības bataljona apakšvirsnieku nonāvēšanu. Lietas būtība: divi pazīstami vietējie bandīti, kad policija mēģināja tos aizturēt, 26.~decembrī ar šāvienu ievainoja poļu policistu un aizbēga. Policijas postenis Vaveros lūdza vācu karaspēka daļai palīdzību bandītu gūstīšanā. Abus apakšvirsniekus kriminālnoziedznieki nošāva, kad tie bez kādiem piesardzības soļiem mazā vietējā kafejnīcā pieprasīja apmeklētājiem uzrādīt dokumentus. Kaut vācu karavīru nāves apstākļi bija labi zināmi vācu varas iestādēm, un noziegumam nebija politiska rakstura, kaut bija zināmi bandītu vārdi, okupanti nošāva 106 Vaveru apkārtnes iedzīvotājus, bet 1~pakāra.
+
+Jāsaka, ka pirmajā vācu okupācijas periodā asiņainu tīri bandītisku uzbrukumu Polijā bija daudz. Tas bija skaidrojams ar to, ka sakarā ar kara darbību 1939.~gada septembrī un vācu frontes ātro virzīšanos uz priekšu liels skaits bīstamu kriminālnoziedznieku, kuri līdz tam izcieta sodus Polijas cietumos, izrādījās brīvībā.
+
+Plaša kampaņa pret poļiem tika izvērsta Augšsilēzijā. Jau pirmajās okupācijas dienās šeit visās apdzīvotajās vietās notika masveida poļu slepkavības. Piemēram, Katovices pilsētā tikai 4.~septembrī bija nogalināti vairāk nekā 750~cilvēku. 1939.--1940.~gadā Augšsilēzijā izvērsās trīs poļu arestu viļņi. Pirmais jau 1939.~gada septembrī. Uz vietējo nacistu denunciāciju pamata tika arestēti daudzi poļu politiskie un sabiedriskie darbinieki. Dažus no viņiem nošāva uz vietas bez izmeklēšanas un tiesas. Otrais vilnis izvērsās tā paša gada oktobrī-novembrī. Vairākumu no arestētajiem nosūtīja uz koncentrācijas nometnēm. 1940.~gada aprīlī-maijā notika vēl viens, nu jau trešais arestu vilnis.
+
+Lai novērstu neapmierinātības izpausmes vērmahtā, īpaši ģenerāļos un virsniekos, pret SS un policijas vienību izrēķināšanos ar vietējiem iedzīvotājiem, visu šo akciju augstākais kurators H.~Himlers 1940.~gada 13.~martā uzstājās Vācijas sauszemes spēku virspavēlnieka V.~f.~Brauhiča sapulcinātās ģeneralitātes priekšā un paziņoja: ``Šajā karaspēka augstāko virsnieku vidū es varu pateikt atklāti: Es nedaru neko, par ko nezina fīrers.'' Tātad visas ``likvidēšanas'' bija ``svētījis'' pats Ā.~Hitlers. Civiliedzīvotāju nošaušanas bija daļa no fīrera pieņemtās tautu iznīcināšanas programmas. Pēc šīs H.~Himlera atzīšanās pret policijas patvarībām vērstās kritiskās balsis vērmahtā noklusa.
+
+Taču vērmahtā bija arī virsnieki, kuri, neraugoties uz vienmēr pastāvošo atmaskošanas un bargas sodīšanas iespēju, aktīvi palīdzēja glābties gan poļu patriotiem, gan vajātajiem ebrejiem. Viens no tiem bija kapteinis V.~Hozenfelds. Starp citiem viņa izglābtajiem bija arī poļu klaviervirtuozs un komponists, pēc tautības ebrejs V.~Špīlmans. Pēc kara viņš uzrakstīja memuārus ``\pltxti{Śmierć miasta}'' (``Pilsētas bojā eja'', 1946), pēc kuriem savukārt kinorežisors R.~Polanskis (\pltxti{Roman Polański}, dzimis \emph{Rajmund Roman Liebling}, 1933) uzņēma filmu ``Pianists'' (2002), kura saņēma ``Zelta palmas zaru'' Kannu kinofestivālā. Taču pašu V.~Hozenfeldu 1945.~gadā, aizdomās par darbību Vācijas specdienestos, padomju varas iestādes arestēja un ieslodzīja gūstekņu nometnē. Nekādi poļu un ebreju paskaidrojumi nelīdzēja, viņš tika notiesāts par ``kara noziegumiem'' uz 25.~gadiem un 1952.~gadā mira gūstā. 2007.~gadā Polijas prezidents pēc nāves apbalvoja V.~Hozenfeldu ar ``Polijas atdzimšanas'' ordeņa ``Komandora krustu'' (\pltxti{Krzyż Komandorski Orderu Odrodzenia Polski}); 2009.~gadā Izraēlas nacionālais Holokausta un Varonības memoriāls Jad-va-Šem piešķīra goda nosaukumu ``Taisnīgais starp tautām''.
+
+Vislielākās vajāšanas vērsās pret inteliģenci, nacionāli noskaņotajiem cilvēkiem un klēriķiem.
+
+Lai izrēķinātos ar poļu kultūras darbiniekiem hitlerieši plaši izmantoja operatīvās grupas (\detxti{Die Einsatzgruppen der Sicherheitspolizei und des SD}). Vēl kara laikā, 1939.~gada septembrī viņi Polijas rietumu reģionos realizēja operāciju ``\detxti{Tannenberg}'', kuras laikā tika nogalināti daudzi Polijas politiķi, priesteri un kultūras darbinieki.
+
+No 1939.~gada oktobra un pirmos 1940.~gada mēnešus pārsvarā poļu rietumu zemēs pastāvēja tā saucamās nometnes internētajām civilpersonām (\detxti{Zivilinterniertenlager}), kurās galvenokārt tika ieslodzīti pirmskara politiskie un sabiedriskie antinacistiski noskaņotie darbinieki. Šīs nometnes kļuva liekas, kad poļu zemēs tika izveidotas koncentrācijas nometnes. Lielu daļu no t.s. internētajām civilpersonām nogalināja jau okupācijas sākumperiodā, daļu vēlāk pārveda uz koncentrācijas nometnēm.
+
+Jau pēc H.~Himlera un H.~Franka Varšavas apmeklējuma 1939.~gada 11.~novembrī tur tika sarīkota pirmā masu tvarstīšana, kuras laikā okupantu rokās krita pirmie simti kultūras, literatūras, izglītības un zinātnes darbinieku. Daudzi zinātnieki un kultūras darbinieki tika apcietināti, turēti koncentrācijas nometnēs un nogalināti.
+
+Spilgts piemērs, kā nacisti izturējās pret poļu inteliģenci, bija izcilā matemātiķa, bijušā premjerministra K.~Bartela, kurš starp 1926.~un 1930.~gadu 5~reizes bija Polijas valdībās vadītāja amatā un mierīgi pārdzīvoja padomju periodu (1939--1941) liktenis. Pēc Vācijas iebrukuma Polijā un Rietumukrainas pievienošanas PSRS viņš palika Ļvovā. Viņam atļāva turpināt lasīt lekcijas Ļvovas Politehniskajā institūtā. 1940.~gadā pēc PSRS Zinātņu akadēmijas ielūguma K.~Bartels devās uz Maskavu, kur viņam piedāvāja pārtulkot krievu valodā un izdot viņa sarakstīto mācību grāmatu tēlotājā ģeometrijā. Drīzumā pēc Vācijas uzbrukuma PSRS vērmahts 1941.~gada 30.~jūnijā ieņēma Ļvovu. Pēc divām dienām K.~Bartelu arestēja. Sākotnēji viņš tika turēts ciešamos apstākļos~--- viņam atļāva sarakstīties, saņemt no sievas ēdienu. Taču jūlija otrajā pusē viņu pārcēla uz gestapo cietumu, kur apstākļi bija daudz sliktāki. Nacisti piedāvāja K.~Bartelam saformēt poļu marionešu valdību. Viņš atteicās un pēc H.~Himlera pavēles 26.~jūlijā (jau pēc viņa kolēģu masveida apšaušanas) tika nošauts, nezināmā vietā apraksts, taču, lai slēptu jebkādas pēdas, ekshumēts un sadedzināts. Liecības par viņa nogalināšanu satur Nirnbegas tribunāla materiāli.
+
+Nacisti nošāva arī ievērojamo vēsturnieku M.~Handelsmanu un daudzus, daudzus citus. M.~Handelsmans līdz 1944.~gadam darbojās pagrīdē, tad gestapo viņu arestēja, nosūtīja uz koncentrācijas nometni, kur viņš gāja bojā 1945.~gada 20.~martā.
+
+Daudzi universitāšu profesori un skolotāji, juristi, mākslinieki, rakstnieki, priesteri un citi Polijas inteliģences pārstāvji tika arestēti un nogalināti vai nosūtīti uz koncentrācijas nometnēm tādu operāciju kā, piemēram, ``akcijas AB'' (``\detxti{Außerordentliche Befriedungsaktion}''~--- ``ārkārtas nomierināšanas akcija'') ietvaros. To uzsāka Austrumprūsijas gauleiters un Ukrainas reihskomisārs Ē.~Kohs Cehanovces rajonā (\detxti{Powiat ciechanowski}) un Suvalkos. Kad 1940.~gada pavasarī un vasarā vērmahts guva jaunus militāros panākumus ziemeļos (Norvēģijā) un rietumos (Francijā), šī darbība tika pārnesta arī uz pārējo Poliju, jo nepieciešamība slēpt savu attieksmi pret citām tautām un nomierināt citas valstis, kā uzskatīja nacisti, bija atkritusi. 1940.~gada 30.~maijā, kad vērmahts praktiski jau bija sagrāvis Franciju, H.~Franks paziņoja: ``10.~maijā sākās uzbrukums Rietumos. Tas nozīmē, ka šai dienā apdzisa pasaules dominējošā interese par to, kas notiek pie mums \citespace{} Tagad mums ir jāizmanto mums dotais brīdis \citespace{} Kā nacionālsociālistiem mums jādomā par to, lai vācu upuru vietā izaugsmi neiegūst poļu nācija \citespace{} Es pilnīgi atklāti atzīstu, tas maksās dzīvību dažiem tūkstošiem poļu, pirmkārt no poļu inteliģences vadošā slāņa \citespace{} Fīrers izteicās tā: to, ko mēs tagad atzīmējām kā vadošo slāni Polijā, ir jāiznīcina. To, kas no jauna izaugs tā vietā, mums ir jāuzmana un attiecīgajā laikā atkal jānovāc.'' Akcija tika vērsta pret Polijas inteliģenci, politiskajiem un sabiedriskajiem darbiniekiem, kā arī personām, kuras tika turētas aizdomās par saikni ar nacionālās atbrīvošanās kustību. Varšavā, Ļubļinā, Krakovā notika masveida aresti. Tika arestēti un nogalināti ap 3~500~cilvēku, kurus okupanti pieskaitīja poļu vadošajam slānim, kā arī ap 3~000 cilvēku, apzīmētu kā ``krimināli elementi''. Akcijai bija jābeidzas jūnija vidū, taču aresti turpinājās arī vēlāk.
+
+Akcijā gāja bojā, piemēram, bijušais Polijas Seima maršals ļudovietis M.~Ratajs, viens no Poļu Sociālistiskās partijas līderiem M.~Nedzelkovskis, Losandželosas Olimpisko spēļu čempions vieglatlētikā J.~Kusočinskis u.c.
+
+Norisa arī tādas bēdīgi slavenas akcijas kā Krakovas profesoru arests (\__txti{Sonderaktion Krakau}), ebreju masu slepkavības Ļvovā 1941.~gadā u.c.
+
+Kad 1939.~gadā tika slēgtas universitātes, īpaši traģiski tas norisinājās Krakovā. Vietējais Gestapo (valsts slepenpolicijas) priekšnieks B.~Millers (Pēc kara par citiem noziegumiem britu kara tiesa B.~Milleram piesprieda 20~gadu cietumsodu. Taču ``aukstā kara'' apstākļos jau 1953.~gadā viņu atbrīvoja. Polijas Tautas republikas iestāžu mēģinājumi panākt viņa izdošanu tiesāšanai par Polijā paveiktajiem noziegumiem palika nesekmīgi) lika Jagelloņu universitātes darbiniekiem 6.~novembrī sapulcēties uz priekšlasījumu ``Trešā reiha un nacionālsociālisma attieksme pret zinātni un universitātēm'' (``\detxti{Die Stellung des Dritten Reiches und des Nationalsozialismus zu Wissenschaft und Universität}''). Lekcijas vietā tika paziņots, ka universitāte uzsākusi darboties bez saskaņojuma ar vācu iestādēm, tās pasniedzēji vienmēr ir izturējušies naidīgi pret vācu zinātni, tāpēc tie, ar triju klātesošo sieviešu izņēmumu, tiks deportēti uz koncentrācijas nometni. Sapulcējušos mācībspēkus B.~Millers lika arestēt. Arestēja arī dažus citus universitātes līdzstrādniekus un studentus. 183~profesori un docenti nonāca Zaksenhauzenes (\detxti{Sachsenhausen-Oranienburg}) koncentrācijas nometnē. Vēlāk pēc B.~Mussolini un Vatikāna protestiem 101~profesors, vecāks par 40~gadiem, tika atbrīvots, citi nosūtīti uz Dahavas nometni. 12~profesori nomira nometnēs, vēl 5~--- jau pēc atbrīvošanas. Lielākā daļa no atbrīvotajiem piedalījās pagrīdes universitātes radīšanā, kuras ap 800~studentu vidū bija arī K.~Voitila, vēlākais Romas pāvests Jānis Pāvils II.
+
+Ļvovā, kur pēc Vācijas uzbrukuma PSRS 30.~jūnijā PSRS IeTK darbinieki pilsētas cietumā nogalināja politieslodzītos, vācu iestādes vainu par to uzvēla ``ebreju boļševikiem'' un galvenokārt ar Ukraiņu Nacionālistu organizācijas (OUN) biedru spēkiem organizēja ebreju grautiņu. (Vācu okupācijas laikā tika nogalināti apmēram 110~līdz 120~tūkstošu Ļvovas ebreju.) Vienlaikus ukraiņu nacionālistiskie studenti sastādīja 22~poļu profesoru sarakstu, kurus naktī no 3.~uz 4.~jūliju arestēja un kopā ar 13~ģimenes locekļiem tai pat naktī nošāva. Līdzīgi notikumi risinājās arī citās pilsētās. Staņislavas pilsētā vien nošāva apmēram 200~Polijas inteliģences pārstāvju.
+
+Ir dati, ka kopā Otrā pasaules kara laikā Polija zaudēja 15--30\% no skolotājiem, 30~līdz 40\% no saviem zinātniekiem un universitāšu profesoriem, 39--45\% no ārstiem un zobārstiem, no 26~līdz 57\% no advokātiem un 18--28\% no garīdzniecības. Šīs politikas pamatojumu izteica kāds no gauleiteriem: ``Manā rajonā tiks nošauts jebkurš [polis], kurš demonstrēs inteliģences pazīmes''.
+
+Poļu apspiešanas, viņu kultūras iznīcināšanas programmas daļa bija nacistu \strong{centieni vājināt} vai pat iznīcināt kristietību, \strong{Romas katoļu baznīcas ietekmi Polijā}. Dažviet okupētajā Polija tās iedzīvotājiem tika traucēts piedalīties dievkalpojumos, vai tie pat aizliegti, izmantot poļu valodu dievkalpojumos bija aizliegts. Tāpat aizliegta bija noteiktu reliģisko dziesmu publiska dziedāšana, arī noteiktu nodaļu no Bībeles lasīšana.
+
+Jau 1939.~gadā tika slēgts vairums katoļu klosteru un vairāk nekā 1~000~klēriķu internēti. Baznīcas īpašums tika konfiscēts vai sekvestrēts, klosteri, katedrāles, bīskapu rezidences, bīskapu un kapitulu ienākumi, garīgo semināru fondi izlaupīti. Ar katoļu baznīcu saistīto organizāciju darbība tika aizliegta, slēgtas pastāvošās katoļu labdarības, audzināšanas, slimo apkopes iestādes. To ēkas sagrāba Vācijas armijas un nacistu partijas iestādes. Polijas primass kardināls A.~Hlonds, kurš gan kara sākumā aizbēga no Polijas, pāvestam Pijam XII ziņoja: ``Klosteri metodiski tiek slēgti, tāpat kā visas plaukstošās audzināšanas, sociālās aprūpes, labdarības, slimnieku kopšanas, izdevniecību iestādes. To ēkas sagrābušas armijas daļas.''
+
+Lai mazinātu katoļu baznīcas ietekmi poļu tautā, okupanti ķērās arī pie garīdznieku fiziskas iznīcināšanas. Garīdzniecība sastādīja uzkrītoši lielu īpatsvaru tai poļu inteliģences daļā, kura bija paredzēta iznīcībai.
+
+Vissliktākie nosacījumi ticīgajiem pastāvēja Vācijai pievienotajā Vartas novadā, kuru nacisti izmantoja kā savas antireliģiskās politikas testa telpu. Vartas novadā tika realizēta atšķirīga politika pret baznīcu, salīdzinājumā arī ar to, kādu nacistiskais režīms īstenoja pašā ``vecajā reihā'', kur tas ticības jautājumos izturējās visai uzmanīgi. Vartas novadā tika izsludināta visu baznīcu pilnīga šķiršana no valsts, nacisti baznīcu centās izstumt no sabiedriskajiem procesiem. 1941.~gadā notika ``Akcija poļu baznīcas sagrāvei Vartas valstsnovadā'' (\detxti{Aktion zur Zerschlagung der polnischen Kirche im Reichsgau Warteland}). Tās rezultātā ap 1~700 poļu garīdznieku nonāca Dahavas (\detxti{Dachau}) koncentrācijas nometnē. 1941.~gada septembrī tika nodibināta ``Vācu tautības Romas katoļu baznīca Vartas novadā'' (\detxti{Römisch-katholische Kirche deutscher Nationalität im Reichsgau Vartheland}), kurai bija aizliegti jebkādi kontakti ar pārējiem katoļiem un Vatikānu. 1941.~gada beigās Vartas novadā uz vairāk nekā 3~miljoniem poļu katoļu bija palikuši tikai 80~priesteri.
+
+Dancigas-Rietumprūsijas apgabalā tika nošauti 476~garīdznieki. Tika slēgtas visas baznīcas. Tāpat tika vajāta baznīca Augšsilēzijā un Ģenerālgubernatūrā. Ar pirmajām Augšsilēzijas pievienošanas dienām Vācijai 40~katoļu garīdznieku tika pārvietoti uz Ģenerālgubernatūru un 30~--- uz Vāciju. 150~garīdznieki tika nogalināti. Tikai Vloclavekas bīskapijā (vācu \detxti{Bistum Włocławek,} arī \detxti{Bistum Leslau}, poļu \pltxti{Diecezja włocławska}) vācu okupācijas gados dzīvību zaudēja 213~priesteru (49\% no visiem). Gnēzenes un Kulmas bīskapijās bija nedaudz mazāk garīdznieku upuru~--- ``tikai'' 48\%. Kopā Ģenerālgubernatūrā okupanti nogalēja 735~katoļu garīdzniekus.
+
+1937.~gadā Polijā bija 11~239~ksendzi, ap 24~000 mūku un mūķeņu un 7~257~baznīcas un kapelas. Pēc vieniem datiem kara laikā gāja bojā 2~637~ksendzi, 438~mūķenes un ievērojams, precīzi nenosakāms mūku skaits. Tika sagrautas 984~baznīcas un kapelas. Pēc citiem datiem, kara laikā no 13~tūkstošiem Polijas katoļu garīdzniekiem 5 tūkstoši tika arestēti un nosūtīti uz koncentrācijas nometnēm, 2~214~no tiem gāja bojā. Kopā katrs sestais ksendzs gāja bojā no hitleriešu rokām.
+
+Tāpēc Polijas baznīca un klērs, atšķirībā no dažu citu Eiropas valstu baznīcām, aktīvi atbalstīja antinacistisko pretošanās kustību, ievērojams skaits katoļu garīdznieku paši piedalījās pretošanās kustībā. Augstākās baznīcas amatpersonas nosodīja daudzas okupantu izrīcības. Polijas katoļu baznīca kara laikā nostiprināja savu kā patriotiska spēka stāvokli.
+
+Okupanti vajāja ne tikai katoļu, bet arī protestantu baznīcas. Apvienotās Polijas Evanģēliskās baznīcas Pozenes daļa pēc valsts spiediena nodibināja atsevišķu ``Vācu tautības Pozenes Evanģēlisko baznīcu Vartas novadā'' (\detxti{Posener Evangelische Kirche deutscher Nationalit im Reichsgau Vartheland}). Arī Ģenerālgubernatūrā tika dibinātas atsevišķas vācu protestantu baznīcas. Turpretī pret poļu evaņģēlisko baznīcu, tās garīdzniekiem tika vērstas tiešas represijas. Vartas novadā vien tika nogalināti 752~garīdznieki, cietumos un koncentrācijas nometnēs ieslodzīts 681. Nirnbergas procesā izskanēja skaitļi, ka no 1940.~līdz 1945.~gadam koncentrācijas nometnēs tika ieslodzīti 2~800~poļu evaņģēliskie garīdznieki, tai skaitā viens bīskaps, kurš mira no tīfa. Līdz 1945.~gada aprīlim no viņiem dzīvību saglabāja tikai 816~cilvēki.
+
+\strong{Poļu kultūru} nacistiskās okupācijas vara nežēlīgi apspieda. Sākotnēji gan vācu virsniekiem un ierēdņiem nebija skaidru norādījumu, kā izturēties pret poļu kultūras iestādījumiem, taču šis neziņas periods ātri noslēdzās. Savā runā Dancigā 1939.~gada 19.~septembrī Ā.~Hitlers paziņoja, ka Polijas tauta ir nepilnvērtīga un nespējīga sevi pārvaldīt un uzturēt kultūru. 6.~oktobrī Ā.~Hitlers vērsa pret poļiem jaunus apvainojumus. Viņš histēriski apgalvoja, ka ``poļu valsts tika izveidota, neraugoties uz 500~gadu ilgu vēsturisku pieredzi, tāpēc tās pastāvēšana agri vai vēlu izraisīs smagas krīzes.''
+
+Vācu ``kultūrpolitika'' Polijas dažādos reģionos niansēs gan bija atšķirīga, bet kopumā bija un palika naidīga poļu tautai. Kara gados tā mainījās tikai nedaudz. Nacistu propagandas attīstību okupētajā Polijā kopumā var iedalīt divos galvenajos posmos: sākotnēji tās centieni galvenokārt bija vērsti uz pirmskara Polijas negatīva tēla izveidi, vēlāk~--- uz pretpadomju, antisemītiskas un provāciskas attieksmes izveidi iedzīvotājos.
+
+Viens no vācu propagandas mērķiem bija ``pārrakstīt'' Polijas vēsturi. Tika publicēti ``pētījumi'', kuros bija apgalvots, ka Polijas valsts patiesībā bija vāciska, ka tādi slaveni poļi, kā, piemēram, astronoms N.~Koperniks, tēlnieks V.~Stvošs, mūziķis F.~Šopēns etniski bija vācieši.
+
+Vācu politikai pret poļiem un viņu kultūru tika veltīta 1939.~gada 31.~oktobrī notikusī Vācijas valsts propagandas ministra J.~Gēbelsa un Ģenerālgubernatūras vietvalža H.~Franka saruna Lodzā. J.~Gēbelss deklarēja, ka ``poļu nācija nav civilizētas nācija nosaukuma vērta.`` (\detxti{Die Polnische Nation es nicht wert sei, eine zivilisierte Nation genannt zu werden.}) Vācu nacistiskie iebrucēji neslēpa savu nodomu panākt Polijas iedzīvotāju kultūras degradāciju.
+
+Daudz pūļu iebrucēji veltīja, lai demoralizētu Polijas iedzīvotājus kā pilsētās, tā laukos. Piemēram, kā piemaksa par savlaicīgu lauksaimniecības produktu piegādi zemniekiem tika dots degvīns. Pašbrūvētā tecinātājus okupācijas varas iestādes izlikās neredzam. Varšavā bija atvērts azartspēļu nams, kurā piekļuve bija tikai poļiem. Bija atļauta prostitūcija, veicināta pornogrāfiskas literatūras izdošana un izplatīšana.
+
+Tika nospriests, ka kultūras dzīvē poļiem nav nekādas perspektīvas. J.~Gēbelss un H.~Franks vienojās, ka ir stingri jāierobežo iespējas poļiem attīstīt savu kultūru, nedodot tiem nekādus teātrus, kinoteātrus, nekādu pieeju radio, presei un nekādu izglītību. Tiesa, šī nostāja palika kā nākotnes iecere, uzreiz to nebija iespējams realizēt. To rādīja jau fakts, ka pats H.~Franks lika priekšā poļiem regulāri rādīt filmas par Trešā reiha sasniegumiem, un šādas ziņas izplatīt arī ar skaļruņiem.
+
+Poļu-vācu sadarbība kultūras jomā, piemēram, kopīgas uzstāšanās, bija stingri aizliegta. Šī vācu politikas Polijā vadlīnija tika prezentēta Ģenerālgubrernatūras izglītības un propagandas nodaļas apkārtrakstā, kurā bija teikts: ``Pats par sevi saprotams, ka neviena vācu amatpersona nekādā veidā neveicinās poļu kultūras dzīves attīstību\dots{}''
+
+Mēģinājumus iznīcināt poļu tautas garīgo kultūru nacistiskie okupanti veica vairākos posmos. Poļu tautas kultūras barbariskās iznīcināšanas kampaņas pirmais vilnis ilga līdz 1940.~gada pavasarim. Ziņas par to nonāca arī aiz robežām un izsauca pasaules sabiedrības neapmierinātību. Tāpēc Ā.~Hitlers taktisku iemeslu dēļ nolēma, no vienas puses, turpināt represijas Polijā piesardzīgāk, un, no otras puses, plaši reklamēt vairāku desmitu Polijas zinātnieku atbrīvošanu no cietumiem un vairāku poļu skolu atjaunošanu Ģenerālgubernatūrā.
+
+No 1940.~gada marta visus kultūras pasākumus kontrolēja Ģenerālgubernatūras Tautas izglītības un propagandas departaments, kurš vēlāk tika pārdēvēts par Propagandas departamentu. Viens no pirmajiem departamenta dekrētiem aizliedza visa veida, bet pirmkārt jau kultūras jomā iecerētu, sabiedrisku pasākumu organizēšanu bez iepriekšēja departamenta apstiprinājuma. Daudzas mācību un kultūras iestādes~--- universitātes, skolas, bibliotēkas, muzeji, teātri un kinoteātri tika slēgti vai saņēma izkārtnes ``Tikai vāciešiem''.
+
+Zinātniskā pētniecības darbība bija aizliegta, akadēmiskās iestādes sagrautas (no 603 zinātniskajām laboratorijām, kas darbojas 1939.~gadā, pilnībā iznīcināja 357, neskartas palika tikai 3), dzīvību zaudēja ap 40\% (atsevišķās jomās pat vairāk nekā 50\%) zinātnisko līdzstrādnieku. Vairāk nekā 80\% poļu kultūras darbinieku zaudēja darbu specialitātē un iztiku sev pelnīja ar fizisku darbu.
+
+1940.~gada augustā tika ieviesta rakstnieku un mākslinieku obligātas reģistrācijas sistēma. Drastiski tika samazināta \strong{izdevējdarbība} Polijas iedzīvotāju vajadzībām. Oktobrī tika aizliegta jaunu grāmatu poļu valodā iespiešana, esošās tika pakļautas cenzūrai un bieži konfiscētas. Tiesa, tai pat 1940.~gadā gan vairākas vācu kontrolētas tipogrāfijas okupētajā Polijā atjaunoja savu darbību un publicēja atsevišķas grāmatas, piemēram, poļu-vācu vārdnīcas un antisemītiskus un antikomunistiskus romānus. Taču poļu valodā iznāca tikai okupantu atlasīta lasāmviela. Okupācijas četru gadu laikā, līdz 1943.~gadam saskaņā ar oficiālajiem Ģenerālgubernatūras valdības datiem poļu iedzīvotāju vajadzībām tika publicētas pavisam 438~grāmatas un kalendāri ar 4,8~miljonu eksemplāru tirāžu.
+
+Polijai anektētajos apgabalos pat poļu grāmatu pārdošana tika aizliegta. Ģenerālgubernatūrā grāmatnīcām bija nepieciešama atļauja darboties un daudzas šo atļauju nesaņēma; bet to ieguvušo darbība bija stingri ierobežota.
+
+Iznīcināšanai tika pakļautas daudzas poļu grāmatas, tās tika konfiscētas ne tikai sabiedriskās bibliotēkās, bet arī privātajos krājumos. Cenzūra pirmās skāra grāmatas, kas tika uzskatītas par ``bīstamām'', tostarp ar zinātnisku un izglītojošu saturu, par kurām nacisti domāja, ka tās varētu veicināt poļu patriotismu un tajās varētu būt antivāciska piegarša. Tika radīti vairāki aizliegto grāmatu saraksti un vairāk nekā 1~500 poļu rakstnieki tika klasificēti kā ``bīstami Vācijas valdībai un Vācijas kultūrai''. Aizliegto grāmatu sarakstā tika iekļauti arī poļu rakstnieku Ā.~Mickeviča, J.~Slovacka, S.~Vispjaņska, B.~Prussa, S.~Żeromska, V.~Reimonta, S.~Vispjaņska, J.~Tuvima, L.~Staffa, M.~Konopņickas u.c. darbi. Aizliegto grāmatu atrašanās privātīpašumā bija pasludināta par nelikumīgu un draudēja ar cietumsodu.
+
+Aizliegtās literatūras skaitā bija iekļautas arī kartes, atlanti, kas rādīja agrākās Polijas robežas, publikācijas angļu un franču valodās, tai skaitā vārdnīcas. Grāmatu pārdošana no rokas rokā bija aizliegta. (Tās grāmatas, kas līdz tam vēl nebija aizliegtas, aizliegumu sagaidīja 1943.~gadā; pat poļu lūgšanu grāmatas tika konfiscētas.)
+
+Jau neilgi pēc okupācijas sākuma Ģenerālgubernatūrā vairums bibliotēku tika slēgtas. Tā aptuveni 80\% no Krakovas bibliotēkām tika slēgtas uzreiz, bet pārējās darbiniekiem bija jānoskatās kā cenzori masveidā samazināja grāmatu krājumus. Okupācijas iestādes izpostīja arī tādas grāmatu krātuves kā Seima un Senāta bibliotēkas. 1941.~gadā Vācijas okupētajā teritorijā tika slēgta pēdējā atlikusī publiskā poļu bibliotēka Varšavā. Kara laikā tikai Varšavas bibliotēkas zaudēja ap vienu miljonu sējumu, aptuveni 30\% no savām kolekcijām. Vairāk nekā 80\% no šiem zaudējumiem bija tiešs rezultāts ``tīrīšanām'' un tiem nebija sakara ar kaujas darbību. Daudzas bibliotēkas un arhīvi tika sadedzināti.
+
+Kara priekšvakarā Polijā iznāca vairāk nekā 2~000~periodiski izdevumi, tai skaitā 170~žurnāli. Saskaņā ar vācu rīkojumiem poļu prese tika pilnībā iznīcināta. Visi pirms kara iznākušie laikraksti tika slēgti. Preses izdevumu skaits saruka līdz vairākiem desmitiem, kurus visus cenzēja vācieši. Daži, kas pastāvēja okupācijas laikā, bija dibināti no jauna un atradās pilnīgā vācu kontrolē. Šāda pilnīga preses iznīcināšana bija bezprecedenta gadījums mūsdienu vēsturē. Vienīgā oficiāli pieejamā lasāmviela bija propagandas prese, kuru izplatīja vācu okupācijas pārvalde.
+
+Ar nāves soda draudiem poļiem bija aizliegts turēt īpašumā radio.
+
+\strong{Kinoteātri}, tagad Vācijas propagandas mašīnas kontrolē, bija spiesti savā repertuārā uzņemt filmas no nacistiskās Vācijas, kuras to slavināja un kuras ievadīja vācu kinožurnāli, t.s. ``Vācu nedēļas apskati'' (\detxti{Die Deutsche Wochenschau}). Dažas poļu filmas, kas varēja tikt parādītas (aptuveni 20\% no repertuāra), tika pamatīgi rediģētas, lai noņemtu visas atsauces uz Polijas valsts simboliem un ebreju aktieriem un producentiem. Vairākas vācu iestāžu kontrolē uzņemtas propagandas filmas tika ieskaņotas arī poļu valodā, taču no 1943.~gada vairs netika rādīta neviena poļu filma.
+
+\strong{Teātri} saskārās ar līdzīgu situāciju, jo tiem ``nopietnu'' lugu uzvešanu vācu iestādes aizliedza. Izņēmums bija zemas kvalitātes izrādes, tostarp ar pornogrāfisku raksturu,~--- tās tika atļautas, lai ``nomierinātu'' iedzīvotājus, lai pasaulei parādītu ``īsto'' poļu kultūru, kā arī, lai radītu iespaidu, ka Vācija poļiem netraucē brīvi izteikties. Vācijas propagandas speciālisti uzaicināja kritiķus no neitrālām valstīm uz speciāli organizētiem ``poļu'' pasākumiem, kuri mērķtiecīgi tika veidoti garlaicīgi vai pornogrāfiski, lai tos pasniegtu kā tipiskas poļu kultūras aktivitātes.
+
+\strong{Mūzikas} jomā okupanti aizliedza izpildīt daudzu poļu komponistu, tajā skaitā F.~Šopēna, muzikālos darbus. Nonāca pat līdz tam, ka okupācijas varas iestādes 1941.~gada decembrī aizliedza poļiem turēt īpašumā gramofonus un skaņu plates, lai tie neklausītos poļu mūziku. Tomēr muzikālās kultūras aktivitātes bija vismazāk ierobežotas, iespējams tāpēc, ka H.~Franks pats sevi uzskatīja par nopietnās mūzikas cienītāju. Laika gaitā viņš pavēlēja izveidot simfonisko orķestri Ģenerālgubernatūras galvaspilsētā Krakovā. Mūzikas priekšnesumi tika atļauti kafejnīcās un baznīcās.
+
+Milzu zaudējumi tika ciesti \strong{izglītības} sfērā. Lai novērstu jaunas izglītotas poļu paaudzes rašanos, atbilstoši 1940.~gada aprīļa H.~Himlers sagatavojam memorandam par vācu attieksmi pret Poliju, okupanti noteica, ka poļu bērnu skolas gaitas jāierobežo līdz dažiem gadiem pamatizglītības. Jau 1939.~gada 31.~oktobrī H.~Franks propagandas ministru J.~Ģēbelsu informēja, ka visas Polijas universitātes un vidusskolas pārtrauks darboties, jo tās ir ``naida inkubatori pret vāciešiem.'' 1939.~gada 19.~decembrī H.~Franks parakstīja direktīvu par izglītības lietu organizāciju Ģenerālgubernatūrā. Tika atzīmēts, ka visās vietās, kur skaitījās vismaz 8 vācu bērni, tiks atvērtas vācu skolas. Poļu skolās tiks mācītas tikai lietišķās zināšanas. Tik tiešām, sekojošajās nedēļās tika izvērsta visu poļu vidējo un augstākos mācību iestāžu slēgšanas kampaņa. Visas universitātes un lielākā daļa vidusskolu tika slēgtas ja ne uzreiz pēc vācu iebrukuma, tad līdz 1940.~gada vidum.
+
+Tā, pēc nacistu ienākšanas Poznaņā uzreiz tika slēgta vietējā universitāte, mācībspēki nosūtīts uz nometnēm. Okupanti Poznaņā nogalināja 24~profesorus, 14~docentus un 26~asistentus. 1941.~gada 27.~aprīlī Poznaņā atklāja jau vācu universitāti, par tās goda prezidentu kļuva gauleiters A.~Greizers. Polijas valdības ziņojumā Nirnbergas tribunālam bija norādīts, ka okupācijas laikā beidza pastāvēt četras universitātes un 12~universitātes tipa skolas, kuru apmeklētība līdz 1939.~gada septembrim sasniedza 45~tūkstošus studentu.
+
+Ar Vācijas izglītības ministrijas direktīvu 1939.~gada decembrī visus poļu (un čehu) studentus, kuri studēja Vācijā, izslēdza no augstskolām. Turklāt Polijas augstskolu diplomus, kas bija izdoti pēc 1939.~gada 1.~septembra, atzina par spēkā neesošiem.
+
+Visas poļu un ukraiņu privātskolas tika slēgtas, un arī privātas nodarbības ar poļu un ukraiņu bērniem aizliegtas. Poļu jauniešiem un jaunietēm, sasniegušiem 16~gadu vecumu, noteica obligātu darba dienestu. Vāciešu ieņemtajās teritorijās pirms kara pastāvēja aptuveni 550~vidusskolas. Okupanti pavēlēja tās slēgt. Vācijai pievienotajās poļu teritorijās tas tika izdarīts. Ģenerālgubernatūrā tika atļauts turpināt darboties vienīgi amatniecības un tirdzniecības skolām. Līdz 1940.~gada beigām nepalika nekādu oficiālu izglītības iestāžu, kas pārsniegtu arodskolas līmeni, un tās pašas nepiedāvāja izglītību, kas sniegtos tālāk par elementāro tirdzniecības un tehnisko apmācību, kas bija nepieciešama nacistu ekonomikai. Pēc slēgšanas viļņa pārpalikušās skolas tika pakļautas Vācijas izglītības sistēmai un poļu skolotāju skaits un viņu kompetence drastiski samazināti. (Starp citu, lēmumos, saistītos ar nacistu nodomiem iznīcināt Polijas izglītības sistēmu, atspoguļojās arī nacistu realizētā nacionālās skaldīšanas un sarīdīšanas politika, jo tajā pašā laikā pret ukraiņu izglītības sistēmu tika parādīta salīdzinoši lielāka iecietība.)
+
+Tās skolas, kuras turpināja strādāt, bija spiestas savos mācību plānos ieviest būtiskas izmaiņas. Ģenerālgubernatūrā aizliedza mācīt vēsturi, ģeogrāfiju, literatūru~--- tos mācību priekšmetus, kuri varēja stiprināt nacionālo pašapziņu. Mācību grāmatas šais priekšmetos piespiedu kārtā atsavināja. Arī citos priekšmetos mācību programmas tika cenzētas, pirmskara mācību grāmatas konfiscētas un skolu bibliotēkas slēgtas.
+
+Poļu skolotājus parasti atlaida, daļu no tiem aicināja piedalīties ``orientējošās tikšanās'' (\detxti{Orientierungs-Treffen}) ar jauno valdību, kur tos vai nu visus apcietināja vai uz vietas nogalināja. Dažus poļu skolēnus gan nosūtīja uz skolām Vācijā, taču daļa no tiem apmeklēja speciālas skolas, kur viņi lielāko daļu laika pavadīja kā neapmaksāti strādnieki, parasti vāciešiem piederošās lauku saimniecībās. Par sarunāšanos poļu valodā tur draudēja bargi sodi.
+
+Viens no jaunajiem mācību mērķiem bija poļiem iegalvot, ka viņu nacionālais liktenis ir bezcerīgs, iemācīt cienīt vāciešus un būt tiem paklausīgiem. To okupanti apzināti centās sasniegt ar, piemēram, policijas reidiem skolās, skolniekiem piederošo mantu kratīšanām, skolēnu un skolotāju masveida arestiem un to izmantošanu piespiedu darbos, bieži nosūtot sezonas darbā uz Vāciju.
+
+Tika sagaidīts, ka poļu bērni sāks strādāt, kad tie vecumā no 12~līdz 15~gadiem būs guvuši pamatizglītību, kurai oficiāli bija jāilgst septiņus gadus, tomēr pēdējo divu mācību gadu programmu apguvei klases tikās tikai reizi nedēļā. Nebija naudas skolu apsildei ziemā. Klases un skolas tika apvienotas, poļu skolotāji atlaisti un tā rezultātā gūtie ietaupījumi izmantoti, lai izveidotu skolas vācu mazākuma bērniem vai būvētu barakas vācu karaspēkam. Netika apmācīti jauni poļu pedagogi.
+
+Vācu policijas sagatavots memorands 1943.~gadā situāciju aprakstīja šādi: ``Skolnieki sēd cieši sablīvēti bez nepieciešamajiem mācību materiāliem un bieži vien bez kvalificētiem pedagogiem. Turklāt poļu skolas vismaz piecus no desmit mēnešu ilgā mācību gadam ir slēgtas ogļu vai cita kurināmā trūkuma dēļ. No divdesmit līdz trīsdesmit plašām skolas ēkām, kas bija Krakovā pirms 1939.~gada, mūsdienās tiek izmantotas divas sliktākās ēkas \citespace{} Katru dienu skolēni mācās dažādās maiņās. Šādos apstākļos mācību diena, kura normālos apstākļos ilgtu piecas stundas, ir samazināta līdz vienai stundai.''
+
+Tomēr, pat ar to, ka 1940.~gada beigās Ģenerālgubernatūrā darbojās tikai 30\% pirmskara skolu un tās apmeklēja tikai 28\% no pirmskara bērnu skaita, poļu pamatskolu situācija tur bija nedaudz labāka nekā citos bijušās Polijas rajonos.
+
+Austrumu apgabalos, kas nepiederēja Ģenerālgubernatūrai (Belostokas rajonā, Ostlandes un Ukrainas reihskomisariātos) daudzas poļu pamatskolas tika slēgtas, lielākajā daļā skolu mācības notika ukraiņu, baltkrievu un lietuviešu valodās. Piemēram, pirmo divu okupācijas gada beigās Belostokas rajonā 86\% skolu, kuras pirms kara strādāja poļu valodā, bija slēgtas. Nākamā gada beigās šis skaitlis pieauga līdz 90\%. (Protams, neklājas aizmirst, ka pirms kara ukraiņu, baltkrievu un lietuviešu bērnu vairākums bija spiesti mācīties poļu skolās.)
+
+Tomēr pilnībā realizēt savas nostādnes poļu izglītībā nacisti nespēja. 1943.~gadā kādā vācu ziņojumā par izglītību bija teikts, ka kontrole pār mācību programmām poļu skolās, it īpaši laukos, ir grūta, jo pastāvēja darbinieku, transporta trūkums. To traucēja arī poļu pretošanās kustība. Daudzās okupantu pieciestajās sākumskolās tika noturētas viņu aizliegtās poļu literatūras un vēstures stundas.
+
+Reizē ar poļu kultūras noniecināšanu, tās izpausmju apspiešanu nacisti jau pirmajās okupācijas dienās sāka \strong{Polijas kultūras vērtību izlaupīšanu}. Tā notika, pamatojoties uz H.~Himlera 1939.~gada 1.~decembrī izdoto rīkojumu, ka gestapo un drošības policijas darbinieku kopā ar vērmahta pavēlniecību pienākums ir Radomā, Varšavā un Ļubļinā rekvizēt vērtīgākos mākslas darbus. Nedēļu vēlāk H.~Himlers izdeva jaunu rīkojumu, saskaņā ar kuru konfiscēt vajadzēja ne tikai mākslas darbus un grāmatas, bet arī ``tērpus, mūzikas instrumentus, monētas, pastmarkas un citas līdzīgas kolekcijas''. Pamatojoties uz šo H.~Himlera norādi H.~Franks 1939.~gada 16.~decembrī parakstīja ``Rīkojumu par mākslas objektu konfiskāciju Ģenerālgubernatūrā''. Visos šajos rīkojumos bija atsauces uz Ā.~Hitlera un H.~Gēringa lēmumiem. Drīz H.~Franks ziņoja Ā.~Hitleram, ka pēdējo 6~mēnešu laikā īpaši sastādītā sarakstā iekļautas gandrīz visas mākslas vērtības Polijā.
+
+Arī pats H.~Franks ``cienīja'' mākslu. Pēc kara Nirnbergas tribunālā 1945.~gada 19.~decembrī tika liecināts, ka 1943.~gada martā viņš pavēlēja izvest no Varšavas uz Krakovu visus labākos mākslas darbiem. Tiem vajadzēja rotāt mākslas izstādi Vaveles pilī, paredzētu personīgi H.~Frankam.
+
+Okupācijas varu izdotie varas iestāžu rīkojumi par zinātnes un mākslas darbu, vēstures dokumentu, dārgmetālu izstrādājumu utt. ``aizsardzību'' kalpoja par ieganstu oficiālai šo priekšmetu konfiskācijai. Saskaņā ar plānu, neskaitāmi mākslas priekšmeti tika konfiscēti un izvesti uz Vāciju.
+
+Laupīšanu uzraudzīja SS ierīkotā iestāde ``\detxti{Ahnenerbe}'' (burtiski~--- ``senču mantojums'', oficiāli ``Vācu biedrība senās Vācijas vēstures un senču mantojuma pētniecībai''), to veica Drošības policijas un Drošības dienesta (\detxti{Sicherheitsdienst des Reichsführers SS}) vienības (\detxti{Einsatzgruppen}), kā arī eksperti no t.s. Austrumu apgabalu uzraudzības pārvaldes (\detxti{Die~Haupttreuhandstelle Ost}). SS vienības mākslas vēsturnieku~--- ekspertu vadībā pa visu Poliju meklēja mākslas vērtības. Tika nolaupītas Rafaēla, Rembranta, Leonardo da Vinči, Canaletto, Bačiarelli un citu Rietumu vecmeistaru darbi, kuri glabājās Polijas muzejos, poļu glezniecības virsotnes J.~Matejko, daudzu citu izcilu poļu mākslinieku gleznas.
+
+Krakovā okupanti nolaupīja 843~mākslas priekšmetus no Čartorijsku muzeja (\pltxti{Muzeum Książąt Czartoryskich w Krakowie}), tostarp tādus šedevrus kā Leonardo da Vinči ``Dāma ar sermuli'' (poļu \pltxti{Dama z gronostajem}), Rafaela gleznu ``Jaunekļa portrets'' (\pltxti{Portret młodzieńca}) u.c. Tur tika nolaupīti arī 12~unikāli persiešu paklāji, 260~zelta rotaslietas, piederējušas Polijas karaļiem. Nolaupīti tika Vāveles pils, Krakovas universitātes Mākslas vēstures institūta dārgumi. Tika izlaupīti Nacionālais muzejs un Armijas muzejs Varšavā, vērtības no Varšavas universitātes bibliotēkas, Valsts naudas kaltuves kolekcijām, kā arī no daudzām Polijas magnātu privātkolekcijām.
+
+Nacisti īpaši medīja kokgriezēja meistara no Nirnbergas V.~Stvoša darināto Sv. Marijas baznīcas Krakovā altāri. Lielais trīspusējais altāris tapa XV gadsimtā. Altāris bija unikāls, neatkārtojams un nenovērtējams meistardarbs ar milzīgu kultūrvēsturisku nozīmi. Pirmajās kara dienās poļu mākslas vēsturniekiem izdevās izvest altāri uz Sandomežu (arī Sandomira, poļu: \pltxti{Sandomierz}), un paslēpt to vietējās katedrāles pagrabā. Tomēr pēc Vācijas drošības policijas priekšnieka (\detxti{Chef der Sicherheitspolizei}) R.~Heidriha pavēles 1939.~gada oktobra sākumā, tas tika atrasts, nogādāts Berlīnē un novietots valsts bankas pagrabā. Bija ierosināts to nodot ``fīrera muzejam'' Lincā, taču galu galā nolemts pārvest uz Nirnbergu un uzstādīt Sv.~Lorenca baznīcā. 1946.~gada maijā V.~Stvoša altāris tika atgriezts tā likumīgajam īpašniekam~--- Polijas valstij, un 1957.~gadā atjaunots, uzstādot baznīcā Krakovā.
+
+Pēc kara tikai daļa nacistu izvesto kultūras vērtību, piemēram, gleznu kolekcija no Čartorijsku muzeja (Krakovā) tika atgūti. Taču daļa, piemēram Rafaela ``Jaunekļa portrets'', nav atrasta līdz mūsdienām. Nevar pateikt, vai tas tika iznīcināts vai nobēdzināts kādā privātā kolekcijā.
+
+Daudz poļu nacionālo vērtību tika izlaupītas reiham pievienotajās zemēs. Lielāko daļu no svarīgākajiem mākslas darbiem nacisti sagrāba jau sešu mēnešu laikā pēc 1939.~gada septembra. Kopumā pirmajos okupācijas mēnešos poļu tautai tika nolaupīti mākslas darbi no 45~iestādēm. 1941.~gada 2.~maijā uz Berlīni tika ziņots, ka līdz 1941.~gada marta beigām mākslas darbi atrasti 74~pilīs, 96~muižās un daudzās privātmājās. ``Kopējais pārbaudīto muižu, piļu un privāto dzīvokļu skaits sasniedz ap 500. Tika apsekotas un konfiscētas 102~bibliotēkas, 15~muzeji, 3~mākslas galerijas, 8~ieroču kolekcijas, 10~monētu kolekcijas, 1~Ēģiptes vērtību kolekcija, 1~antīko vāžu kolekcija, 1~etnogrāfiska kolekcija, 21~dažāda privātā kolekcija (amatnieku rokdarbi, porcelāns, dabas zinātnes eksponāti, briežu ragi, u.c.), 1~100~gleznas un akvareļi, vairāki simti gravīru, 25~statujas un skulptūras, 500~mēbeļu, 33~kastes ar baznīcas piederumiem, daudzi simti paklāju, \citespace{} 25 lielas dārgmetālu kolekcijas, kā arī liels skaits darinājumu no dārgmetāliem. Daži no šiem priekšmetiem tika atlasīti kā īpaši vērtīgi. Nosauktie skaitļi neatspoguļo konfiskāciju pilnu apjomu''. 1942.~gada beigās vācu ierēdņi lēsa, ka jau ``vairāk nekā 90\%'' toreizējo Polijai piederējušo mākslas darbu atrodas viņu ``aizgādībā''. Daži no tiem tika nosūtīti Vācijas muzejiem, jau minētajam Vadoņa muzejam Lincā u.c., tomēr lielākā daļa nonāca pašu nacistu ierēdņu īpašumā. Tika nolaupīti vairāk nekā 516~000 mākslas darbu, starp tiem 2~800 Eiropas gleznotāju, 11~000 poļu meistaru gleznas, 1~400 skulptūras, 75~000 manuskripti, 25~000 kartes un 90~000 grāmatas (tai skaitā 20~000, iespiestas pirms 1800.~gada), un simtiem tūkstošu citu objektu ar māksliniecisku vai vēsturisku vērtību. Tika slēgti zooloģiskie dārzi, bet visi dzīvnieki nosūtīti uz Vāciju.
+
+Īpašu uzmanību okupanti pievērsa Polijas karaļa regālijām, kas bija piederējušas Augustam III Saksim un viņa sievai. Kara laikā muzeja darbinieki paslēpa tās, bet okupanti atrada regālijas un nosūtīja uz Drēzdenes muzeju. No turienes tās kara beigās tika nogādātas Kenigšteinas (\detxti{Festung Königstein}) cietoksnī. Pēc kara tās atrada padomju karaspēks un nodeva Polijas valstij.
+
+Reizē okupanti grāva visu, kas atgādināja polu tautas slaveno vēsturi, tās brīvības cīņu tradīcijas. Iebrucēji iznīcināja Ā.~Mickeviča, F.~Šopēna, S.~Moņuško, M.~Skladovskas-Kirī, T.~Kostjuško pieminekļus, piemiņas monumentu par godu poļu-lietuviešu-krievu uzvarai pie Grīnvaldes (\pltxti{Bitwa pod Grunwaldem}, 1410), piemiņas plāksnes nacionālajiem varoņiem, krucifiksus ceļmalās. Piemēram, Toruņā tika nojaukti visi pieminekļi un noplēstas visas piemiņas plāksnes. Visā Polijā tika iznīcināti desmitiem pieminekļu. Netika taupīti arī tie, kuri reizē bija arī vācu vēstures liecinieki. Tā, No Krakovas universitātes auditorijas, kur, saskaņā ar leģendu, bija mācījies Fausts, nacisti izmeta vecos solus, bet pašu auditoriju pārvērta krogā.
+
+Vēlāk, atkāpjoties no Polijas, vācu iebrucēji centās paņemt līdzi visas tās kultūras vērtības, kuras vēl bija pārpalikušas Polijā. Pie tam daudzas gāja bojā ceļā, tika iznīcinātas Vācijas pilsētu bombardēšanas laikā un nereti arī pašu okupantu nodedzinātas, jo tie kultūras, mākslas priekšmeti, kurus nacisti uzskatīja vai nu par vācu kultūru apdraudošiem vai par nenozīmīgiem, ne tikai netika glābti no bojā ejas kara darbības rezultātā, bet bieži tīšuprāt tika masveidā iznīcināti. Tā daudzi mākslas darbi: gleznas, skulptūras, arhitektūras pieminekļi u.c. gāja bojā okupantu nevīžības vai ļaunprātības rezultātā. Par upuri nacistiskajam kursam uz poļu kultūras iznīcināšanu krita daudzi arhitektūras pieminekļi, ieskaitot karaļa pili un katedrāli Varšavā. Nacionālajā muzejā Varšavā nacisti ierīkoja kazino un gaisa kara spēku noliktavu. Tikai Lazenku (\pltxti{Łazienki Królewskie}) kompleksā Varšavā okupācijas laikā gāja bojā ap 300~mākslas darbu.
+
+Kopumā nacisti iznīcināja gandrīz pusi kultūras un mākslas materiālo vērtību, ap 2/3 skolu un zinātnes iestāžu. Nodedzinātas tika 66\% bibliotēku un arhīvu, bojā gāja ap 16~miljonu sējumu. (Tiek lēsts, ka kara laikā gāja bojā ap 10 miljonu sējumu tikai no valsts bibliotēku un institūciju īpašuma.) Pilnībā sagrautas tika 17~augstskolu ēkas, 352~slimnīcas, 29~sanatorijas u.c. Kara laikā tika sagrauti 25~muzeju, 35\% teātru un daudzas citas kultūras iestādes. Pēc kādas aplēses, 43\% no Polijas izglītības un pētniecības iestāžu infrastruktūras un 14\% no Polijas muzejiem tika iznīcināti. Vēl pēc cita vērtējuma Polijā karu pārdzīvoja tikai 105 no bijušajiem 175~muzejiem un tikai 33 no tiem pēc kara beigām varēja atsākt darbību. No 603~akadēmiskajām institūcijām, eksistējušajām Polijā pirms kara, apmēram puse tika pilnībā iznīcinātas, un tikai dažas pārdzīvoja karu daudz maz neskartas.
+
+\asterism
+
+Īpaši nežēlīgs liktenis okupētajā Polijā sagaidīja tās \strong{ebreju tautības iedzīvotājus}. Lai arī cik liels bija nacistu terors pret poļiem, viņi tomēr neparedzēja tūlītēju visu poļu iznīcināšanu, kā tas bija ar ebrejiem. Pirmskara Polijā dzīvoja ap 3,5~miljoni (līdz 10\%) ebreju. Ar Polijas iekarošanu viņu lielākā daļa nonāca nacistiskās Vācijas varā.
+
+Tikai neliela daļa ebreju, kam bija skaidrāks skats nākotnē, pirmajās kara nedēļās, arī pēc tam centās atstāt nacistu okupētās zemes un, pat riskējot ar dzīvību, nonākt PSRS jauniegūtajos apgabalos.
+
+Viens no tiem bija jau tolaik sabiedrisku atpazīstamību ieguvušais telepāts V.~Messings. Viņš ar pavadoni laivā devās pāri Rietumu Bugai, kur neilgi pirms tam vācieši bija sašāvuši divas tādu pat pārbēdzēju laivas. Savus pārdzīvojumus V.~Messings attēloja atmiņās: ``Mēs bez trokšņa pārpeldējām upi un piestājām pie padomju krasta. Es nepaguvu paspert ir divdesmit soļu pa manas jaunās dzimtenes zemi, kā izdzirdu skarbu saucienu ``Stāt!'' Ar milzīgu prieku~--- es esmu glābts! glābts! glābts!~--- es pacēlu rokas un skaļi pateicu frāzi, kuru man iemācīja viens aptiekārs Olštinā (poļu \pltxti{Olsztyn}, vācu \detxti{Allenstein}): ``Nešaujiet, biedri, es esmu savējais!'' Cik gan patīkami bija izdzirdēt krievu ``\rutxti{Стой!}'' (Stāt!), vācu ``\detxti{Halt!}'' vietā. Tikai tas, kurš ir pārdzīvojis to, ko esmu pārdzīvojis es, var saprast mana prieka dziļumu.''
+
+Daudzi Polijas ebreji, atbilstoši Pirmā pasaules kara pieredzei un par spīti ziņām no nacistiskās Vācijas, cerēja, ka vācu okupācija būs panesama. Nostādīti alternatīvas priekšā vai nu visu pamest un bēgt uz padomju ieņemto zonu vai emigrēt uz Palestīnu, vairākums no viņiem nolēma palikt uz vietas. Zīmīgi, ka pirmajās okupācijas nedēļās gar jauno vācu-padomju robežu vācu karavīri ar spēku spieda ebrejus pāriet padomju teritorijā, dzina peldēt pāri Bugas un Narevas upēm, pat atklājot uguni, ja tie kavējās. Daudzi gāja bojā no lodēm, daudzi noslīka. Tomēr tikai mazākums Polijas ebreju iedzīvotāju nonāca padomju ieņemtajā zonā, vairākums palika vācu okupētajos rajonos. Pirmajos vācu okupācijas mēnešos, kad nacisti vēl daļēji atļāva ebreju emigrēšanu, pat atvēra emigrācijas iestādes, daži no viņiem spēja aizbēgt uz Palestīnu, ASV, Dienvidameriku u.c. Taču tikai nelielai daļai ebreju, galvenokārt bagātākajiem, tādā ceļā izdevās izbraukt no Polijas.
+
+Okupācijas gados ebreji kļuva par masveida iznīcināšanas un nesaudzīgas vardarbības objektu. Polijas ebreju liktenis bija cieši saistīts ar nacistu izvirzītā ``ebreju jautājuma'' risināšanas problēmu visā Eiropā. Eiropas ebreju likteņa izšķiršana bija viena no Ā.~Hitlera pasaules iekarošanas plānu sastāvdaļām.
+
+1939.~gada 21.~septembrī Vācijas drošības policijas priekšnieks R.~Heidrihs sasauca apspriedi, kurā sprieda par poļiem (R.~Heidrihs norādīja, ka ``poļu problēma'' jārisina ``neitralizējot'' (\detxti{unschädlich machen}) valdošo šķiru vai nosūtot viņus uz koncentrācijas nometnēm, bet atlikušos ``primitīvos poļus'' jāintegrē darba procesā, ar laiki izvācot no vāciski runājošo teritorijas) un ebrejiem. Mērķis, ko, atsaucoties uz Ā.~Hitleru, pieminēja R.~Heidrihs, bija visus ebrejus pārvietot uz ``ebreju rezervātu'' austrumos~--- Polijā. Viņš pieminēja arī tādu plāna sastāvdaļu kā ``ebreju vecāko padomju'' (\detxti{Judenältestenräte}) dibināšana, ar kuru starpniecību vācu iestādes novadītu savas pavēles un kuras būtu ``pilnā mērā atbildīgas'' par to izpildīšanu.
+
+Jau 29.~septembrī, kad vācieši iemaršēja Varšavā, ebreju dzīve tur kardināli mainījās. 1939.~gada 8.~septembrī H.~Franks izdeva pavēli, kas lika visiem ebrejiem okupētajās teritorijās nēsāt īpašus apsējus ar Dāvida zvaigzni. Polija bija pirmā no valstīm, kur visi ebreju iedzīvotāji jau no pirmajām okupācijas nedēļām bija spiesti to darīt. Tādam pat zvaigznēm bija jātiek uzstādītām uz visiem uzņēmumiem, veikaliem, kas piederēja ebrejiem. Ar 23.~novembri šī pavēle tika attiecināta uz visiem Ģenerālgubernatūras ebrejiem, vecākiem par 10~gadiem. (Vācijas tieši anektētajos apgabalos šādu zvaigzni ebreji nēsāja no 1941.~gada rudens.) Nacisti piespieda visas ebreju kopienas samaksāt ievērojamu kontribūciju, konfiscēja visus finanšu līdzekļus, ko atrada ebreju kopienu kasēs, visi ebreju banku konti tika bloķēti. Ebreji nedrīkstēja izņemt no saviem kontiem bankās vairāk par 250~zlotiem nedēļā. Viņiem bija aizliegts būt par rūpniecības uzņēmumu īpašniekiem, turēt mājās vairāk par 2~000 zlotiem.
+
+Nacisti īpaši bija ieinteresēti iznīcināt ebreju kultūru. Tāpēc Polijā tika iznīcinātas praktiski visas sinagogas. Ebreju literatūras pārdošana tika aizliegta.
+
+No 1940.~gada sākuma ebrejiem jau praktiski bija atņemts viss kustāmais un nekustāmais īpašums. Ebrejiem bija jāatbrīvo ceļš vāciešiem uz ietves. Jebkurš varas iestāžu rīkojumu pārkāpums izsauca smagus sodus, līdz pat nāves sodam. Taču tas bija tikai pats sākums ebreju ciešanām.
+
+Visu teritoriju, kuras kontrolēja Vācija, attīrīšanai no ebrejiem Valsts drošības galvenajā pārvaldē (\detxti{Reichssicherheitshauptamt}) 1939.~gada decembrī tika radīta IV-B-4 nodaļa, kuru vadīja Ā.~Eihmans. Nodaļa bija atbildīga par ``ebreju jautājuma galīgu risinājumu'' (\detxti{Endlösung der Judenfrage}). Ar nacistu partijas kancelejas (\detxti{Parteikanzlei}) vadītāja M.~Bormana, H.~Himlera un H.~Franka direktīvu 1941.~gada 31.~maijā visos Vācijai pievienotajos apgabalos tika ieviesti t.s. Nirnbergas likumi (\detxti{Nürnberger Rassengesetze}), kuri noteica, ka Vācijas pavalstnieks var būt tikai tas, kura dzīslās tek ģermāņu asinis, un kurš ar savu uzvedību pierāda vēlmi kalpot valstij, kā arī aizliedza laulības starp ebrejiem un Vācijas pavalstniekiem.
+
+Polijas, kurā dzīvoja lielākais ebreju skaits Eiropā, pakļaušana veicināja arī ebreju iznīcināšanas programmu (\detxti{Endlösungprogramm}) īstenošanas uzsākšanu. Līdz 1940.~gada martam nacisti plānoja Ģenerālgubernatūru (galvenokārt Ļubļinas rajonu) pārvērst par gigantisku visas Eiropas ebreju rezervāciju. 1939.--1940.~gada ziemā šurp tika atgādāti vairāki tūkstoši ebreju no Vācijas, Austrijas un Čehoslovākijas. Visos Vācijai piedalītajos apgabalos ebreju stāvoklis izvērtās vienādi drausmīgs. Kopš 1940.~gada Polijas ebrejus un ebreju izcelsmes personas līdz trešajam augumam vardarbīgi pārvietoja uz \strong{geto} (tā pēc viduslaiku tradīcijas nacistiskās Vācijas un tās okupētajās teritorijās sauca ebreju nometināšanas vietas īpašos pilsētu kvartālos, kurus pakāpeniski apjoza ar mūri un izolēja no apkārtējās pasaules un kur valdīja visdrausmīgākie apstākļi: nabadzība, bads un slimības) Ģenerālgubernatūras teritorijā. Viņiem bija lemts tikai vienīgi cilvēka spēkus izsmeļošs piespiedu darbs iekarotāju labā vai bada nāve.
+
+Pēc kara Nirnbergas prāvā tika deklarēts, ka H.~Franks bija atbildīgs par poļu un ebreju iznīcināšanas akcijām Ģenerālgubernatūras teritorijā, kaut arī pats H.~Franks apgalvoja, ka visas akcijas tieši vadīja H.~Himlers. Laikabiedri H.~Franku sauca par ``Polijas miesnieku'' (\detxti{Schlächter von Polen}) vai ``Krakovas ebreju slepkavu'' (\detxti{Judenschlächter von Krakau}).
+
+Pirmie projekti radīt īpašu ebreju rajonu Varšavā radās jau 1940.~gada februārī. Nacisti apgalvoja, ka ebreji ir infekcijas slimību izplatītāji un Polijas apdzīvotajās vietās geto tiek radīti, lai ar ebreju izolāciju pārējos iedzīvotājus aizsargātu pret epidēmijām. 1940.~gada martā virkni Varšavas rajonu ar augstu ebreju iedzīvotāju īpatsvaru izsludināja par karantīnas zonām. No šiem rajoniem izlika ap 113~tūkstošu poļu un viņu vietā nometināja 138~tūkstošus ebreju no citiem rajoniem.
+
+Pēc H.~Franka 1940.~gada 13.~septembra direktīvas ebreju geto radīšana ieguva sistemātisku un centralizētu raksturu. Formāli ebreju rajons Varšavā pēc Varšavas distrikta gubernatora L.~Fišera pavēles tika radīts 2.~oktobrī, kad tam tika iedalīts pilsētas iecirknis. Varšavas geto kļuva par vienu no lielākajiem Polijā: tas aptvēra 4,5\% pilsētas teritorijas, kurā līdz karam dzīvoja 37\% Varšavas iedzīvotāju. Drīz tajā dzīvoja jau ap 400~000~cilvēku, bet jau 1941.~gada janvārī~--- 590~000~--- gandrīz 1/3 visu pilsētas iedzīvotāju un to skaits arvien pieauga sakarā ar ebreju pārvietošanu uz geto no citiem Varšavas rajoniem. Pirmajā geto pastāvēšanas periodā tajā bija ap 27~000 dzīvokļu ar vidēji 2,5~istabām katrā. Vienā dzīvoklī dzīvoja vidēji 15~cilvēku. Iedzīvotāju blīvums geto sastādīja 1~100 cilvēku uz ha, kas 10~reizes pārsniedza vidējo blīvumu pilsētā.
+
+Sākotnēji iziešana no geto tika sodīta ar 9~mēnešiem cietumsoda, bet saskaņā ar 1941.~gada 10.~novembra pavēli ebreju aiziešana no viņiem iedalītā rajona tika sodīta ar nāvi. Tas pats sods draudēja ikvienam, kurš dotu ebrejam patvērumu vai kādi citādi palīdzētu. Varšavas geto tika izmitināti ebreji ne tikai no Polijas, bet arī deportētie šurp no citām Eiropas valstīm. (1941.~gada oktobrī sākās Vācijas ebreju deportācija uz geto Polijā, Baltijā, Baltkrievijā.)
+
+Geto pakāpeniski no pārējās pilsētas nodalīja ar īpaši uzceltu sienu ar dzeloņstieplēm. Sākotnēji sienā bija 22~vārti, taču vēlāk to skaits samazināja līdz 15. Vārtus apsargāja policijas posteņi. Salīdzinoši neliela darbaspējīgo geto iemītnieku daļa strādāja fabrikās un darbnīcās geto teritorijā, kuras piederēja vācu uzņēmējiem un pirmkārt apkalpoja armijas vajadzības. Viņi saņēma kādus-nekādus iztikas līdzekļus. Oficiāli noteiktā pārtikas norma bija aprēķināta iedzīvotāju nomiršanai no bada. 1941.~gada otrajā pusē tā bija 184~kilokalorijas dienā, taču pateicoties tam, ka daļa produktu geto tomēr tika piegādāti arī nelegāli, reālais vidējais patēriņš uz vienu cilvēku sasniedza 1~123~kilokalorijas dienā. Maza daļa bagātāko varēja par lielu naudu iegādāties produktus, kuri geto nonāca kontrabandas ceļā. Taču milzīgs vairākums knapi vilka garu, lēni mirstot badā.
+
+Daļa geto iemītnieku tika sūtīti piespiedu darbos ārpus geto robežām, varēja tur sagādāt zināmu pārtikas daudzumu. Darba dienas ilgums bija 12~stundas bez izejamām dienām. No 110~tūkstošiem strādnieku pastāvīgs darbs bija tikai 27 tūkstošiem.
+
+Norisa daļas geto ieslodzīto demoralizācija, veidojās jauniešu bandas. Nevar noliegt, ka šādos apstākļos atsevišķi cilvēki bija gatavi uz visu veidu nodevību. Taču milzums piemēru liecināja arī par cilvēku spēju pašuzupurēties citu labā. Piemēram, grupa ebreju ārstu no Varšavas savu nelaimi izmantoja, lai ar sevi veiktu zinātnisku pētījumu par badošanās ietekmi uz organismu. Tā rezultāti, noslēpti zemē ieraktā piena kannā, saglabājās un pēc kara tika publicēti.
+
+1940.~gada rudenī~--- 1941.~gada pavasarī jau visā Ģenerālgubernatūrā mītošo ebreju vairākumu sadzina geto. 1941.~gada vidū gandrīz visi Polijas ebreji dzīvoja geto. 1942.~gada beigās Ģenerālgubernatūras teritorijā pastāvēja 54~ebreju geto.
+
+Katrā no geto nacisti iecēla t.s. ``Judenrat''-i (ebreju padomi), kuras sastāvā bija cilvēki ar agrāk ievērojamu lomu ebreju kopienā. Nacistiem tas bija vajadzīgs, lai nodrošinātu ebreju paklausību, bet padomēm bija liela loma geto iedzīvotāju apgādē ar pārtiku, medicīnisko un sociālo palīdzību, tās gādāja par sakariem ar pilsētu iedzīvotājiem ārpus geto sienām, ražošanas organizāciju, kas dotu produkciju apmaiņai pret pārtiku. Tā Varšavas geto tika ražots vairāk produkcijas apmaiņai ar pārējiem pilsētas iedzīvotājiem, nekā nosūtīšanai vācu firmām, ko prasīja okupanti. Piemēram, bez 70~legālajām maizes ceptuvēm darbojās arī vēl 800 nelegālas. Nelegālā eksporta vērtība no geto tika lēsta uz 10~miljoniem zlotu mēnesī.
+
+% page 907
 
 % ----- INFO PAGE -----
 \newpage\thispagestyle{plain}
